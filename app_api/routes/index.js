@@ -13,8 +13,8 @@ var ctrlSiteStructure = require('../controllers/siteStructure');*/
 //projects
 router.get('/projects', ctrlProjects.projectsList); //get all projects
 router.post('/projects', ctrlProjects.projectCreate); //create a new project
-/*router.get('/projects/:projectId', ctrlProjects.projectsReadOne); //get project by id
+router.get('/projects/:projectId', ctrlProjects.projectsReadOne); //get project by id
 router.put('/projects/:projectId', ctrlProjects.projectsUpdateOne); //edit project by id
-router.delete('/projects/:projectId', ctrlProjects.projectsDeleteOne); //delete project by id*/
+router.delete('/projects/:projectId', ctrlProjects.projectsDeleteOne); //delete project by id
 
 module.exports = router;
