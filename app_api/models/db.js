@@ -61,3 +61,4 @@ process.on('SIGTERM', function()
 });
 
 require('./projects');
+require('./news');
