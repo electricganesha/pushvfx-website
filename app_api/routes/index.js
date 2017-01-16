@@ -6,8 +6,8 @@ var ctrlReviews = require('../controllers/reviews');
 var ctrlAuth = require('../controllers/authentication');*/
 var ctrlProjects = require('../controllers/projects');
 var ctrlNews = require('../controllers/news');
-/*var ctrlTeam = require('../controllers/team');
-var ctrlLab = require('../controllers/lab');
+var ctrlTeam = require('../controllers/team');
+/*var ctrlLab = require('../controllers/lab');
 var ctrlSiteStructure = require('../controllers/siteStructure');*/
 
 //projects
@@ -21,6 +21,13 @@ router.delete('/projects/:projectId', ctrlProjects.projectsDeleteOne); //delete 
 router.get('/news', ctrlNews.newsList); //get all news
 router.post('/news', ctrlNews.newsCreate); //create a new newsclip
 router.get('/news/:newsId', ctrlNews.newsReadOne); //get newsclip by id
+router.put('/news/:newsId', ctrlNews.newsUpdateOne); //edit newsclip by id
+router.delete('/news/:newsId', ctrlNews.newsDeleteOne); //delete newsclip by id
+
+//team
+router.get('/team', ctrlTeam.teamList); //get all team members
+router.post('/team', ctrlTeam.teamCreate); //create a new team member
+router.get('/team/:teamId', ctrlTeam.teamReadOne); //get newsclip by id
 router.put('/news/:newsId', ctrlNews.newsUpdateOne); //edit newsclip by id
 router.delete('/news/:newsId', ctrlNews.newsDeleteOne); //delete newsclip by id
 

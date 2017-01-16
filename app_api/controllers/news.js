@@ -63,7 +63,7 @@ module.exports.newsCreate = function(req, res) {
 module.exports.newsUpdateOne = function(req, res) {
   if (!req.params.newsId) {
     sendJSONresponse(res, 404, {
-      "message": "Not found, projectId is required"
+      "message": "Not found, newsId is required"
     });
     return;
   }
