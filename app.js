@@ -18,7 +18,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 var appClientFiles = [
-  'app_client/sitePUSH.js'
+  'app_client/sitePUSH.js',
+  'app_client/home/home.controller.js',
 ];
 
 var uglified = uglifyJs.minify(appClientFiles, { compress : false });
@@ -37,11 +38,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'app_client')));
 
 app.use('/api', routesApi);
-app.use(function(req,res) {
+/*app.use(function(req,res) {
   res.sendFile(path.join(__dirname, 'app_client', 'index.html'));
-});
+});*/
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
