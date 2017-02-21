@@ -16,6 +16,11 @@
     };
     vm.message = "Checking your location";
 
+    vm.pageFooter = {
+      title: 'PUSH',
+      strapline: 'PUSH YOURSELF TO NEW IDEAS'
+    };
+
     vm.showError = function (error) {
       $scope.$apply(function() {
         vm.message = error.message;
