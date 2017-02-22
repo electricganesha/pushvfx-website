@@ -64,3 +64,4 @@ require('./projects');
 require('./news');
 require('./team');
 require('./lab');
+require('./structuralInfo');

@@ -2,15 +2,22 @@ var express = require('express');
 var router = express.Router();
 
 /*var ctrlAuth = require('../controllers/authentication');*/
+var ctrlStructure = require('../controllers/structure');
 var ctrlProjects = require('../controllers/projects');
 var ctrlNews = require('../controllers/news');
 var ctrlTeam = require('../controllers/team');
 var ctrlLab = require('../controllers/lab');
-/*var ctrlSiteStructure = require('../controllers/siteStructure');*/
+
+//structuralInfo
+router.get('/structuralInfo', ctrlStructure.structuralInfoGet); //get structural info
+router.post('/structuralInfo', ctrlStructure.structuralInfoCreate); //create structural info
+router.put('/structuralInfo/:siId', ctrlStructure.structuralInfoUpdate); //edit structural info
+router.delete('/structuralInfo/:siId', ctrlStructure.structuralInfoDelete); //delete structural info
 
 //projects
 router.get('/projects', ctrlProjects.projectsList); //get all projects
 router.post('/projects', ctrlProjects.projectCreate); //create a new project
+router.get('/getBestProjects', ctrlProjects.getBestProjects); //get last 6 best projects
 router.get('/projects/:projectId', ctrlProjects.projectsReadOne); //get project by id
 router.put('/projects/:projectId', ctrlProjects.projectsUpdateOne); //edit project by id
 router.delete('/projects/:projectId', ctrlProjects.projectsDeleteOne); //delete project by id

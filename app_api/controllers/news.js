@@ -46,8 +46,11 @@ module.exports.newsReadOne = function(req, res) {
 module.exports.newsCreate = function(req, res) {
   News.create({
     title: req.body.title,
-    displayImage: req.body.displayImage,
-    synopsis: req.body.synopsis
+    dateOfEvent: req.body.dateOfEvent,
+    thumbnail: req.body.thumbnail,
+    synopsis: req.body.synopsis,
+    description: req.body.description,
+    stills: req.body.stills,
   }, function(err, newsclip) {
     if (err) {
         console.log(err);
@@ -80,15 +83,24 @@ module.exports.newsUpdateOne = function(req, res) {
           sendJSONresponse(res, 400, err);
           return;
         }
-        
-        if(req.body.title)
-            newsclip.title = req.body.title;
 
-        if(req.body.displayImage)
-            newsclip.displayImage = req.body.displayImage;
-        
+        if(req.body.title)
+        newsclip.title = req.body.title;
+
+        if(req.body.dateOfEvent)
+        newsclip.dateOfEvent = req.body.dateOfEvent;
+
+        if(req.body.thumbnail)
+        newsclip.thumbnail = req.body.thumbnail;
+
         if(req.body.synopsis)
-            newsclip.synopsis = req.body.synopsis;
+        newsclip.synopsis = req.body.synopsis;
+
+        if(req.body.description)
+        newsclip.description = req.body.description;
+
+        if(req.body.stills)
+        newsclip.stills = req.body.stills;
 
         newsclip.save(function(err, newsclip) {
           if (err) {
