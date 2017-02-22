@@ -44,11 +44,19 @@ module.exports.teamReadOne = function(req, res) {
 /* POST a new team member */
 /* /api/team */
 module.exports.teamCreate = function(req, res) {
+
+/*name: {type:String, required:true},
+profilePic : {type:String, required:true},
+description: {type:String, required:true},
+skills : {type:String, required: true},
+social: [socialNetworksSchema]*/
+
   Team.create({
     name: req.body.name,
     profilePic: req.body.profilePic,
+    description: req.body.description,
     skills: req.body.skills,
-    website: req.body.website
+    social: req.body.social,
   }, function(err, teammember) {
     if (err) {
         console.log(err);
@@ -81,18 +89,21 @@ module.exports.teamUpdateOne = function(req, res) {
           sendJSONresponse(res, 400, err);
           return;
         }
-        
+
         if(req.body.name)
             teammember.name = req.body.name;
 
         if(req.body.profilePic)
             teammember.profilePic = req.body.profilePic;
-        
+
+        if(req.body.description)
+            teammember.description = req.body.description;
+
         if(req.body.skills)
             teammember.skills = req.body.skills;
 
-        if(req.body.website)
-            teammember.website = req.body.website;
+        if(req.body.social)
+            teammember.social = req.body.social;
 
         teammember.save(function(err, teammember) {
           if (err) {
