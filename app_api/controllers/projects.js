@@ -47,7 +47,6 @@ module.exports.projectsReadOne = function(req, res) {
 module.exports.getBestProjects = function(req,res)
 {
   Proj.find({bestWork:true}).sort('-dateCreated').limit(6).exec(function(err, projects) {
-    console.log(projects.length)
     res.json(projects);
   });
 }

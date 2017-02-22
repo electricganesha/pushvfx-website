@@ -9,12 +9,12 @@ function config($routeProvider, $locationProvider)
     templateUrl: 'home/home.view.html',
     controller: 'homeCtrl',
     controllerAs: 'vm'
-    });/*
-  .when('/about', {
-    templateUrl: 'common/views/genericText.view.html',
-    controller: 'aboutCtrl',
+    })
+  .when('/portfolio', {
+    templateUrl: 'portfolio/portfolio.view.html',
+    controller: 'portfolioCtrl',
     controllerAs: 'vm'
-  })
+  });/*
   .when('/location/:locationid', {
     templateUrl: '/locationDetail/location.view.html',
     controller: 'locationDetailCtrl',

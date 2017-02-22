@@ -1,29 +1,53 @@
-<page-header content="vm.pageHeader"></page-header>
 <div id="content">
   <div id="spaceheader"></div>
   <div id="homeimg1">
     <div id="uparrow">
-      <object style="width: 100%;" data="/img/uptriangle.svg" type="image/svg+xml"></object>
+      <object style="width: 100%;" data="/img/arrow_up.svg" type="image/svg+xml"></object>
     </div>
   </div>
-  <div id="slogan">
+  <div id="slogan-top">
     <p>PUSH YOURSELF TO NEW IDEAS</p>
   </div>
-  <div class="row">
-    <div class="col-md-2" style="border: solid 2px blue;">
-
-    </div>
-    <div id="latestwork" class="col-md-8" style="border: solid 2px red;">
-      <p>OUR LATEST WORK</p>
-      <div id="latestprojects">
-        <div class="col-md-4" style="border: solid 2px blue;" ng-repeat="location in vm.data.projects">
-          
+  <div id="latestworkcontent">
+    <div class="row">
+      <div id="homedivleft">
+        <object id="left-triangle" data="/img/left_triangle.svg" type="image/svg+xml"></object>
+      </div>
+      <div id="latestwork">
+        <p>OUR LATEST WORK</p>
+        <div id="latestprojects">
+          <a href="#" ng-repeat="bestproject in vm.data.bestprojects.data">
+            <div class="col-md-4" style="padding:0;">
+              <div id="latestprojectsphoto">
+              </div>
+              <p>{{ bestproject.title }}</p>
+            </div>
+          </a>
         </div>
       </div>
+      <div id="homedivright">
+        <object id="left-triangle" data="/img/right_triangle.svg" type="image/svg+xml"></object>
+      </div>
     </div>
-    <div class="col-md-2" style="border: solid 2px green;">
+  </div>
+  <div id="slogan-bottom">
+    <p>PUSH YOURSELF TO THE LIMIT</p>
+  </div>
+  <div id="homeimg1">
+    <div id="downarrow">
+      <object style="width: 100%;" data="/img/arrow_down.svg" type="image/svg+xml"></object>
+    </div>
+    <div id="uparrow">
+      <object style="width: 100%;" data="/img/arrow_up.svg" type="image/svg+xml"></object>
+    </div>
+  </div>
 
+  <div id="bottomcontent">
+    <div class="row">
+      <div id="homebottomdivcenter">
+        <p id="bottom-slogan">PUSH YOURSELF</p>
+        <object id="left-triangle-bottom-div" data="/img/left_triangle.svg" type="image/svg+xml"></object>
+      </div>
     </div>
   </div>
 </div>
-<page-footer content="vm.pageFooter"></page-footer>

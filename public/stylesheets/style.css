@@ -8,6 +8,11 @@
     src: url(/fonts/Montserrat-Regular.otf);
 }
 
+@font-face {
+    font-family: myriadregular;
+    src: url(/fonts/MyriadPro-Regular.otf);
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -27,8 +32,20 @@ page-header{
   position: absolute;
 }
 
+#triangles{
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+
+#header-triangles{
+  text-align: center;
+  width: 90%;
+  height: 55px;
+}
+
 #logotipo{
-  height: 130px;
+  height: 100px;
   text-align: center;
   background-color: #FFFFFF;
 }
@@ -36,7 +53,6 @@ page-header{
 #logotipo img{
   width: 165px;
   margin: auto;
-  margin-top: 30px;
 }
 
 #menu {
@@ -44,6 +60,7 @@ page-header{
   font-family: monserratmedium;
   font-size: 19px;
   text-align: center;
+  height: 30px;
 }
 
 #menu ul{
@@ -240,11 +257,10 @@ page-header{
   padding-right: 15px;
 }
 
-/*####################### PAGE CONTENT STYLE #################################*/
+/*####################### HOME PAGE CONTENT STYLE #################################*/
 
 #content {
   width: 100%;
-  height: 3000px;
 }
 
 #spaceheader {
@@ -270,25 +286,162 @@ page-header{
   position:absolute;
 }
 
-#slogan{
+#downarrow{
+  width: 100%;
+}
+
+#slogan-top{
   height: 150px;
   padding-top: 30px;
   text-align: center;
   font-family: monserratmedium;
-  font-size: 29px;
+  font-size: 31px;
   color: #3e2a56;
   letter-spacing: 3px;
 }
 
+#slogan-bottom{
+  height: 150px;
+  padding-top: 40px;
+  text-align: center;
+  font-family: monserratmedium;
+  font-size: 31px;
+  color: #3e2a56;
+  letter-spacing: 3px;
+}
+
+#latestworkcontent{
+  position: relative;
+  padding-bottom: 50px;
+  margin-top:40px;
+}
+
 #latestwork{
   text-align: center;
+  width: 72%;
+  float:left;
 }
 
 #latestwork p{
   margin-top: 50px;
   font-family: monserratregular;
-  font-size: 26px;
+  font-size: 28px;
   color: #3e2a56;
   letter-spacing: 2px;
+}
+
+#latestprojects{
+  padding: 0;
+  margin-top:40px;
+}
+
+#latestprojectsphoto{
+  width: 95%;
+  height:250px;
+  margin: auto;
+  border: solid 2px green;
+}
+
+#latestprojects p{
+  text-align: left;
+  width: 95%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: myriadregular;
+  font-size: 16px;
+  color: #3e2a56;
+  letter-spacing: 1px;
+}
+
+#homedivleft{
+  width: 14%;
+  float: left;
+}
+
+#homedivright{
+  position: absolute;
+  width: 14%;
+  right:-2px;
+  text-align: right;
+  bottom: 0px;
+}
+
+#left-triangle{
+  width: 60%;
+}
+
+#homebottomdivcenter{
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-top:70px;
+  height:350px;
+  font-family: monserratmedium;
+  font-size: 31px;
+  color: #3e2a56;
+  letter-spacing: 3px;
+}
+
+#left-triangle-bottom-div{
+  position: relative;
+  width: 8%;
+  float:left;
+}
+
+#bottom-slogan{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*####################### PORTFOLIO PAGE CONTENT STYLE #################################*/
+
+#spaceheaderportfolio {
+  width: 100%;
+  height: 300px;
+  content: '';
+}
+
+#select-menu{
+  border: solid 2px red;
+  height: 150px;
+}
+
+#selectcontent{
+  border: solid 2px blue;
+  text-align: center;
+}
+
+#portfoliotitle{
+  border: solid 2px green;
+  width: 290px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+#smalltriangleleft{
+  float: left;
+}
+
+#portfoliotitlecenter{
+  float: left;
+  width: 240px;
+  text-align: center;
+  font-family: monserratmedium;
+  font-size: 31px;
+  color: #3e2a56;
+  letter-spacing: 3px;
+}
+
+#smalltriangleright{
+  float: left;
+}
+
+#portfolioselection{
+  border: solid 2px red;
+  height: 150px;
 }
 

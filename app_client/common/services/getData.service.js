@@ -8,7 +8,7 @@
   function getData ($http) {
 
     var latestwork = function () {
-      return $http.get('/api/locations');
+      return $http.get('/api/getBestProjects');
     };
 
     return {
