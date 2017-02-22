@@ -20,6 +20,9 @@ app.set('view engine', 'jade');
 var appClientFiles = [
   'app_client/sitePUSH.js',
   'app_client/home/home.controller.js',
+  'app_client/common/directives/pageHeader/pageHeader.directive.js',
+  'app_client/common/directives/pageFooter/pageFooter.directive.js',
+  'app_client/common/services/getData.service.js'
 ];
 
 var uglified = uglifyJs.minify(appClientFiles, { compress : false });
@@ -31,6 +34,8 @@ fs.writeFile('public/angular/sitePUSH.min.js', uglified.code, function (err){
     console.log("Script generated and saved:", 'pushSITE.min.js');
   }
 });
+
+app.use(express.static(__dirname + '../public'));
 
 // uncomment after placing your favicon in /public
 app.use(logger('dev'));

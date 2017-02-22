@@ -7,14 +7,14 @@
   homeCtrl.$inject = ['$scope'];
   function homeCtrl ($scope) {
     var vm = this;
-    vm.pageHeader = {
-      title: 'PUSH',
-      strapline: 'PUSH YOURSELF TO NEW IDEAS'
-    };
-    vm.sidebar = {
-      content: "Looking for wifi and a seat? Loc8r helps you find places to work when out and about. Perhaps with coffee, cake or a pint? Let Loc8r help you find the place you're looking for."
-    };
-    vm.message = "Checking your location";
+    getData.latestwork()
+        .success(function(data) {
+          vm.data = { projects: data };
+          console.log(vm.data);
+        })
+        .error(function (e) {
+          vm.message = "Sorry, something's gone wrong, please try again later";
+        });
 
     vm.showError = function (error) {
       $scope.$apply(function() {
