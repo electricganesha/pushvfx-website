@@ -173,7 +173,6 @@ page-header{
   margin-bottom: 20px;
 }
 
-
 #map-link{
   text-decoration: none;
   position: relative;
@@ -219,6 +218,7 @@ page-header{
   display:inline;
   list-style-type: none;
 }
+
 #footerrighttop li img{
   width:35px;
 }
@@ -240,10 +240,55 @@ page-header{
   padding-right: 15px;
 }
 
+/*####################### PAGE CONTENT STYLE #################################*/
+
 #content {
   width: 100%;
-  top:30px;
   height: 3000px;
-  border: solid 2px hotpink;
+}
+
+#spaceheader {
+  width: 100%;
+  height: 150px;
+  content: '';
+}
+
+#homeimg1{
+  position:relative;
+  width: 100%;
+  height: 100vh;
+  background: url('https://www.whitecase.com/sites/whitecase/files/images/locations/HongKong_Tablet_1920x960.jpg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#uparrow{
+  width: 100%;
+  bottom:-6px;
+  position:absolute;
+}
+
+#slogan{
+  height: 150px;
+  padding-top: 30px;
+  text-align: center;
+  font-family: monserratmedium;
+  font-size: 29px;
+  color: #3e2a56;
+  letter-spacing: 3px;
+}
+
+#latestwork{
+  text-align: center;
+}
+
+#latestwork p{
+  margin-top: 50px;
+  font-family: monserratregular;
+  font-size: 26px;
+  color: #3e2a56;
+  letter-spacing: 2px;
 }
 
