@@ -41,6 +41,52 @@ module.exports.projectsReadOne = function(req, res) {
   }
 };
 
+/* GET projects by category */
+/* /api/bestprojects/ */
+module.exports.getProjectsByCategory = function(req,res)
+{
+
+  Proj.find({category: req.params.category}).exec(function(err, projects) {
+    res.json(projects);
+  });
+}
+
+/* GET projects by subcategory */
+/* /api/bestprojects/ */
+module.exports.getProjectsBySubCategory = function(req,res)
+{
+  var subcategories = req.params.subcategories.split("&");
+
+  switch(subcategories.length)
+  {
+    case(0):
+    sendJSONresponse(res, 404, {
+      "message": "Please search with parameters : param1&param2 ..."
+    });
+    break;
+    case(1):
+      Proj.find({subcategories: { $in:[subcategories[0]]} }).exec(function(err, projects) {
+        res.json(projects);
+      });
+    break;
+    case(2):
+      Proj.find({$and: [{subcategories: { $in:[subcategories[0]]} },{subcategories: { $in:[subcategories[1]]} }]}).exec(function(err, projects) {
+        res.json(projects);
+      });
+    break;
+    case(3):
+      Proj.find({$and: [{subcategories: { $in:[subcategories[0]]} },{subcategories: { $in:[subcategories[1]]} },{subcategories: { $in:[subcategories[2]]} }]}).exec(function(err, projects) {
+        res.json(projects);
+      });
+    break;
+    case(4):
+      Proj.find({$and: [{subcategories: { $in:[subcategories[0]]} },{subcategories: { $in:[subcategories[1]]} }, {subcategories: { $in:[subcategories[2]]} },{subcategories: { $in:[subcategories[3]]} }]}).exec(function(err, projects) {
+        res.json(projects);
+      });
+    break;
+  }
+}
+
 
 /* GET 6 of the lastest best projects */
 /* /api/bestprojects */
