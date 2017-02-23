@@ -11,6 +11,10 @@
       return $http.get('/api/getBestProjects');
     };
 
+    var portfolio = function (category) {
+      return $http.get('/api/getProjectsByCategory/' + category);
+    };
+
     return {
       latestwork : latestwork, 
     };

@@ -7,25 +7,24 @@
   portfolioCtrl.$inject = ['$scope', 'getData'];
   function portfolioCtrl ($scope, getData) {
     var vm = this;
-
-    /*vm.choice = 0;
-
-    switch(choice)
-    {
-        case(0):
-            vm.data = { film: data };
-        break;
-        case(1):
-            vm.data = { interactive: data };
-        break;
-    }
-
-    getData.latestwork()
+    
+    var choice = "Film";
+    getData.portfolio(choice)
       .then(function (data){
-        vm.data = { bestprojects: data };
+        vm.data = { portfolio: data };
       },function (error){
         vm.message = "Sorry, something's gone wrong, please try again later";
-      });*/
+      });
+
+    vm.selectMenu = function(choice)
+    {
+      getData.portfolio(choice)
+        .then(function (data){
+          vm.data = { portfolio: data };
+        },function (error){
+          vm.message = "Sorry, something's gone wrong, please try again later";
+        });
+    }
 
     vm.showError = function (error) {
       $scope.$apply(function() {

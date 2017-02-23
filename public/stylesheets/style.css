@@ -17,6 +17,7 @@ body{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  line-height: 1;
 }
 
 /*####################### PAGE HEADER STYLE #################################*/
@@ -67,7 +68,7 @@ page-header{
   width: 740px;
   margin: auto;
   list-style-type: none;
-    padding: 0;
+  padding: 0;
 }
 
 #menu ul li {
@@ -400,22 +401,19 @@ page-header{
 
 #spaceheaderportfolio {
   width: 100%;
-  height: 300px;
+  height: 340px;
   content: '';
 }
 
 #select-menu{
-  border: solid 2px red;
-  height: 150px;
 }
 
 #selectcontent{
-  border: solid 2px blue;
-  text-align: center;
+  height: 80px;
+  margin-top: 30px;
 }
 
 #portfoliotitle{
-  border: solid 2px green;
   width: 290px;
   height: 50px;
   margin: auto;
@@ -432,16 +430,31 @@ page-header{
   text-align: center;
   font-family: monserratmedium;
   font-size: 31px;
-  color: #3e2a56;
   letter-spacing: 3px;
+}
+
+#portfoliotitlecenter p{
+  color: #3e2a56;
 }
 
 #smalltriangleright{
   float: left;
 }
 
-#portfolioselection{
-  border: solid 2px red;
-  height: 150px;
+#portfolioselection ul{
+  width: 455px;
+  height: 25px;
+  list-style-type: none;
+  margin: auto;
+  color: #3e2a56;
+  padding:0;
 }
+
+#portfolioselection ul li{
+  float: left;
+  font-family: monserratmedium;
+  font-size: 22px;
+  letter-spacing: 3px;
+}
+
 

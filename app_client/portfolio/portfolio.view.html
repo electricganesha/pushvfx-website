@@ -4,16 +4,23 @@
         <div id="selectcontent">
             <div id="portfoliotitle">
                 <div id="smalltriangleleft">
-                    <object style="width: 20px;" data="/img/triangulopequenoesquerda.svg" type="image/svg+xml"></object>
+                    <object style="width: 25px;" data="/img/triangulopequenoesquerda.svg" type="image/svg+xml"></object>
                 </div>
                 <div id="portfoliotitlecenter">
                     <p>PORTFOLIO</p>
                 </div>
                 <div id="smalltriangleright">
-                    <object style="width: 20px;" data="/img/triangulopequenodireita.svg" type="image/svg+xml"></object>
+                    <object style="width: 25px;" data="/img/triangulopequenodireita.svg" type="image/svg+xml"></object>
                 </div>
             </div>
             <div id="portfolioselection">
+                <ul>
+                    <li ng-click="vm.selectMenu('Film')" style="cursor: pointer;">FILM</li>
+                    <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+                    <li ng-click="vm.selectMenu('Interactive')" style="cursor: pointer;">INTERACTIVE</li>
+                    <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+                    <li ng-click="vm.selectMenu('Motion')" style="cursor: pointer;">MOTION</li>
+                </ul>
             </div>
         </div>
     </div>
