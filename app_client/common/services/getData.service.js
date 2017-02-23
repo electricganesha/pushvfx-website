@@ -12,11 +12,13 @@
     };
 
     var portfolio = function (category) {
+      console.log(category);
       return $http.get('/api/getProjectsByCategory/' + category);
     };
 
     return {
-      latestwork : latestwork, 
+      latestwork : latestwork,
+      portfolio : portfolio  
     };
   }
 

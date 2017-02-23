@@ -11,6 +11,7 @@
     var choice = "Film";
     getData.portfolio(choice)
       .then(function (data){
+        vm.category = choice;
         vm.data = { portfolio: data };
       },function (error){
         vm.message = "Sorry, something's gone wrong, please try again later";
@@ -20,6 +21,7 @@
     {
       getData.portfolio(choice)
         .then(function (data){
+          vm.category = choice;
           vm.data = { portfolio: data };
         },function (error){
           vm.message = "Sorry, something's gone wrong, please try again later";

@@ -457,4 +457,23 @@ page-header{
   letter-spacing: 3px;
 }
 
+#mainTitle{
+  width:100%;
+  font-size: 140px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+}
+
+#mainTitle p{
+  text-align: center;
+}
+
+#portfoliocontent{
+  position: relative;
+  padding-bottom: 50px;
+  margin-top:80px;
+}
+
 
