@@ -18,6 +18,8 @@ router.delete('/structuralInfo/:siId', ctrlStructure.structuralInfoDelete); //de
 router.get('/projects', ctrlProjects.projectsList); //get all projects
 router.post('/projects', ctrlProjects.projectCreate); //create a new project
 router.get('/getBestProjects', ctrlProjects.getBestProjects); //get last 6 best projects
+router.get('/getProjectsByCategory/:category', ctrlProjects.getProjectsByCategory); //get last 6 best projects
+router.get('/getProjectsBySubCategory/:subcategories', ctrlProjects.getProjectsBySubCategory); //get last 6 best projects
 router.get('/projects/:projectId', ctrlProjects.projectsReadOne); //get project by id
 router.put('/projects/:projectId', ctrlProjects.projectsUpdateOne); //edit project by id
 router.delete('/projects/:projectId', ctrlProjects.projectsDeleteOne); //delete project by id
