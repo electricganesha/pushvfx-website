@@ -65,3 +65,4 @@ require('./news');
 require('./team');
 require('./lab');
 require('./structuralInfo');
+require('./reel');

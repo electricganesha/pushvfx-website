@@ -7,6 +7,7 @@ var ctrlProjects = require('../controllers/projects');
 var ctrlNews = require('../controllers/news');
 var ctrlTeam = require('../controllers/team');
 var ctrlLab = require('../controllers/lab');
+var ctrlReel = require('../controllers/reels');
 
 //structuralInfo
 router.get('/structuralInfo', ctrlStructure.structuralInfoGet); //get structural info
@@ -44,5 +45,13 @@ router.post('/lab', ctrlLab.labCreate); //create a new lab item
 router.get('/lab/:labId', ctrlLab.labReadOne); //get lab items by id
 router.put('/lab/:labId', ctrlLab.labUpdateOne); //edit lab items by id
 router.delete('/lab/:labId', ctrlLab.labDeleteOne); //delete lab items by id
+
+//reel
+router.get('/reels', ctrlReel.reelsList); //get all projects
+router.post('/reels', ctrlReel.reelCreate); //create a new project
+router.get('/getReelsByCategory/:categories', ctrlReel.getReelsByCategory); //get last 6 best projects
+router.get('/reels/:reelId', ctrlReel.reelsReadOne); //get project by id
+router.put('/reels/:reelId', ctrlReel.reelsUpdateOne); //edit project by id
+router.delete('/reels/:reelId', ctrlReel.reelsDeleteOne); //delete project by id
 
 module.exports = router;
