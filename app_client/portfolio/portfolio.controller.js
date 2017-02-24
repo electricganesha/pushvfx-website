@@ -6,31 +6,30 @@
 
   portfolioCtrl.$inject = ['$scope', 'getData'];
   function portfolioCtrl ($scope, getData) {
-    var vm = this;
     
     var choice = "Film";
     getData.portfolio(choice)
       .then(function (data){
-        vm.category = choice;
-        vm.data = { portfolio: data };
+        $scope.category = choice;
+        $scope.portfolio = data;
       },function (error){
-        vm.message = "Sorry, something's gone wrong, please try again later";
+        $scope.message = "Sorry, something's gone wrong, please try again later";
       });
 
-    vm.selectMenu = function(choice)
+    $scope.selectMenu = function(choice)
     {
       getData.portfolio(choice)
         .then(function (data){
-          vm.category = choice;
-          vm.data = { portfolio: data };
+          $scope.category = choice;
+          $scope.portfolio = data;
         },function (error){
-          vm.message = "Sorry, something's gone wrong, please try again later";
+          $scope.message = "Sorry, something's gone wrong, please try again later";
         });
     }
 
-    vm.showError = function (error) {
+    $scope.showError = function (error) {
       $scope.$apply(function() {
-        vm.message = error.message;
+        $scope.message = error.message;
       });
     };
 

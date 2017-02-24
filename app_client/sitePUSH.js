@@ -7,19 +7,16 @@ function config($routeProvider, $locationProvider)
   $routeProvider
   .when('/', {
     templateUrl: 'home/home.view.html',
-    controller: 'homeCtrl',
-    controllerAs: 'vm'
+    controller: 'homeCtrl'
     })
   .when('/portfolio', {
     templateUrl: 'portfolio/portfolio.view.html',
-    controller: 'portfolioCtrl',
-    controllerAs: 'vm'
-  });/*
-  .when('/location/:locationid', {
-    templateUrl: '/locationDetail/location.view.html',
-    controller: 'locationDetailCtrl',
-    controllerAs: 'vm'
+    controller: 'portfolioCtrl'
   })
+  .when('/team', {
+    templateUrl: 'team/team.view.html',
+    controller: 'teamCtrl'
+  });/*
   .when('/register', {
     templateUrl: '/auth/register/register.view.html',
     controller: 'registerCtrl',

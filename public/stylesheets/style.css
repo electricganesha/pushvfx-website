@@ -405,9 +405,6 @@ page-header{
   content: '';
 }
 
-#select-menu{
-}
-
 #selectcontent{
   height: 80px;
   margin-top: 30px;
@@ -442,7 +439,7 @@ page-header{
 }
 
 #portfolioselection ul{
-  width: 455px;
+  width: 295px;
   height: 25px;
   list-style-type: none;
   margin: auto;
@@ -453,7 +450,7 @@ page-header{
 #portfolioselection ul li{
   float: left;
   font-family: monserratmedium;
-  font-size: 22px;
+  font-size: 12px;
   letter-spacing: 3px;
 }
 
@@ -477,3 +474,148 @@ page-header{
 }
 
 
+/*####################### TEAM PAGE CONTENT STYLE #################################*/
+
+
+#spaceheaderteam{
+  width: 100%;
+  height: 190px;
+  content: '';
+}
+
+
+#teamcontent{
+  position: relative;
+  margin-top:40px;
+}
+
+#teamdivtop{
+  text-align: center;
+  width: 71%;
+  float:left;
+  margin-top: 150px;
+}
+
+#teamdivtop p{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: monserratmedium;
+  font-size: 23px;
+  color: #3e2a56;
+  letter-spacing: 2px;
+}
+
+#teamtext p{
+  margin-top: 20px;
+  text-align: justify;
+  font-family: myriadregular;
+  font-size: 17px;
+  color: #3e2a56;
+  letter-spacing: 1px;
+}
+
+#divleft{
+  width: 14%;
+  float: left;
+}
+
+#teamdivlist{
+  /*border: solid 2px red;*/
+  text-align: center;
+  width: 72%;
+  float:left;
+}
+
+#titlelist{
+  height: 80px;
+  padding-top: 20px;
+  text-align: center;
+  font-family: monserratmedium;
+  font-size: 23px;
+  color: #3e2a56;
+  letter-spacing: 3px;
+}
+
+#teammemberphoto{
+  width: 95%;
+  height:250px;
+  margin: auto;
+  border: solid 2px green;
+}
+
+#membername{
+  font-family: monserratmedium;
+  font-size: 26px;
+  color: #3e2a56;
+  text-align: left;
+  width: 95%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+#memberdescription{
+  font-family: myriadregular;
+  font-size: 17px;
+  color: #3e2a56;
+  text-align: justify;
+  width: 95%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#listalign{
+  padding: 0;
+}
+
+#instatitle{
+  width: 100%;
+  position: absolute;
+  font-size: 22px;
+  margin-top: 50px;
+}
+
+#insta{
+  width: 71%;
+  margin: auto;
+  position:relative;
+  padding-top: 45px;
+}
+
+#photoinsta {
+  content: '';
+  width: 90%; 
+  height: 200px;
+  margin: auto;
+  margin-top:25px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#right-triangle-bottom-div{
+  width: 8%;
+  float:right;
+  margin-top:-200px;
+  margin-bottom: 300px;
+}
+
+#instainfo{
+  padding-top: 120px;
+  width: 70%;
+  margin: auto;
+}
+
+#instainfo img{
+  width:30px;
+  float: left;
+}
+
+#instainfo p{
+  font-family: monserratmedium;
+  float: left;
+  letter-spacing: 1px;
+}

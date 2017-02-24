@@ -17,10 +17,12 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+
 var appClientFiles = [
   'app_client/sitePUSH.js',
   'app_client/home/home.controller.js',
   'app_client/portfolio/portfolio.controller.js',
+  'app_client/team/team.controller.js',
   'app_client/common/directives/pageHeader/pageHeader.directive.js',
   'app_client/common/directives/pageFooter/pageFooter.directive.js',
   'app_client/common/services/getData.service.js'
@@ -38,6 +40,7 @@ fs.writeFile('public/angular/sitePUSH.min.js', uglified.code, function (err){
 
 app.use(express.static(__dirname + '../public'));
 
+
 // uncomment after placing your favicon in /public
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -50,7 +53,6 @@ app.use('/api', routesApi);
 /*app.use(function(req,res) {
   res.sendFile(path.join(__dirname, 'app_client', 'index.html'));
 });*/
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
