@@ -39,11 +39,21 @@
       });
     }
 
+    var reels = function () {
+      return $http.get('/api/reels');
+    };
+    
+    var reelsByCat = function (category) {
+      return $http.get('/api/getReelsByCategory/' + category);
+    };
+
     return {
       latestwork : latestwork,
       portfolio : portfolio,
       teammembers : teammembers,  
-      getinstaphotos : getinstaphotos
+      getinstaphotos : getinstaphotos,
+      reels : reels,
+      reelsByCat : reelsByCat
     };
   }
 
