@@ -6,9 +6,10 @@
   <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
-<body ng-view>
-    Welcome to PUSH Website
-  <footer-generic></footer-generic>
+<body ng-controller="homeCtrl">
+  <page-header content="vm.pageHeader"></page-header>
+  <div ng-view></div>
+  <page-footer content="vm.pageFooter"></page-footer>
   <script src="/angular/angular.min.js"></script>
   <script src="/angular/angular-route.min.js"></script>
   <script src="/angular/angular-sanitize.min.js"></script>

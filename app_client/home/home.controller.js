@@ -4,21 +4,19 @@
     .module('sitePUSH')
     .controller('homeCtrl', homeCtrl);
 
-  homeCtrl.$inject = ['$scope'];
-  function homeCtrl ($scope) {
-    var vm = this;
-    getData.latestwork()
-        .success(function(data) {
-          vm.data = { projects: data };
-          console.log(vm.data);
-        })
-        .error(function (e) {
-          vm.message = "Sorry, something's gone wrong, please try again later";
-        });
+  homeCtrl.$inject = ['$scope', 'getData'];
+  function homeCtrl ($scope, getData) {
 
-    vm.showError = function (error) {
+    getData.latestwork()
+      .then(function (data){
+        $scope.bestprojects = data;
+      },function (error){
+        $scope.message = "Sorry, something's gone wrong, please try again later";
+      });
+
+    $scope.showError = function (error) {
       $scope.$apply(function() {
-        vm.message = error.message;
+        $scope.message = error.message;
       });
     };
 
