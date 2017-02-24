@@ -619,3 +619,74 @@ page-header{
   float: left;
   letter-spacing: 1px;
 }
+
+
+/*####################### REEL PAGE CONTENT STYLE #################################*/
+
+#reelcontent{
+  position: relative;
+  margin-top:40px;
+}
+
+#reeltitle{
+  width: 290px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+#reeltitlecenter{
+  float: left;
+  width: 240px;
+  text-align: center;
+  font-family: monserratmedium;
+  font-size: 31px;
+  letter-spacing: 3px;
+}
+
+#reeltitlecenter p{
+  color: #3e2a56;
+}
+
+#reelselection ul{
+  width: 332px;
+  height: 25px;
+  list-style-type: none;
+  margin: auto;
+  color: #3e2a56;
+  padding:0;
+}
+
+#reelselection ul li{
+  float: left;
+  font-family: monserratmedium;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+#spaceheaderreel{
+  width: 100%;
+  height: 300px;
+  content: '';
+}
+
+#reeldivlist{
+  border: solid 2px red;
+  width: 63%;
+  margin:auto;
+  float:left;
+  padding-bottom: 100px; 
+}
+
+#divleftreel{
+  width: 18.5%;
+  float: left;
+}
+
+#divrightreel{
+  position: absolute;
+  width: 18.5%;
+  right:-2px;
+  text-align: right;
+  bottom: 0px;
+}

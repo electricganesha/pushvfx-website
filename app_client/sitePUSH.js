@@ -16,12 +16,11 @@ function config($routeProvider, $locationProvider)
   .when('/team', {
     templateUrl: 'team/team.view.html',
     controller: 'teamCtrl'
-  });/*
-  .when('/register', {
-    templateUrl: '/auth/register/register.view.html',
-    controller: 'registerCtrl',
-    controllerAs: 'vm'
   })
+  .when('/reel', {
+    templateUrl: 'reel/reel.view.html',
+    controller: 'reelCtrl'
+  });/*
   .when('/login',{
     templateUrl: '/auth/login/login.view.html',
     controller: 'loginCtrl',
