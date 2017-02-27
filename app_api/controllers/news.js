@@ -41,6 +41,12 @@ module.exports.newsReadOne = function(req, res) {
   }
 };
 
+module.exports.getLastSixNews = function(req,res) {
+  News.find().sort('+dateOfEvent').limit(6).exec(function(err, news) {
+    res.json(news);
+  });
+}
+
 /* POST a new news */
 /* /api/news */
 module.exports.newsCreate = function(req, res) {

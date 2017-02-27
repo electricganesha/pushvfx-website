@@ -47,13 +47,18 @@
       return $http.get('/api/getReelsByCategory/' + category);
     };
 
+    var lastSixNews = function () {
+      return $http.get('/api/getlastsixnews');
+    };
+
     return {
       latestwork : latestwork,
       portfolio : portfolio,
       teammembers : teammembers,  
       getinstaphotos : getinstaphotos,
       reels : reels,
-      reelsByCat : reelsByCat
+      reelsByCat : reelsByCat,
+      lastSixNews : lastSixNews
     };
   }
 

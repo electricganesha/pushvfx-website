@@ -36,7 +36,7 @@
                 });
         }
     }
-
+    
     $scope.showError = function (error) {
       $scope.$apply(function() {
         $scope.message = error.message;

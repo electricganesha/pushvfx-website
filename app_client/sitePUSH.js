@@ -1,6 +1,6 @@
 (function() {
 
-angular.module('sitePUSH', ['ngRoute', 'ngSanitize', 'ui.bootstrap']);
+angular.module('sitePUSH', ['ngRoute', 'ngSanitize', 'ui.bootstrap', 'anguvideo', 'ngMap']);
 
 function config($routeProvider, $locationProvider)
 {
@@ -20,12 +20,15 @@ function config($routeProvider, $locationProvider)
   .when('/reel', {
     templateUrl: 'reel/reel.view.html',
     controller: 'reelCtrl'
-  });/*
-  .when('/login',{
-    templateUrl: '/auth/login/login.view.html',
-    controller: 'loginCtrl',
-    controllerAs: 'vm'
-  })*/
+  })
+  .when('/contacts',{
+    templateUrl: '/contacts/contacts.view.html',
+    controller: 'contactsCtrl'
+  })
+  .when('/timeline',{
+    templateUrl: '/timeline/timeline.view.html',
+    controller: 'timelineCtrl'
+  });
   //.otherwise({redirectTo: '/'});
 
   $locationProvider.html5Mode({

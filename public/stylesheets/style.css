@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: monserratlight;
+    src: url(/fonts/Montserrat-Light.otf);
+}
+
+@font-face {
     font-family: myriadregular;
     src: url(/fonts/MyriadPro-Regular.otf);
 }
@@ -649,7 +654,7 @@ page-header{
 }
 
 #reelselection ul{
-  width: 332px;
+  width: 328px;
   height: 25px;
   list-style-type: none;
   margin: auto;
@@ -671,7 +676,6 @@ page-header{
 }
 
 #reeldivlist{
-  border: solid 2px red;
   width: 63%;
   margin:auto;
   float:left;
@@ -684,9 +688,199 @@ page-header{
 }
 
 #divrightreel{
-  position: absolute;
   width: 18.5%;
   right:-2px;
   text-align: right;
   bottom: 0px;
+}
+
+#reel{
+  width: 96%;
+  height:34vw;
+  margin-left: 2%;
+  z-index:0; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#reelvideo{
+  width: 96%; 
+  height:34vw;
+  margin: auto;
+  z-index: -1;
+}
+
+
+/*####################### CONTACTS PAGE CONTENT STYLE #################################*/
+
+#spaceheadercontacts{
+  width: 100%;
+  height: 300px;
+  content: '';
+}
+
+#contactscontent{
+  position: relative;
+  margin-top:40px;
+}
+
+#info-form{
+    width: 59%;
+    margin: auto;
+} 
+
+.formtb{
+    width: 100%;
+    height: 32px;
+    border: 0;
+    color: #9b9694;
+    outline: 0;
+    border-bottom: solid 1px #3e2a56;
+    font-family: monserratlight;
+    letter-spacing: 1px;
+}
+
+textarea {
+    width: 100%;
+    padding-top: 7px;
+    padding-left: 7px;
+    color: #9b9694;
+    border: 1px solid #3e2a56;
+    resize: none;
+    outline: 0;
+    font-family: monserratlight;
+}
+
+#send {
+    background-color: transparent;
+    color: #b8153a;
+    width: 213px;
+    height: 35px;
+    margin-top: 20px;
+    border: 2px solid #b8153a;
+    transition: background-color .2s ease;
+    transition: color .2s ease;
+    font-family: monserratlight;
+}
+
+#send:hover {
+    color: #f7f1e0;
+    background-color: #b8153a;
+}
+
+#line_cont {
+    width: 60px;
+    border: 0;
+    height: 0;
+    border-top: 1px solid #b8153a;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    float: left;
+    margin: 0;
+}
+
+#info_title{
+  font-family: monserratregular;
+  font-size: 14px;
+  color: #b8153a; 
+  letter-spacing: 1px;
+  margin:5px;
+}
+
+#info_text{
+  line-height:22px; 
+  color: #3e2a56; 
+  font-size:12px;
+  font-family: monserratlight;
+}
+
+#contactsdivlist{
+  width: 57%;
+  margin:auto;
+}
+
+/*####################### TIMELINE PAGE CONTENT STYLE #################################*/
+
+
+#spaceheadertimeline{
+  width: 100%;
+  height: 250px;
+  content: '';
+}
+
+#timelineselection ul{
+  width: 242px;
+  height: 25px;
+  list-style-type: none;
+  margin: auto;
+  color: #3e2a56;
+  padding:0;
+  font-size: 18px;
+}
+
+#timelinedivlist{
+  width: 63%;
+  margin:auto;
+  float:left;
+  padding-bottom: 100px; 
+}
+
+#timelinetitlecenter{
+  float: left;
+  width: 280px;
+  text-align: center;
+  font-family: monserratregular;
+  font-size: 39px;
+  letter-spacing: 3px;
+}
+
+#timelinetitlecenter p{
+  color: #3e2a56;
+}
+
+#timelinetitle{
+  width: 330px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+}
+#titleSixNews{
+  width: 310px;
+  margin: auto;
+  font-family: monserratregular;
+  font-size: 24px;
+  letter-spacing: 3px;
+  padding-bottom: 50px;
+}
+
+#select-menu-timeline{
+  margin-top: 150px;
+}
+
+#timelinecontent{
+  position: relative;
+}
+
+#newname{
+  font-family: monserratmedium;
+  font-size: 19px;
+  color: #3e2a56;
+  text-align: left;
+  width: 95%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+#newdescription{
+  font-family: myriadregular;
+  font-size: 17px;
+  color: #3e2a56;
+  text-align: justify;
+  width: 95%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
