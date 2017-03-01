@@ -47,8 +47,16 @@
       return $http.get('/api/getReelsByCategory/' + category);
     };
 
+    var newsByYear = function (newsYear) {
+      return $http.get('/api/getnewsbyyear/' + newsYear);
+    };
+
     var lastSixNews = function () {
       return $http.get('/api/getlastsixnews');
+    };
+
+    var newsByDate = function (date) {
+      return $http.get('/api/getnewsbydate/' + date);
     };
 
     return {
@@ -58,7 +66,9 @@
       getinstaphotos : getinstaphotos,
       reels : reels,
       reelsByCat : reelsByCat,
-      lastSixNews : lastSixNews
+      newsByYear : newsByYear,
+      lastSixNews : lastSixNews,
+      newsByDate : newsByDate
     };
   }
 

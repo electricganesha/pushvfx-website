@@ -47,6 +47,18 @@ module.exports.getLastSixNews = function(req,res) {
   });
 }
 
+module.exports.getNewsByYear = function(req,res) {
+  News.find({ "dateOfEvent": {"$gte" : new Date(req.params.newsYear,0,1), "$lt": new Date(req.params.newsYear,11,31)}}).exec(function(err, news) {
+    res.json(news);
+  });
+}
+
+module.exports.getnewsByDate = function(req,res) {
+  News.find({ "dateOfEvent": req.params.newsDate}).exec(function(err, news) {
+    res.json(news);
+  });
+}
+
 /* POST a new news */
 /* /api/news */
 module.exports.newsCreate = function(req, res) {

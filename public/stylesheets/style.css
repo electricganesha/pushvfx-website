@@ -845,6 +845,7 @@ textarea {
   margin: auto;
   text-align: center;
 }
+
 #titleSixNews{
   width: 310px;
   margin: auto;
@@ -870,7 +871,6 @@ textarea {
   width: 95%;
   margin: auto;
   margin-top: 30px;
-  margin-bottom: 30px;
   text-transform: uppercase;
 }
 
@@ -883,4 +883,47 @@ textarea {
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+#timeLines{
+  margin-bottom:50px;
+}
+
+#infoNews{
+  width: 63%;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+#newsphoto{
+    width: 30%;
+    height: 200px;
+    float: left;
+    border: solid 2px red;
+}
+
+#newdatename{
+  font-family: monserratmedium;
+  font-size: 19px;
+  color: #3e2a56;
+  text-align: left;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#newdatedescription{
+  font-family: myriadregular;
+  font-size: 17px;
+  color: #3e2a56;
+  text-align: justify;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+#textonews{
+    width: 70%;
+    float: right;
 }

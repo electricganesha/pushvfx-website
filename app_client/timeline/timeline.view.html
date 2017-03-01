@@ -44,6 +44,19 @@
         <div id="homedivright">
             <object width="90%" id="left-triangle" data="/img/right_triangle.svg" type="image/svg+xml"></object>
         </div>
+        <div id="timeLines">
+            
+        </div>
+        <div id="infoNews">
+            <div class="col-md-12" style="padding:0; margin-bottom: 70px;" ng-repeat="new in newsByDate.data">
+                <div id="newsphoto">
+                </div>
+                <div id="textonews">
+                    <p id="newdatename">{{ new.title }}</p>
+                    <p id="newdatedescription">{{ new.synopsis }}</p>
+                </div>
+            </div>
+        </div>
     </div>
   </div>
 </div>
