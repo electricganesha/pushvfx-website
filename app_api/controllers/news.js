@@ -15,7 +15,6 @@ module.exports.newsList = function(req, res) {
 
 /* GET a newsclip by its id */
 module.exports.newsReadOne = function(req, res) {
-  console.log('Finding news details', req.params);
   if (req.params && req.params.newsId) {
     News
       .findById(req.params.newsId)

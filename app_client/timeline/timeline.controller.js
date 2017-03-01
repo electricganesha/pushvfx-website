@@ -5,8 +5,8 @@
     .controller('timelineCtrl', timelineCtrl);
 
 
-  timelineCtrl.$inject = ['$scope', '$compile', 'getData'];
-  function timelineCtrl ($scope, $compile, getData) {
+  timelineCtrl.$inject = ['$scope', '$compile', 'getData', 'saveNewsId'];
+  function timelineCtrl ($scope, $compile, getData, saveNewsId) {
     var dates = new Array();
     var yearEvents = [];
 
@@ -30,6 +30,10 @@
           $scope.message = "Sorry, something's gone wrong, please try again later";
         });
     } 
+
+    $scope.saveId = function(id){
+      saveNewsId.set(id);
+    }
 
     $scope.showNew = function(newsdate) {
       getData.newsByDate(newsdate)

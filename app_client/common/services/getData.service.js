@@ -59,6 +59,10 @@
       return $http.get('/api/getnewsbydate/' + date);
     };
 
+    var oneNew = function (id) {
+      return $http.get('/api/news/' + id);
+    }
+
     return {
       latestwork : latestwork,
       portfolio : portfolio,
@@ -68,7 +72,8 @@
       reelsByCat : reelsByCat,
       newsByYear : newsByYear,
       lastSixNews : lastSixNews,
-      newsByDate : newsByDate
+      newsByDate : newsByDate,
+      oneNew : oneNew
     };
   }
 

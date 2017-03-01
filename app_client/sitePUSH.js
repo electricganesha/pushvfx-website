@@ -28,6 +28,10 @@ function config($routeProvider, $locationProvider)
   .when('/timeline',{
     templateUrl: '/timeline/timeline.view.html',
     controller: 'timelineCtrl'
+  })
+  .when('/news',{
+    templateUrl: '/news/news.view.html',
+    controller: 'newsCtrl'
   });
   //.otherwise({redirectTo: '/'});
 

@@ -44,16 +44,12 @@
         <div id="homedivright">
             <object width="90%" id="left-triangle" data="/img/right_triangle.svg" type="image/svg+xml"></object>
         </div>
-        <div id="homedivleft" style="clear:both">
-            <object id="left-triangle" data="/img/left_triangle.svg" type="image/svg+xml"></object>
-        </div>
-        <p id="bartitle" >STAY UP TO DATE WITH PUSH</p>
         <div id="timeLines">
             
         </div>
         <div id="infoNews">
             <div class="col-md-12" style="padding:0; margin-bottom: 70px;" ng-repeat="new in newsByDate.data">
-                <a ng-click="saveId(new._id)" href="/news">
+                <a ng-click="saveId(new._id)" href="/new">
                     <div id="newsphoto">
                     </div>
                     <div id="textonews">
@@ -62,9 +58,6 @@
                     </div>
                 </a>
             </div>
-        </div>
-        <div id="timelinedivright">
-            <object width="90%" id="left-triangle" data="/img/right_triangle.svg" type="image/svg+xml"></object>
         </div>
     </div>
   </div>
