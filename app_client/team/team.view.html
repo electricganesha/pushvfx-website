@@ -52,9 +52,9 @@
           <p>&nbsp;&nbsp;@PUSH.IG</P>
         </div>
         <div id="insta" >
-            <div class="col-md-2" style="padding:0;" ng-repeat="photos in instaphotos.data">
+            <div class="col-md-2" style=" padding: 0;" ng-repeat="photos in instaphotos.data">
               <a href="{{ photos.link }}" target="_blank">
-                <div id="photoinsta" style="background: url('{{ photos.images.standard_resolution.url }}') no-repeat center center;">
+                <div id="photoinsta" style="background: black url('{{ photos.images.low_resolution.url }}') no-repeat center center;">
                   <p></p>
                 </div>
               </a>

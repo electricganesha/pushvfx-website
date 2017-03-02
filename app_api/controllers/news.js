@@ -15,7 +15,6 @@ module.exports.newsList = function(req, res) {
 
 /* GET a newsclip by its id */
 module.exports.newsReadOne = function(req, res) {
-  console.log('Finding news details', req.params);
   if (req.params && req.params.newsId) {
     News
       .findById(req.params.newsId)
@@ -41,6 +40,24 @@ module.exports.newsReadOne = function(req, res) {
   }
 };
 
+module.exports.getLastSixNews = function(req,res) {
+  News.find().sort('+dateOfEvent').limit(6).exec(function(err, news) {
+    res.json(news);
+  });
+}
+
+module.exports.getNewsByYear = function(req,res) {
+  News.find({ "dateOfEvent": {"$gte" : new Date(req.params.newsYear,0,1), "$lt": new Date(req.params.newsYear,11,31)}}).exec(function(err, news) {
+    res.json(news);
+  });
+}
+
+module.exports.getnewsByDate = function(req,res) {
+  News.find({ "dateOfEvent": req.params.newsDate}).exec(function(err, news) {
+    res.json(news);
+  });
+}
+
 /* POST a new news */
 /* /api/news */
 module.exports.newsCreate = function(req, res) {
@@ -48,6 +65,7 @@ module.exports.newsCreate = function(req, res) {
     title: req.body.title,
     dateOfEvent: req.body.dateOfEvent,
     thumbnail: req.body.thumbnail,
+    topTitle: req.body.topTitle,
     synopsis: req.body.synopsis,
     description: req.body.description,
     stills: req.body.stills,
@@ -92,6 +110,9 @@ module.exports.newsUpdateOne = function(req, res) {
 
         if(req.body.thumbnail)
         newsclip.thumbnail = req.body.thumbnail;
+
+        if(req.body.topTitle)
+        newsclip.topTitle = req.body.topTitle;
 
         if(req.body.synopsis)
         newsclip.synopsis = req.body.synopsis;

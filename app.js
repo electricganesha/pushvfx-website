@@ -24,9 +24,14 @@ var appClientFiles = [
   'app_client/portfolio/portfolio.controller.js',
   'app_client/team/team.controller.js',
   'app_client/reel/reel.controller.js',
+  'app_client/contacts/contacts.controller.js',
+  'app_client/timeline/timeline.controller.js',
+  'app_client/news/news.controller.js',
+  'app_client/projects/projects.controller.js',
   'app_client/common/directives/pageHeader/pageHeader.directive.js',
   'app_client/common/directives/pageFooter/pageFooter.directive.js',
-  'app_client/common/services/getData.service.js'
+  'app_client/common/services/getData.service.js',
+  'app_client/common/services/saveNewsId.service.js'
 ];
 
 var uglified = uglifyJs.minify(appClientFiles, { compress : false });

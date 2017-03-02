@@ -28,6 +28,9 @@ router.delete('/projects/:projectId', ctrlProjects.projectsDeleteOne); //delete 
 //news
 router.get('/news', ctrlNews.newsList); //get all news
 router.post('/news', ctrlNews.newsCreate); //create a new newsclip
+router.get('/getlastsixnews', ctrlNews.getLastSixNews); //get last 6 news
+router.get('/getnewsbyyear/:newsYear', ctrlNews.getNewsByYear); //get all news of a certain year
+router.get('/getnewsbydate/:newsDate', ctrlNews.getnewsByDate); //get all news of a certain date
 router.get('/news/:newsId', ctrlNews.newsReadOne); //get newsclip by id
 router.put('/news/:newsId', ctrlNews.newsUpdateOne); //edit newsclip by id
 router.delete('/news/:newsId', ctrlNews.newsDeleteOne); //delete newsclip by id

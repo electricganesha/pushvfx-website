@@ -39,11 +39,41 @@
       });
     }
 
+    var reels = function () {
+      return $http.get('/api/reels');
+    };
+    
+    var reelsByCat = function (category) {
+      return $http.get('/api/getReelsByCategory/' + category);
+    };
+
+    var newsByYear = function (newsYear) {
+      return $http.get('/api/getnewsbyyear/' + newsYear);
+    };
+
+    var lastSixNews = function () {
+      return $http.get('/api/getlastsixnews');
+    };
+
+    var newsByDate = function (date) {
+      return $http.get('/api/getnewsbydate/' + date);
+    };
+
+    var oneNew = function (id) {
+      return $http.get('/api/news/' + id);
+    }
+
     return {
       latestwork : latestwork,
       portfolio : portfolio,
       teammembers : teammembers,  
-      getinstaphotos : getinstaphotos
+      getinstaphotos : getinstaphotos,
+      reels : reels,
+      reelsByCat : reelsByCat,
+      newsByYear : newsByYear,
+      lastSixNews : lastSixNews,
+      newsByDate : newsByDate,
+      oneNew : oneNew
     };
   }
 
