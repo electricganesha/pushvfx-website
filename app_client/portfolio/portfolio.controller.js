@@ -4,8 +4,8 @@
     .module('sitePUSH')
     .controller('portfolioCtrl', portfolioCtrl);
 
-  portfolioCtrl.$inject = ['$scope', 'getData'];
-  function portfolioCtrl ($scope, getData) {
+  portfolioCtrl.$inject = ['$scope', 'getData', 'saveNewsId'];
+  function portfolioCtrl ($scope, getData, saveNewsId) {
     
     var choice = "Film";
     getData.portfolio(choice)
@@ -15,6 +15,10 @@
       },function (error){
         $scope.message = "Sorry, something's gone wrong, please try again later";
       });
+
+    $scope.saveId = function(id){
+      saveNewsId.set(id);
+    }
 
     $scope.selectMenu = function(choice)
     {

@@ -9,8 +9,12 @@
 
     getData.oneNew(saveNewsId.get())
       .then(function (data){
-        console.log(data);
-        $scope.new = data;
+        console.log(data.data.stills);
+        $scope.newTopTitle = data.data.topTitle;
+        $scope.newTitle = data.data.title;
+        $scope.newdescription = data.data.description;
+        $scope.myInterval = 10000;
+        $scope.slides = data.data.stills;
       },function (error){
         $scope.message = "Sorry, something's gone wrong, please try again later";
       });

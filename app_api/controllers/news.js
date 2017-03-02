@@ -65,6 +65,7 @@ module.exports.newsCreate = function(req, res) {
     title: req.body.title,
     dateOfEvent: req.body.dateOfEvent,
     thumbnail: req.body.thumbnail,
+    topTitle: req.body.topTitle,
     synopsis: req.body.synopsis,
     description: req.body.description,
     stills: req.body.stills,
@@ -109,6 +110,9 @@ module.exports.newsUpdateOne = function(req, res) {
 
         if(req.body.thumbnail)
         newsclip.thumbnail = req.body.thumbnail;
+
+        if(req.body.topTitle)
+        newsclip.topTitle = req.body.topTitle;
 
         if(req.body.synopsis)
         newsclip.synopsis = req.body.synopsis;

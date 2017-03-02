@@ -32,6 +32,10 @@ function config($routeProvider, $locationProvider)
   .when('/news',{
     templateUrl: '/news/news.view.html',
     controller: 'newsCtrl'
+  })
+  .when('/projects',{
+    templateUrl: '/projects/projects.view.html',
+    controller: 'projectsCtrl'
   });
   //.otherwise({redirectTo: '/'});
 

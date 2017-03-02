@@ -5,59 +5,27 @@
         <div id="homedivleft">
             <object id="left-triangle" data="/img/left_triangle.svg" type="image/svg+xml"></object>
         </div>
-        <div id="select-menu-timeline">
-            <div id="selectcontent">
-                <div id="timelinetitle">
-                    <div id="smalltriangleleft">
-                        <object style="width: 25px;" data="/img/triangulopequenoesquerda.svg" type="image/svg+xml"></object>
-                    </div>
-                    <div id="timelinetitlecenter">
-                        <p>TIMELINE</p>
-                    </div>
-                    <div id="smalltriangleright">
-                        <object style="width: 25px;" data="/img/triangulopequenodireita.svg" type="image/svg+xml"></object>
-                    </div>
-                </div>
-                <div id="timelineselection">
-                    <ul>
-                        <li style="cursor: pointer;">SINCE THE DAWN OF PUSH</li>
-                    </ul>
-                </div>
+        <div id="select-menu-news">
+            <p style="margin-bottom: 50px;">{{ newTopTitle }}</p>
+            <div id="carouselContent">
+                <carousel interval="myInterval">
+                    <slide ng-repeat="slide in slides" style="height: 32vw;">
+                        <img src="{{slide}}" id="divImgCarousel">
+                    </slide>
+                </carousel>
             </div>
         </div>
     </div>
   </div>
   <div id="reellist">
     <div class="row">
-        <p id="titleSixNews">KNOW OUR HISTORY</p>
-        <div id="divleftreel">
-            <p></p>
-        </div>
-        <div id="timelinedivlist">
-            <div class="col-md-4" style="padding:0;" ng-repeat="new in lastNews.data" ng-style="($index >= 3 || $index <= 5) && {'margin-top':'30px'} || {'margin-top':'0px'} ">
-                <div id="teammemberphoto">
-                </div>
-                <p id="newname">{{ new.title }}</p>
-                <p id="newdescription">{{ new.synopsis }}</p>
-            </div>
+        <p id="titleNew">{{newTitle}}</p>
+        <div id="newsdivlist">
+            <p>{{ newdescription }}</p>
+            <div id="cracha"></div>
         </div>
         <div id="homedivright">
             <object width="90%" id="left-triangle" data="/img/right_triangle.svg" type="image/svg+xml"></object>
-        </div>
-        <div id="timeLines">
-            
-        </div>
-        <div id="infoNews">
-            <div class="col-md-12" style="padding:0; margin-bottom: 70px;" ng-repeat="new in newsByDate.data">
-                <a ng-click="saveId(new._id)" href="/new">
-                    <div id="newsphoto">
-                    </div>
-                    <div id="textonews">
-                        <p id="newdatename">{{ new.title }}</p>
-                        <p id="newdatedescription">{{ new.synopsis }}</p>
-                    </div>
-                </a>
-            </div>
         </div>
     </div>
   </div>

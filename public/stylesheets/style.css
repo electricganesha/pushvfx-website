@@ -846,12 +846,14 @@ textarea {
 }
 
 #titleSixNews{
-  width: 310px;
-  margin: auto;
-  font-family: monserratregular;
-  font-size: 24px;
-  letter-spacing: 3px;
-  padding-bottom: 50px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: monserratregular;
+    font-size: 24px;
+    letter-spacing: 3px;
+    padding-bottom: 50px;
+    color: #3e2a56;
 }
 
 #select-menu-timeline{
@@ -936,6 +938,7 @@ textarea {
     font-size: 24px;
     font-family: monserratregular;
     letter-spacing: 2px;
+    color: #3e2a56;
 }
 
 #timelinedivright {
@@ -946,4 +949,89 @@ textarea {
     text-align: right;
     bottom: 0px;
     margin-top: -150px;
+}
+
+/*####################### NEWS PAGE CONTENT STYLE #################################*/
+
+#select-menu-news{
+  font-size: 22px;
+  font-family: monserratregular;
+  color: #3e2a56;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+.carousel-control.right {
+  background-image: none;
+  background-color: #3e2a56;
+  width: 40px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.carousel-control.right:hover {
+  opacity: 1;
+}
+
+.carousel-control.left {
+  background-image: none;
+  background-color: #3e2a56;
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.carousel-control.left:hover {
+  opacity: 1;
+}
+
+.carousel-indicators{
+  display: none;
+}
+
+#carouselContent{
+  width: 86%;
+  margin: auto;
+  height: 32vw;
+  margin-bottom: 50px;
+}
+
+.carousel{
+  height: 100%;
+}
+
+#divImgCarousel{
+  width: 100%;
+  height: 100%;
+}
+
+#titleNew{
+    width: 58%;
+    margin: auto;
+    font-family: monserratmedium;
+    font-size: 25px;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+    color: #b8153a;
+    text-transform: uppercase;
+}
+
+#newsdivlist{
+  width: 58%;
+  margin:auto;
+  text-align: justify;
+  color: #3e2a56;
+  font-size: 18px;
+  margin-bottom: 70px;
+}
+
+#cracha{
+  border: solid 2px red;
+  display: none;
 }

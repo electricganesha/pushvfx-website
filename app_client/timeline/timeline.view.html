@@ -35,10 +35,12 @@
         </div>
         <div id="timelinedivlist">
             <div class="col-md-4" style="padding:0;" ng-repeat="new in lastNews.data" ng-style="($index >= 3 || $index <= 5) && {'margin-top':'30px'} || {'margin-top':'0px'} ">
-                <div id="teammemberphoto">
-                </div>
-                <p id="newname">{{ new.title }}</p>
-                <p id="newdescription">{{ new.synopsis }}</p>
+                <a style="text-decoration: none;" ng-click="saveId(new._id)" href="/news">
+                    <div id="teammemberphoto">
+                    </div>
+                    <p id="newname">{{ new.title }}</p>
+                    <p id="newdescription">{{ new.synopsis }}</p>
+                </a>
             </div>
         </div>
         <div id="homedivright">
@@ -53,7 +55,7 @@
         </div>
         <div id="infoNews">
             <div class="col-md-12" style="padding:0; margin-bottom: 70px;" ng-repeat="new in newsByDate.data">
-                <a ng-click="saveId(new._id)" href="/news">
+                <a style="text-decoration: none;" ng-click="saveId(new._id)" href="/news">
                     <div id="newsphoto">
                     </div>
                     <div id="textonews">
