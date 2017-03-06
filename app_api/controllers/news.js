@@ -41,7 +41,7 @@ module.exports.newsReadOne = function(req, res) {
 };
 
 module.exports.getLastSixNews = function(req,res) {
-  News.find().sort('+dateOfEvent').limit(6).exec(function(err, news) {
+  News.find().sort('-dateOfEvent').limit(6).exec(function(err, news) {
     res.json(news);
   });
 }
@@ -53,7 +53,7 @@ module.exports.getNewsByYear = function(req,res) {
 }
 
 module.exports.getnewsByDate = function(req,res) {
-  News.find({ "dateOfEvent": req.params.newsDate}).exec(function(err, news) {
+  News.find({ "dateOfEvent": req.params.newsDate}).sort('-dateOfEvent').exec(function(err, news) {
     res.json(news);
   });
 }
