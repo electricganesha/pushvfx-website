@@ -1035,3 +1035,104 @@ textarea {
   border: solid 2px red;
   display: none;
 }
+
+/*####################### PROJECT PAGE CONTENT STYLE #################################*/
+
+#projectstill{
+  width: 100%;
+  height: 30vw;
+  z-index:0; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#stillProjectcontent{
+  width:57%;
+  height:30vw;
+  margin: auto;
+}
+
+#projectVideo {
+    width: 100%;
+    height: 30vw;
+    margin: auto;
+    z-index: -1;
+}
+
+#projecttitle{
+  font-family: monserratregular;
+  font-size: 22px;
+  color: #3e2a56;
+  clear: both;
+  width: 57%;
+  margin: auto;
+  margin-top: 40px;
+
+}
+
+#projectdescription1, #projectdescription2{
+  font-family: monserratregular;
+  font-size: 15px;
+  color: #3e2a56;
+  clear: both;
+  width: 57%;
+  margin: auto;
+  margin-top: 30px;
+  text-align: justify;
+}
+
+#projectheadercontent{
+  margin-top:40px;
+}
+
+#projectStills{
+    width: 57%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#twocolumn{
+  height: 10vw;
+}
+
+#projectCredits{
+    width: 57%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#creditTitle{
+  color: #b8153a;
+  font-family: monserratmedium;
+  font-size: 20px;
+}
+
+#creditName{
+  color: #3e2a56;
+  font-family: myriadregular;
+  font-size: 15px;
+}
+
+#midStillProjectcontent{
+  width:57%;
+  height:30vw;
+  margin: auto;
+  margin-top: 40px;
+}
+
+#projectdescription3{
+  font-family: monserratregular;
+  font-size: 15px;
+  color: #3e2a56;
+  margin: auto;
+  text-align: justify;
+}
+
+#bottomStillProjectcontent{
+  width:58.5%;
+  height:33vw;
+  margin: auto;
+  margin-top: 40px;
+}

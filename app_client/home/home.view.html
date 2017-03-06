@@ -16,11 +16,12 @@
       <div id="latestwork">
         <p>OUR LATEST WORK</p>
         <div id="latestprojects">
-          <a href="#" ng-repeat="bestproject in bestprojects.data">
-            <div class="col-md-4" style="padding:0;">
-              <div id="latestprojectsphoto">
-              </div>
-              <p>{{ bestproject.title }}</p>
+            <div class="col-md-4" style="padding:0;" ng-repeat="bestproject in bestprojects.data">
+              <a style="text-decoration: none;" ng-click="saveId(bestproject._id)"  href="/projects">
+                <div id="latestprojectsphoto">
+                </div>
+                <p>{{ bestproject.title }}</p>
+              </a>
             </div>
           </a>
         </div>
