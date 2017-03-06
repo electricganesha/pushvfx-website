@@ -8,6 +8,7 @@ var ctrlNews = require('../controllers/news');
 var ctrlTeam = require('../controllers/team');
 var ctrlLab = require('../controllers/lab');
 var ctrlReel = require('../controllers/reels');
+var ctrlCareer = require('../controllers/careers');
 
 //structuralInfo
 router.get('/structuralInfo', ctrlStructure.structuralInfoGet); //get structural info
@@ -56,5 +57,12 @@ router.get('/getReelsByCategory/:categories', ctrlReel.getReelsByCategory); //ge
 router.get('/reels/:reelId', ctrlReel.reelsReadOne); //get project by id
 router.put('/reels/:reelId', ctrlReel.reelsUpdateOne); //edit project by id
 router.delete('/reels/:reelId', ctrlReel.reelsDeleteOne); //delete project by id
+
+//career
+router.get('/career', ctrlCareer.careerList); //get all career items
+router.post('/career', ctrlCareer.careerCreate); //create a new career item
+router.get('/career/:career', ctrlCareer.careerReadOne); //get career items by id
+router.put('/career/:career', ctrlCareer.careerUpdateOne); //edit career items by id
+router.delete('/career/:career', ctrlCareer.careerDeleteOne); //delete career items by id
 
 module.exports = router;
