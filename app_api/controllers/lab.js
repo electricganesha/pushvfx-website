@@ -47,10 +47,8 @@ module.exports.labCreate = function(req, res) {
   Lab.create({
     title: req.body.title,
     displayImage: req.body.displayImage,
-    videoSnippet: req.body.videoSnippet,
-    fullVideo: req.body.fullVideo,
-    synopsis: req.body.synopsis,
-    description: req.body.description
+    link: req.body.link,
+    synopsis: req.body.synopsis
   }, function(err, labitem) {
     if (err) {
         console.log(err);
@@ -90,17 +88,11 @@ module.exports.labUpdateOne = function(req, res) {
         if(req.body.displayImage)
             labitem.displayImage = req.body.displayImage;
 
-        if(req.body.videoSnippet)
-            labitem.videoSnippet = req.body.videoSnippet;
-
-        if(req.body.fullVideo)
-            labitem.fullVideo = req.body.fullVideo;
+        if(req.body.link)
+            labitem.link = req.body.link;
         
         if(req.body.synopsis)
             labitem.synopsis = req.body.synopsis;
-
-        if(req.body.description)
-            labitem.description = req.body.description;
 
         labitem.save(function(err, labitem) {
           if (err) {

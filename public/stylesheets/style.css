@@ -228,8 +228,7 @@ page-header{
 
 #footerrighttop {
   text-align: right;
-  height: 135px;
-  padding-top: 20px;
+  height: 105px;
 }
 
 #footerrighttop ul{
@@ -1136,3 +1135,63 @@ textarea {
   margin: auto;
   margin-top: 40px;
 }
+
+
+/*####################### DISCLAIMER PAGE CONTENT STYLE #################################*/
+
+#disclaimerdivtop{
+  text-align: center;
+  width: 71%;
+  float:left;
+  margin-top: 150px;
+}
+
+#disclaimertext p, #disclaimertext ol, #disclaimertext ul{
+  margin-top: 10px;
+  text-align: justify;
+  font-family: myriadregular;
+  font-size: 17px;
+  color: #3e2a56;
+  letter-spacing: 1px;
+}
+
+#disclaimertext h3{
+  font-family: monserratmedium;
+  font-size: 23px;
+  color: #3e2a56;
+  letter-spacing: 1px;
+}
+
+
+/*####################### LAB PAGE CONTENT STYLE #################################*/
+
+#labcontent{
+  position: relative;
+  margin-top:40px;
+}
+
+#labdivtop{
+  text-align: center;
+  width: 71%;
+  float:left;
+  margin-top: 130px;
+}
+
+#lablist{
+  width: 71%;
+  margin: auto;
+  margin-bottom: 90px;
+}
+
+#lablist p{
+   text-align: left;
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: myriadregular;
+    font-size: 16px;
+    color: #3e2a56;
+    letter-spacing: 1px;
+}
+
