@@ -30,7 +30,6 @@ module.exports.projectsReadOne = function(req, res) {
         sendJSONresponse(res, 404, err);
         return;
       }
-      console.log(project);
       sendJSONresponse(res, 200, project);
     });
   } else {

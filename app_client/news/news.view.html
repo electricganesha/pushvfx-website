@@ -10,7 +10,7 @@
             <div id="carouselContent">
                 <carousel interval="myInterval">
                     <slide ng-repeat="slide in slides" style="height: 32vw;">
-                        <img src="{{slide}}" id="divImgCarousel">
+                        <img ng-src="{{ slide }}" id="divImgCarousel">
                     </slide>
                 </carousel>
             </div>
