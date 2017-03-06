@@ -13,6 +13,8 @@ var routesApi = require('./app_api/routes/index');
 
 var app = express();
 
+app.set('port',process.env.PORT || 4000);
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -89,6 +91,10 @@ app.use(function(err, req, res, next) {
     message: err.message,
     error: {}
   });
+});
+
+var server = app.listen(app.get('port'),function(){
+	console.log('Ready on port' , server.address().port);
 });
 
 
