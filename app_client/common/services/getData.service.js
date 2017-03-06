@@ -63,6 +63,10 @@
       return $http.get('/api/news/' + id);
     }
 
+    var projectById = function (id) {
+      return $http.get('/api/projects/' + id);
+    }
+
     return {
       latestwork : latestwork,
       portfolio : portfolio,
@@ -73,7 +77,8 @@
       newsByYear : newsByYear,
       lastSixNews : lastSixNews,
       newsByDate : newsByDate,
-      oneNew : oneNew
+      oneNew : oneNew,
+      projectById : projectById
     };
   }
 

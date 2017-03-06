@@ -15,6 +15,10 @@ var projectSchema = new mongoose.Schema(
       thumbnail:  {type:String, required:true}, // PROJECT THUMBNAIL
       showCaseStill : {type:String, required:true}, //STILL IMAGE SHOWING IN THE LIST / PROJECT PAGE
       showCaseVideo : {type:String, required:true}, // STILL VIDEO WHEN WE CLICK STILL IMAGE
+      midPageStill : {type:String},
+      midPageVideo : {type:String},
+      bottomPageStill : {type:String},
+      bottomPagetext : {type:String},
       category: {type:String, required:true, enum:['Film','Motion','Interactive']}, // PROJECT CATEGORY
       subcategories: {type:[String]}, // PROJECT SUBCATEGORY
       credits:  [creditsSchema], // CREDITS - based on Credits Schema
