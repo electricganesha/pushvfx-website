@@ -49,9 +49,10 @@
             <p></p>
         </div>
         <div id="contactsdivlist">
+            <!--ng-if="mapOptions" -->
             <div class="col-md-12" style="padding:0; margin-bottom: 70px; height: 23vw;">
 
-                <ng-map style="height: 100%; margin-top: 90px;" zoom="16" center="[38.748242, -9.185363]">
+                <ng-map  id="pushMap" zoom="16" center="[38.748242, -9.185363]" style="height: 100%; margin-top: 90px;">
                     <marker position="[38.748242, -9.185363]" />
                 </ng-map>
             </div>

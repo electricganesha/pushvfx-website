@@ -39,9 +39,12 @@ page-header{
 }
 
 #triangles{
+  background: white;
   width: 100%;
-  height: 40px;
+  height: 64px;
   text-align: center;
+  margin-top: -20px;
+  z-index: 10;
 }
 
 #header-triangles{
@@ -51,26 +54,27 @@ page-header{
 }
 
 #logotipo{
-  height: 100px;
   text-align: center;
-  background-color: #FFFFFF;
+  position: relative;
+  z-index: 5;
+  margin-top: -26px;
 }
 
 #logotipo img{
-  width: 165px;
+  width: 110px;
   margin: auto;
 }
 
 #menu {
-  background-color: #FFFFFF;
   font-family: monserratmedium;
-  font-size: 19px;
+  font-size: 15px;
   text-align: center;
   height: 30px;
+  margin: 22px;
 }
 
 #menu ul{
-  width: 740px;
+  width: 527px;
   margin: auto;
   list-style-type: none;
   padding: 0;
@@ -82,6 +86,7 @@ page-header{
 
 #border-header{
   width: 100%;
+  margin-top: -95px;
 }
 
 #menu-link{
@@ -141,7 +146,6 @@ page-header{
 
 #footer {
   width: 60%;
-  height:300px;
   margin:0 auto;
   float: none;
 }
@@ -154,18 +158,6 @@ page-header{
   width: 100%;
 }
 
-#footerleft{
-  height: 250px;
-}
-
-#footerright{
-  height: 250px;
-}
-
-#mapleft{
-  height: 250px;
-}
-
 #mapleft ul{
   margin-top: 20px;
   padding:15px;
@@ -175,12 +167,8 @@ page-header{
   font-family: monserratregular;
   list-style-type: none;
   color:#b8153a;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 20px;
-}
-
-#mapright{
-  height: 250px;
 }
 
 #mapright ul{
@@ -192,7 +180,7 @@ page-header{
   font-family: monserratregular;
   list-style-type: none;
   color:#b8153a;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 20px;
 }
 
@@ -228,11 +216,11 @@ page-header{
 
 #footerrighttop {
   text-align: right;
-  height: 105px;
+  height: 80px;
 }
 
 #footerrighttop ul{
-  margin-top: 35px;
+  margin-top: 30px;
   padding-right:15px;
 }
 
@@ -242,7 +230,7 @@ page-header{
 }
 
 #footerrighttop li img{
-  width:35px;
+  width:30px;
 }
 
 #footerrightbottom {
@@ -270,7 +258,7 @@ page-header{
 
 #spaceheader {
   width: 100%;
-  height: 150px;
+  height: 53px;
   content: '';
 }
 
@@ -297,10 +285,10 @@ page-header{
 
 #slogan-top{
   height: 150px;
-  padding-top: 30px;
+  padding-top: 60px;
   text-align: center;
   font-family: monserratmedium;
-  font-size: 31px;
+  font-size: 19px;
   color: #3e2a56;
   letter-spacing: 3px;
 }
@@ -310,7 +298,7 @@ page-header{
   padding-top: 40px;
   text-align: center;
   font-family: monserratmedium;
-  font-size: 31px;
+  font-size: 19px;
   color: #3e2a56;
   letter-spacing: 3px;
 }
@@ -330,7 +318,7 @@ page-header{
 #latestwork p{
   margin-top: 50px;
   font-family: monserratregular;
-  font-size: 28px;
+  font-size: 18px;
   color: #3e2a56;
   letter-spacing: 2px;
 }
@@ -380,10 +368,10 @@ page-header{
   text-align: center;
   position: relative;
   width: 100%;
-  margin-top:70px;
+  margin-top:50px;
   height:350px;
   font-family: monserratmedium;
-  font-size: 31px;
+  font-size: 19px;
   color: #3e2a56;
   letter-spacing: 3px;
 }
@@ -397,7 +385,7 @@ page-header{
 #bottom-slogan{
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
 }
 
@@ -405,7 +393,7 @@ page-header{
 
 #spaceheaderportfolio {
   width: 100%;
-  height: 340px;
+  height: 212px;
   content: '';
 }
 
@@ -483,10 +471,9 @@ page-header{
 
 #spaceheaderteam{
   width: 100%;
-  height: 190px;
+  height: 69px;
   content: '';
 }
-
 
 #teamcontent{
   position: relative;
@@ -670,7 +657,7 @@ page-header{
 
 #spaceheaderreel{
   width: 100%;
-  height: 300px;
+  height: 200px;
   content: '';
 }
 
@@ -716,7 +703,7 @@ page-header{
 
 #spaceheadercontacts{
   width: 100%;
-  height: 300px;
+  height: 200px;
   content: '';
 }
 
@@ -804,7 +791,7 @@ textarea {
 
 #spaceheadertimeline{
   width: 100%;
-  height: 250px;
+  height: 122px;
   content: '';
 }
 
@@ -1205,7 +1192,14 @@ textarea {
   margin-top: 130px;
 }
 
-#careerdivtop p{
+#careerinfo1, #careerinfo2{
+  font-family: monserratmedium;
+  font-size: 15px;
+  color: #3e2a56;
+  letter-spacing: 1px;
+}
+
+#careerdivtoptitle{
   margin-top: 30px;
   margin-bottom: 30px;
   font-family: monserratmedium;
@@ -1225,5 +1219,49 @@ textarea {
   border-bottom: solid 2px #3e2a56;
   width: 98%;
   margin: auto;
-  height: 120px;
+}
+
+#titleJob{
+  margin-top: 20px;
+  font-family: monserratmedium;
+  color: #b8153a;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+#jobCol1{
+  height: 130px;
+  padding-left: 30px;
+}
+
+#jobCol2{
+  height: 130px;
+  text-align: center;
+  line-height: 90px;
+}
+
+#jobCol3{
+  height: 130px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+#dateJob{
+  font-family: myriadregular;
+  color: #3e2a56;
+  font-size: 18px;
+}
+
+#locationJob{
+  margin-top: 20px;
+  font-family: monserratmedium;
+  color: #3e2a56;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+#statusJob{
+  font-family: myriadregular;
+  color: #3e2a56;
+  font-size: 18px;
 }
