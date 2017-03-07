@@ -67,6 +67,10 @@
       return $http.get('/api/projects/' + id);
     }
 
+    var lab = function () {
+      return $http.get('/api/lab');
+    }
+
     return {
       latestwork : latestwork,
       portfolio : portfolio,
@@ -78,7 +82,8 @@
       lastSixNews : lastSixNews,
       newsByDate : newsByDate,
       oneNew : oneNew,
-      projectById : projectById
+      projectById : projectById,
+      lab : lab
     };
   }
 

@@ -36,6 +36,14 @@ function config($routeProvider, $locationProvider)
   .when('/projects',{
     templateUrl: '/projects/projects.view.html',
     controller: 'projectsCtrl'
+  })
+  .when('/disclaimer',{
+    templateUrl: '/disclaimer/disclaimer.view.html',
+    controller: 'disclaimerCtrl'
+  })
+  .when('/lab',{
+    templateUrl: '/lab/lab.view.html',
+    controller: 'labCtrl'
   });
   //.otherwise({redirectTo: '/'});
 
