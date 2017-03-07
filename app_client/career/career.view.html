@@ -1,0 +1,28 @@
+<div id="content">
+  <div id="spaceheaderteam"></div>
+  <div id="labcontent">
+    <div class="row">
+      <div id="homedivleft">
+        <object id="left-triangle" data="/img/left_triangle.svg" type="image/svg+xml"></object>
+      </div>
+      <div id="careerdivtop">
+            <p>JOBS</p>
+      </div>
+      <div id="homedivright">
+          <p></p>
+      </div>
+    </div>
+  </div>
+  <div id="careerlist">
+    <div class="row">
+        <div id="job" ng-repeat="item in lab.data">
+            <a href="{{item.link}}" target="_blank">
+                <p>{{ item.title }}</p>
+            </a>
+        </div>
+        <div id="homedivright">
+            <object id="left-triangle" data="/img/right_triangle.svg" type="image/svg+xml"></object>
+        </div>
+    </div>
+  </div>
+</div>

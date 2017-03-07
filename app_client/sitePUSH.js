@@ -44,8 +44,12 @@ function config($routeProvider, $locationProvider)
   .when('/lab',{
     templateUrl: '/lab/lab.view.html',
     controller: 'labCtrl'
-  });
-  //.otherwise({redirectTo: '/'});
+  })
+  .when('/career',{
+    templateUrl: '/career/career.view.html',
+    controller: 'careerCtrl'
+  })
+  .otherwise({redirectTo: '/'});
 
   $locationProvider.html5Mode({
     enabled:true,
