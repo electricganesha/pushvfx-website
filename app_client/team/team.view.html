@@ -3,7 +3,7 @@
   <div id="teamcontent">
     <div class="row">
       <div id="homedivleft">
-        <object id="left-triangle" data="/img/left_triangle.svg" type="image/svg+xml"></object>
+        <object style="width: 40%;" id="left-triangle" data="/img/left_triangle.svg" type="image/svg+xml"></object>
       </div>
       <div id="teamdivtop">
         <p>PUSH</p>
@@ -29,7 +29,7 @@
             <div id="list">
                 <div id="listalign">
                   <div class="col-md-4" style="padding:0;" ng-repeat="member in teammembers.data" ng-style="($index >= 3 || $index <= 5) && {'margin-top':'30px'} || {'margin-top':'0px'} ">
-                      <div id="teammemberphoto">
+                      <div id="teammemberphoto" ng-style="{'background':'url({{member.profilePic}}) no-repeat center center'}">
                       </div>
                       <p id="membername">{{ member.name }}</p>
                       <p id="memberdescription">{{ member.description }}</p>
@@ -38,7 +38,7 @@
             </div>
         </div>
         <div id="homedivright">
-            <object id="left-triangle" data="/img/right_triangle.svg" type="image/svg+xml"></object>
+            <object style="width: 40%;" id="left-triangle" data="/img/right_triangle.svg" type="image/svg+xml"></object>
         </div>
     </div>
   </div>
@@ -52,7 +52,7 @@
           <p>&nbsp;&nbsp;@PUSH.IG</P>
         </div>
         <div id="insta" >
-            <div class="col-md-2" style=" padding: 0;" ng-repeat="photos in instaphotos.data">
+            <div class="col-md-3" style=" padding: 0;" ng-repeat="photos in instaphotos.data">
               <a href="{{ photos.link }}" target="_blank">
                 <div id="photoinsta" style="background: black url('{{ photos.images.low_resolution.url }}') no-repeat center center;">
                   <p></p>

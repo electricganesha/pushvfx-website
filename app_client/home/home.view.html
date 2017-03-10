@@ -1,5 +1,4 @@
 <div id="content">
-  <div id="spaceheader"></div>
   <div id="homeimg1">
     <div id="uparrow">
       <object style="width: 100%;" data="/img/arrow_up.svg" type="image/svg+xml"></object>
@@ -11,14 +10,14 @@
   <div id="latestworkcontent">
     <div class="row">
       <div id="homedivleft">
-        <object id="left-triangle" data="/img/left_triangle.svg" type="image/svg+xml"></object>
+        <object style="width: 40%;" id="left-triangle" data="/img/left_triangle.svg" type="image/svg+xml"></object>
       </div>
       <div id="latestwork">
         <p>OUR LATEST WORK</p>
         <div id="latestprojects">
             <div class="col-md-4" style="padding:0;" ng-repeat="bestproject in bestprojects.data">
               <a style="text-decoration: none;" ng-click="saveId(bestproject._id)"  href="/projects">
-                <div id="latestprojectsphoto">
+                <div id="latestprojectsphoto" ng-style="{'background':'url({{bestproject.thumbnail}}) no-repeat center center'}">
                 </div>
                 <p>{{ bestproject.title }}</p>
               </a>
@@ -27,7 +26,7 @@
         </div>
       </div>
       <div id="homedivright">
-        <object id="left-triangle" data="/img/right_triangle.svg" type="image/svg+xml"></object>
+        <object style="width: 40%;" id="left-triangle" data="/img/right_triangle.svg" type="image/svg+xml"></object>
       </div>
     </div>
   </div>

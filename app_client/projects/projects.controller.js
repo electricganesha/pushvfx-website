@@ -43,7 +43,7 @@
         if(data.data.bottomPageStill != "" || data.data.bottomPagetext != ""){
           $scope.bottomPageDiv = true;
           $scope.bottomPageStill = data.data.bottomPageStill;
-          $scope.bottomPageText = data.data.bottomPageText;
+          $scope.bottomPagetext = data.data.bottomPagetext;
         }
       },function (error){
         $scope.message = "Sorry, something's gone wrong, please try again later";
