@@ -22,6 +22,7 @@ var projectSchema = new mongoose.Schema(
       category: {type:String, required:true, enum:['Film','Motion','Interactive']}, // PROJECT CATEGORY
       subcategories: {type:[String]}, // PROJECT SUBCATEGORY
       credits:  [creditsSchema], // CREDITS - based on Credits Schema
+      links: [String], //PROJECT LINKS
       stills:  [String], // PROJECT STILLS
       description:  [String], // PROJECT DESCRIPTION : to be separated in paragraphs
       status: {type:String, enum:['Complete','Undergoing','Research','Prospective']}, // PROJECT STATUS :
