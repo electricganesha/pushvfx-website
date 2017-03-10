@@ -2,7 +2,7 @@
     <div id="spaceheaderreel"></div>
     <div id="projectheadercontent">
         <div id="homedivleft">
-            <object id="left-triangle" data="/img/left_triangle.svg" type="image/svg+xml"></object>
+            <object style="width: 40%;" id="left-triangle" data="/img/left_triangle.svg" type="image/svg+xml"></object>
         </div>
         <div id="stillProjectcontent">
             <div class="col-md-12" style="padding:0;" ng-if="showCaseStill">
@@ -14,16 +14,16 @@
         
     </div>
     <p id="projecttitle">{{title}}</p>
-    <p id="projectdescription1">{{description1}}</p>
+    <p id="projectdescription1">{{description1 | json}}</p>
     <div id="projectStills">
         <div class="row" ng-hide="!twocolumn"  ng-show="twocolumn">
-            <div class="col-md-6" ng-repeat="still in projectstills">
+            <div class="col-md-6" ng-repeat="still in projectstills track by $index">
                 <div id="twocolumn" ng-style="{'background':'url({{still}}) no-repeat center center'}">
                 </div>
             </div>
         </div>
         <div class="row" ng-hide="!sixcolumn" ng-show="sixcolumn">
-            <div class="col-md-4" style="padding-left:5px; padding-right:5px; padding-top:5px; padding-bottom: 5px;" ng-repeat="still in projectstillssix">
+            <div class="col-md-4" style="padding-left:5px; padding-right:5px; padding-top:5px; padding-bottom: 5px;" ng-repeat="still in projectstillssix track by $index">
                 <div id="twocolumn" ng-style="{'background':'url({{still}}) no-repeat center center'}">
                 </div>
             </div>
@@ -31,13 +31,13 @@
     </div>
     <div id="projectCredits">
         <div class="row">
-            <div class="col-md-2" ng-repeat="credit in credits">
+            <div class="col-md-3 col-xs-12" ng-repeat="credit in credits">
                 <p id="creditTitle">{{ credit.title }}:</p>
                 <p id="creditName">{{ credit.name }}</p>
             </div>
         </div>
     </div>
-    <p id="projectdescription2">{{description2}}</p>
+    <p id="projectdescription2">{{description2 | json}}</p>
     <div id="midStillProjectcontent" ng-show="midPageDiv">
         <div class="col-md-12" style="padding:0;" ng-if="showCaseStill">
             <div ng-if="midPagevideoShow == true">
@@ -52,12 +52,12 @@
         </div>
     </div>
     <div id="bottomStillProjectcontent" ng-show="bottomPageDiv"  ng-if="bottomPageStill">
-        <div class="col-md-8" style="height: 15vw;">
+        <div class="col-md-8" style="height: 15vw; padding: 0;">
             <div id="projectstill" ng-style="{'background':'url({{bottomPageStill}}) no-repeat center center'}">
             </div>
         </div>
-        <div class="col-md-4" style="height: 15vw;">
-            <p id="projectdescription3">{{ bottomPageText }}</p>
+        <div class="col-md-4" style="height: 15vw; padding-right: 0;">
+            <p id="projectdescription3">{{ bottomPagetext }}</p>
         </div>
     </div>
 </div>

@@ -1,4 +1,5 @@
 @media (max-width : 480px) {
+    /*####################### PAGE HEADER #################################*/
     .container-fluid{
         background-color: white;
         margin-top: -5px;
@@ -13,6 +14,7 @@
     .navbar-default .navbar-collapse{
         border-color: transparent;
     }
+
     .navbar-collapse ul li{
         padding: 0;
     }
@@ -24,12 +26,167 @@
     }
 
     #border-header{
-        margin-top: -60px;
+        margin-top: -70px;
+    }
+
+    /*####################### PAGE FOOTER #################################*/
+
+    #footerrighttop ul{
+        padding: 0;
+        width: 162px;
+        margin: auto;
+    }
+
+    #sociallink{
+        padding-right: 10px;
+    }
+
+    #footerrightbottom {
+        font-size: 9px;
+    }
+
+    #mapright ul{
+        text-align: center;
+    }
+
+    #mapright li{
+        font-size: 12px;
+    }
+
+    #mapleft ul{
+        text-align: center;
+    }
+
+    #mapleft li{
+        font-size: 12px;
+    }
+
+    #footerrightbottom {
+        font-size: 9px;
+        text-align: center;
+    }
+
+    #footerrightbottom p {
+        padding-right: 0;
+    }
+
+    #footerrightbottom img {
+        padding-right: 0;
+    }
+
+    /*####################### HOME CONTENT #################################*/
+
+    #latestprojectsphoto{
+        height: 150px;
+    }
+
+    #latestworkcontent{
+        margin-top: 0;
+    }
+
+    #homebottomdivcenter{
+        height: 200px;
+    }
+
+    #uparrow {
+        bottom: -3px;
+    }
+
+    /*####################### PORTFOLIO CONTENT #################################*/
+
+    #latestprojects p{
+        font-size: 11px;
+    }
+
+
+    /*####################### TEAM CONTENT #################################*/
+
+    #teammemberphoto{
+     height: 174px;   
+    }
+
+    #instatitle{
+        font-size: 17px;
+    }
+
+    #instainfo img{
+        margin-left:13px;
+    }
+
+    /*####################### REEL CONTENT #################################*/
+
+    #reel{
+        height: 49vw;
+    }
+
+    #reeltitle{
+        width: 211px;
+    }
+
+    #reeltitlecenter{
+        width: 158px;
+        font-size: 21px;
+    }
+
+    #reelselection {
+        width: 258px;
+            clear: both;
+    }
+    #reelselection ul li {
+        font-size: 8px;
+    }
+
+    #reeldivlist{
+        width: 81%;
+        float: none;
+        margin-top: 50px;
+    }
+
+    #spaceheaderreel{
+        height:100px;
+    }
+
+    #bartitle{
+        font-size: 14px;
+    }
+
+    /*####################### TIMELINE CONTENT #################################*/
+
+    #textonews{
+        margin-top: 30px;
+    }
+
+    /*####################### NEW CONTENT #################################*/
+
+    #select-menu-news{
+        font-size: 12px;
+    }
+
+    #titleNew{
+        font-size: 11px;
+    }
+
+    #newsdivlist {
+        font-size: 12px;
+    }
+
+    /*####################### PROJECTS CONTENT #################################*/
+
+    #projectCredits{
+        text-align: center;
+    }
+
+    /*####################### CONTACTS CONTENT #################################*/
+
+    #messageform{
+        float: none;
+        margin-top: 40px;
     }
 
 }
 
 @media (min-width: 481px) and (max-width: 620px) {
+    /*####################### PAGE HEADER #################################*/
     .container-fluid{
         background-color: white;
         margin-top: -5px;
@@ -44,6 +201,7 @@
     .navbar-default .navbar-collapse{
         border-color: transparent;
     }
+
     .navbar-collapse ul li{
         padding: 0;
     }
@@ -55,11 +213,130 @@
     }
 
     #border-header{
-        margin-top: -60px;
+        margin-top: -81px;
     }
+
+    /*####################### PAGE FOOTER #################################*/
+
+    #footerrighttop ul{
+        padding: 0;
+        width: 162px;
+        margin: auto;
+    }
+
+    #sociallink{
+        padding-right: 10px;
+    }
+
+    #mapleft ul{
+        text-align: center;
+    }
+
+    #mapright ul{
+        text-align: center;
+    }
+
+    #footerrightbottom {
+        font-size: 9px;
+    }
+
+    #footerrightbottom {
+        font-size: 9px;
+        text-align: center;
+    }
+
+    #footerrightbottom p {
+        padding-right: 0;
+    }
+
+    #footerrightbottom img {
+        padding-right: 0;
+    }
+
+    /*####################### HOME CONTENT #################################*/
+
+    #latestprojectsphoto{
+        height: 150px;
+    }
+
+    #latestworkcontent{
+        margin-top: 0;
+    }
+
+    #homebottomdivcenter{
+        height: 200px;
+    }
+
+    #uparrow {
+        bottom: -3px;
+    }
+
+    /*####################### PORTFOLIO CONTENT #################################*/
+
+    #latestprojects p{
+        font-size: 11px;
+    }
+
+    /*####################### TEAM CONTENT #################################*/
+
+    #teammemberphoto{
+     height: 195px;   
+    }
+
+    #instatitle{
+        font-size: 17px;
+    }
+
+    /*####################### REEL CONTENT #################################*/
+
+    #reelselection {
+        width: 259px;
+    }
+    #reelselection ul li {
+        font-size: 8px;
+    }
+
+    #bartitle{
+        font-size: 14px;
+    }
+
+    /*####################### TIMELINE CONTENT #################################*/
+
+    #textonews{
+        margin-top: 30px;
+    }
+
+    /*####################### NEW CONTENT #################################*/
+
+    #select-menu-news{
+        font-size: 12px;
+    }
+
+    #titleNew{
+        font-size: 11px;
+    }
+
+    #newsdivlist {
+        font-size: 12px;
+    }
+
+    /*####################### PROJECTS CONTENT #################################*/
+
+    #projectCredits{
+        text-align: center;
+    }
+
+     /*####################### CONTACTS CONTENT #################################*/
+
+    #messageform{
+        float: none;
+        margin-top: 40px;
+    }
+
 }
 
 @media(min-width:621px) and (max-width:767px) {
+    /*####################### PAGE HEADER #################################*/
     .container-fluid{
         background-color: white;
         margin-top: -5px;
@@ -74,6 +351,7 @@
     .navbar-default .navbar-collapse{
         border-color: transparent;
     }
+
     .navbar-collapse ul li{
         padding: 0;
     }
@@ -85,21 +363,207 @@
     }
 
     #border-header{
-        margin-top: -75px;
+        margin-top: -103px;
+    }
+
+    /*####################### PAGE FOOTER #################################*/
+
+    #footerrighttop ul{
+        padding: 0;
+        width: 192px;
+        margin: auto;
+    }
+
+    #sociallink{
+        padding-right: 20px;
+    }
+
+    #footerrightbottom {
+        font-size: 9px;
+        text-align: center;
+    }
+
+    #footerrightbottom p {
+        padding-right: 0;
+    }
+
+    #footerrightbottom img {
+        padding-right: 0;
+    }
+
+    #mapleft ul{
+        text-align: center;
+    }
+
+    #mapright ul{
+        text-align: center;
+    }
+
+    /*####################### HOME CONTENT #################################*/
+
+    #latestprojectsphoto{
+        height: 215px;
+    }
+
+    #latestworkcontent{
+        margin-top: 0;
+    }
+
+    #homebottomdivcenter{
+        height: 200px;
+    }
+
+    #uparrow {
+        bottom: -3px;
+    }
+
+    /*####################### PORTFOLIO CONTENT #################################*/
+
+    #latestprojects p{
+        font-size: 11px;
+    }
+
+    /*####################### TEAM CONTENT #################################*/
+
+    #teammemberphoto{
+     height: 300px;   
+    }
+
+    #instatitle{
+        font-size: 17px;
+    }
+
+    #instainfo img{
+        margin-left:15px;
+    }
+
+    #photoinsta{
+        height: 301px;
+    }
+
+    /*####################### TIMELINE CONTENT #################################*/
+
+    #textonews{
+        margin-top: 30px;
+    }
+
+    /*####################### PROJECTS CONTENT #################################*/
+
+    #projectCredits{
+        text-align: center;
+    }
+
+    /*####################### CONTACTS CONTENT #################################*/
+
+    #messageform{
+        float: none;
+        margin-top: 40px;
     }
 }
 
 @media(min-width:768px) and (max-width:876px) {
+    /*####################### PAGE HEADER #################################*/
     .navbar .navbar-nav{
         width: 473px;  
     }
 
     #pad{
         padding-right: 35px; 
+    }
+
+    #border-header {
+        margin-top: -123px;
+    }
+
+    /*####################### PAGE FOOTER #################################*/
+
+    #footerrighttop ul{
+        padding: 0;
+        width: 192px;
+        margin: auto;
+    }
+
+    #sociallink{
+        padding-right: 20px;
+    }
+
+    #footerrightbottom {
+        font-size: 9px;
+        text-align: center;
+    }
+
+    #footerrightbottom p {
+        padding-right: 0;
+    }
+
+    #footerrightbottom img {
+        padding-right: 0;
+    }
+
+    #mapleft ul{
+        text-align: center;
+    }
+
+    #mapright ul{
+        text-align: center;
+    }
+
+    /*####################### HOME CONTENT #################################*/
+
+    #latestworkcontent{
+        margin-top: 0;
+    }
+
+    #homebottomdivcenter{
+        height: 200px;
+    }
+
+    #uparrow {
+        bottom: -3px;
+    }
+
+    /*####################### PORTFOLIO CONTENT #################################*/
+
+    #latestprojects p{
+        font-size: 11px;
+    }
+
+    /*####################### TEAM CONTENT #################################*/
+
+    #teammemberphoto{
+     height: 300px;   
+    }
+
+    #instainfo img{
+        margin-left:15px;
+    }
+
+    #photoinsta{
+        height: 301px;
+    }
+
+    /*####################### TIMELINE CONTENT #################################*/
+
+    #textonews{
+        margin-top: 30px;
+    }
+
+    /*####################### PROJECTS CONTENT #################################*/
+
+    #projectCredits{
+        text-align: center;
+    }
+
+    /*####################### CONTACTS CONTENT #################################*/
+
+    #messageform{
+        float: none;
+        margin-top: 40px;
     }
 }
 
 @media(min-width:877px) and (max-width:945px) {
+    /*####################### PAGE HEADER #################################*/
     .navbar .navbar-nav{
         width: 473px;  
     }
@@ -109,11 +573,94 @@
     }
 
     #border-header{
-        margin-top: -105px;
+        margin-top: -137px;
+    }
+
+    /*####################### PAGE FOOTER #################################*/
+
+    #footerrighttop ul{
+        padding: 0;
+        width: 192px;
+        margin: auto;
+    }
+
+    #sociallink{
+        padding-right: 20px;
+    }
+
+    #footerrightbottom {
+        font-size: 9px;
+        text-align: center;
+    }
+
+    #footerrightbottom p {
+        padding-right: 0;
+    }
+
+    #footerrightbottom img {
+        padding-right: 0;
+    }
+
+    #mapleft ul{
+        text-align: center;
+    }
+
+    #mapright ul{
+        text-align: center;
+    }
+
+    /*####################### HOME CONTENT #################################*/
+
+    #latestworkcontent{
+        margin-top: 0;
+    }
+
+    #homebottomdivcenter{
+        height: 200px;
+    }
+
+    /*####################### PORTFOLIO CONTENT #################################*/
+
+    #latestprojects p{
+        font-size: 11px;
+    }
+
+    /*####################### TEAM CONTENT #################################*/
+
+    #teammemberphoto{
+     height: 300px;   
+    }
+
+    #instainfo img{
+        margin-left:26px;
+    }
+
+    #photoinsta{
+        height: 301px;
+    }
+
+    /*####################### TIMELINE CONTENT #################################*/
+
+    #textonews{
+        margin-top: 30px;
+    }
+
+    /*####################### PROJECTS CONTENT #################################*/
+
+    #projectCredits{
+        text-align: center;
+    }
+
+    /*####################### CONTACTS CONTENT #################################*/
+
+    #messageform{
+        float: none;
+        margin-top: 40px;
     }
 }
 
-@media(min-width:945px) and (max-width:1099px) {
+@media(min-width:945px) and (max-width:991px) {
+    /*####################### PAGE HEADER #################################*/
     .navbar .navbar-nav{
         width: 473px;  
     }
@@ -123,21 +670,111 @@
     }
 
     #border-header{
-        margin-top: -129px;
-    }
-
-    #triangles{
-        position: relative;
+        margin-top: -157px;
     }
 
     nav{
         width: 60%;
         margin: auto;
+    }
+
+    /*####################### PAGE FOOTER #################################*/
+    #footerright {
+        width: 100%;
+    }
+
+    #footerleft{
+        width: 100%; 
+    }
+
+    #footerrighttop ul{
+        padding: 0;
+        width: 192px;
+        margin: auto;
+    }
+
+    #sociallink{
+        padding-right: 20px;
+    }
+
+    #footerrightbottom {
+        font-size: 9px;
+        text-align: center;
+    }
+
+    #footerrightbottom p {
+        padding-right: 0;
+    }
+
+    #footerrightbottom img {
+        padding-right: 0;
+    }
+
+    #mapleft ul{
+        text-align: center;
+    }
+
+    #mapright ul{
+        text-align: center;
+    }
+
+    /*####################### HOME CONTENT #################################*/
+
+    #latestprojectsphoto{
+        height: 288px;
+    }
+
+    #latestworkcontent{
+        margin-top: 0;
+    }
+
+    #homebottomdivcenter{
+        height: 200px;
+    }
+
+    /*####################### PORTFOLIO CONTENT #################################*/
+
+    #latestprojects p{
+        font-size: 11px;
+    }
+
+    /*####################### TEAM CONTENT #################################*/
+
+    #teammemberphoto{
+     height: 300px;   
+    }
+
+    #instainfo img{
+        margin-left:29px;
+    }
+
+    #photoinsta{
+        height: 301px;
+    }
+
+    /*####################### TIMELINE CONTENT #################################*/
+
+    #textonews{
+        margin-top: 30px;
+    }
+
+    /*####################### PROJECTS CONTENT #################################*/
+
+    #projectCredits{
+        text-align: center;
+    }
+
+    /*####################### CONTACTS CONTENT #################################*/
+
+    #messageform{
+        float: none;
+        margin-top: 40px;
     }
     
 }
 
-@media(min-width:1100px) and (max-width:1210px) {
+@media(min-width:992px) and (max-width:1099px) {
+     /*####################### PAGE HEADER #################################*/
     .navbar .navbar-nav{
         width: 473px;  
     }
@@ -147,7 +784,112 @@
     }
 
     #border-header{
-        margin-top: -160px;
+        margin-top: -157px;
+    }
+
+    nav{
+        width: 60%;
+        margin: auto;
+    }
+
+    /*####################### PAGE FOOTER #################################*/
+    #footerright {
+        width: 100%;
+    }
+
+    #footerleft{
+        width: 100%; 
+    }
+
+    #footerrighttop ul{
+        padding: 0;
+        width: 192px;
+        margin: auto;
+    }
+
+    #sociallink{
+        padding-right: 20px;
+    }
+
+    #footerrightbottom {
+        font-size: 9px;
+        text-align: center;
+    }
+
+    #footerrightbottom p {
+        padding-right: 0;
+    }
+
+    #footerrightbottom img {
+        padding-right: 0;
+    }
+
+    #mapleft ul{
+        text-align: center;
+    }
+
+    #mapright ul{
+        text-align: center;
+    }
+
+    /*####################### HOME CONTENT #################################*/
+
+    #latestprojectsphoto{
+        height: 119px;
+    }
+
+    #latestworkcontent{
+        margin-top: 0;
+    }
+
+    #homebottomdivcenter{
+        height: 200px;
+    }
+
+    /*####################### PORTFOLIO CONTENT #################################*/
+
+    #latestprojects p{
+        font-size: 11px;
+    }
+
+    /*####################### TEAM CONTENT #################################*/
+
+    #teammemberphoto{
+     height: 153px;   
+    }
+
+    #instainfo img{
+        margin-left:13px;
+    }
+
+    #photoinsta{
+        height: 167px;
+    }
+
+    #memberdescription{
+        height: 237px;
+    }
+
+    /*####################### TIMELINE CONTENT #################################*/
+    
+    #newdescription{
+        height:31px;
+    }
+
+}
+
+@media(min-width:1100px) and (max-width:1210px) {
+    /*####################### PAGE HEADER #################################*/
+    .navbar .navbar-nav{
+        width: 473px;  
+    }
+
+    #pad{
+        padding-right: 35px; 
+    }
+
+    #border-header{
+        margin-top: -180px;
     }
 
     #triangles{
@@ -157,11 +899,48 @@
     nav{
         width: 60%;
         margin: auto;
+    }
+
+    /*####################### HOME CONTENT #################################*/
+
+    #latestprojectsphoto{
+        height: 133px;
+    }
+
+    /*####################### PORTFOLIO CONTENT #################################*/
+
+    #latestprojects p{
+        font-size: 11px;
+    }
+
+    /*####################### TEAM CONTENT #################################*/
+
+    #teammemberphoto{
+     height: 153px;   
+    }
+
+    #instainfo img{
+        margin-left:10px;
+    }
+
+    #photoinsta{
+        height: 152px;
+    }
+
+    #memberdescription{
+        height: 203px;
+    }
+
+    /*####################### TIMELINE CONTENT #################################*/
+    
+    #newdescription{
+        height:20px;
     }
     
 }
 
 @media(min-width:1211px) and (max-width:1300px) {
+    /*####################### PAGE HEADER #################################*/
     .navbar .navbar-nav{
         width: 473px;  
     }
@@ -171,7 +950,7 @@
     }
 
     #border-header{
-        margin-top: -175px;
+        margin-top: -197px;
     }
 
     #triangles{
@@ -181,10 +960,47 @@
     nav{
         width: 60%;
         margin: auto;
+    }
+
+    /*####################### HOME CONTENT #################################*/
+
+    #latestprojectsphoto{
+        height: 152px;
+    }
+
+    /*####################### PORTFOLIO CONTENT #################################*/
+
+    #latestprojects p{
+        font-size: 11px;
+    }
+
+     /*####################### TEAM CONTENT #################################*/
+
+    #teammemberphoto{
+     height: 153px;   
+    }
+
+    #instainfo img{
+        margin-left:10px;
+    }
+
+    #photoinsta{
+        height: 152px;
+    }
+
+    #memberdescription{
+        height: 203px;
+    }
+
+    /*####################### TIMELINE CONTENT #################################*/
+    
+    #newdescription{
+        height:9px;
     }
 }
 
 @media(min-width:1301px) and (max-width:1499px) {
+    /*####################### PAGE HEADER #################################*/
     .navbar .navbar-nav{
         width: 473px;  
     }
@@ -194,7 +1010,7 @@
     }
 
     #border-header{
-        margin-top: -175px;
+        margin-top: -210px;
     }
 
     #triangles{
@@ -205,9 +1021,34 @@
         width: 60%;
         margin: auto;
     }
+
+    /*####################### HOME CONTENT #################################*/
+
+    #latestprojectsphoto{
+        height: 152px;
+    }
+
+    /*####################### PORTFOLIO CONTENT #################################*/
+
+    #latestprojects p{
+        font-size: 11px;
+    }
+
+    /*####################### TEAM CONTENT #################################*/
+
+    #memberdescription{
+        height: 165px;
+    }
+
+    /*####################### TIMELINE CONTENT #################################*/
+    
+    #newdescription{
+        height:4px;
+    }
 }
 
 @media(min-width:1500px) and (max-width:1600px) {
+    /*####################### PAGE HEADER #################################*/
     .navbar .navbar-nav{
         width: 473px;  
     }
@@ -217,7 +1058,7 @@
     }
 
     #border-header{
-        margin-top: -223px;
+        margin-top: -245px;
     }
 
     #triangles{
@@ -228,5 +1069,275 @@
         width: 50%;
         margin: auto;
     }
+
+    /*####################### HOME CONTENT #################################*/
+
+    #latestprojectsphoto{
+        height: 177px;
+    }
+
+    /*####################### TEAM CONTENT #################################*/
+
+    #memberdescription{
+        height: 143px;
+    }
+
+}
+
+@media(min-width:1601px) and (max-width:1800px) {
+    .navbar .navbar-nav{
+        width: 473px;  
+    }
+
+    #pad{
+        padding-right: 35px; 
+    }
+
+    #border-header{
+        margin-top: -260px;
+    }
+
+    #triangles{
+        position: relative;
+    }
+
+    nav{
+        width: 50%;
+        margin: auto;
+    }
+
+    /*####################### HOME CONTENT #################################*/
+
+    #latestprojectsphoto{
+        height: 177px;
+    }
+}
+
+@media(min-width:1801px) and (max-width:1899px) {
+    /*####################### PAGE HEADER #################################*/
+    .navbar .navbar-nav{
+        width: 473px;  
+    }
+
+    #pad{
+        padding-right: 35px; 
+    }
+
+    #border-header{
+        margin-top: -291px;
+    }
+
+    #triangles{
+        position: relative;
+    }
+
+    nav{
+        width: 50%;
+        margin: auto;
+    }
+
+    /*####################### HOME CONTENT #################################*/
+
+    #latestprojectsphoto{
+        height: 200px;
+    }
+
+    /*####################### TEAM CONTENT #################################*/
+
+    #memberdescription{
+        height: 115px;
+    }
+}
+
+@media(min-width:1900px) and (max-width:1920px) {
+    /*####################### PAGE HEADER #################################*/
+    .navbar .navbar-nav{
+        width: 473px;  
+    }
+
+    #pad{
+        padding-right: 35px; 
+    }
+
+    #border-header{
+        margin-top: -315px;
+    }
+
+    #triangles{
+        position: relative;
+    }
+
+    nav{
+        width: 35%;
+        margin: auto;
+    }
+
+    #spaceheader {
+        height: 45px;
+    }
+
+    /*####################### HOME CONTENT #################################*/
+
+    #latestprojectsphoto{
+        height: 235px;
+    }
+
+    /*####################### TEAM CONTENT #################################*/
+
+    #memberdescription{
+        height: 103px;
+    }
+}
+
+@media(min-width:1921px) and (max-width:2150px) {
+    /*####################### PAGE HEADER #################################*/
+    .navbar .navbar-nav{
+        width: 473px;  
+    }
+
+    #pad{
+        padding-right: 35px; 
+    }
+
+    #border-header{
+        margin-top: -317px;
+    }
+
+    #triangles{
+        position: relative;
+    }
+
+    nav{
+        width: 35%;
+        margin: auto;
+    }
+
+    #spaceheader {
+        height: 45px;
+    }
+
+    /*####################### HOME CONTENT #################################*/
+
+    #latestprojectsphoto{
+        height: 235px;
+    }
+
+    /*####################### TEAM CONTENT #################################*/
+
+    #memberdescription{
+        height: 103px;
+    }
+
+}
+
+@media(min-width:2151px) and (max-width:2300px) {
+    /*####################### PAGE HEADER #################################*/
+    .navbar .navbar-nav{
+        width: 473px;  
+    }
+
+    #pad{
+        padding-right: 35px; 
+    }
+
+    #border-header{
+        margin-top: -354px;
+    }
+
+    #triangles{
+        position: relative;
+    }
+
+    nav{
+        width: 35%;
+        margin: auto;
+    }
+
+    #spaceheader {
+        height: 45px;
+    }
+
+    /*####################### TEAM CONTENT #################################*/
+
+    #memberdescription{
+        height: 103px;
+    }
+
+}
+
+@media(min-width:2301px) and (max-width:2500px) {
+    /*####################### PAGE HEADER #################################*/
+    .navbar .navbar-nav{
+        width: 473px;  
+    }
+
+    #pad{
+        padding-right: 35px; 
+    }
+
+    #border-header{
+        margin-top: -376px;
+    }
+
+    #triangles{
+        position: relative;
+    }
+
+    nav{
+        width: 35%;
+        margin: auto;
+    }
+
+    #spaceheader {
+        height: 45px;
+    }
+
+    /*####################### TEAM CONTENT #################################*/
+
+    #memberdescription{
+        height: 103px;
+    }
+
+}
+
+@media(min-width:2501px) {
+    /*####################### PAGE HEADER #################################*/
+    .navbar .navbar-nav{
+        width: 473px;  
+    }
+
+    #pad{
+        padding-right: 35px; 
+    }
+
+    #border-header{
+        margin-top: -407px;
+    }
+
+    #triangles{
+        position: relative;
+    }
+
+    nav{
+        width: 35%;
+        margin: auto;
+    }
+
+    #spaceheader {
+        height: 45px;
+    }
+
+    /*####################### HOME CONTENT #################################*/
+
+    #latestprojectsphoto{
+        height: 295px;
+    }
+
+    /*####################### TEAM CONTENT #################################*/
+
+    #memberdescription{
+        height: 103px;
+    }
+
 }
 

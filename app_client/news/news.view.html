@@ -9,7 +9,7 @@
             <p style="margin-bottom: 50px;">{{ newTopTitle }}</p>
             <div id="carouselContent">
                 <carousel interval="myInterval">
-                    <slide ng-repeat="slide in slides" style="height: 32vw;">
+                    <slide ng-repeat="slide in slides track by $index" style="height: 32vw;">
                         <img ng-src="{{ slide }}" id="divImgCarousel">
                     </slide>
                 </carousel>

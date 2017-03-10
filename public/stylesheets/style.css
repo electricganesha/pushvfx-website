@@ -41,6 +41,19 @@ body{
     padding-top: 15px;
 }
 
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #b8153a;
+}
+
+.navbar-default .navbar-toggle{
+  border-color: #b8153a;
+  z-index: 6;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+  background-color: white;
+}
+
 page-header{
   width: 100%;
   position: fixed;
@@ -59,6 +72,7 @@ page-header{
   text-align: center;
   margin-top: -20px;
   z-index: 4;
+  position: relative;
 }
 
 #header-triangles{
@@ -164,6 +178,10 @@ page-header{
   width: 60%;
   margin:0 auto;
   float: none;
+}
+
+#sociallink{
+  padding-right: 20px;
 }
 
 #footer-delimiter{
@@ -272,12 +290,6 @@ page-header{
   width: 100%;
 }
 
-#spaceheader {
-  width: 100%;
-  height: 53px;
-  content: '';
-}
-
 #homeimg1{
   position:relative;
   width: 100%;
@@ -327,14 +339,14 @@ page-header{
 
 #latestwork{
   text-align: center;
-  width: 72%;
+  width: 60%;
   float:left;
 }
 
 #latestwork p{
   margin-top: 50px;
   font-family: monserratregular;
-  font-size: 18px;
+  font-size: 16px;
   color: #3e2a56;
   letter-spacing: 2px;
 }
@@ -344,33 +356,47 @@ page-header{
   margin-top:40px;
 }
 
+#latestprojects a:hover > #latestprojectsphoto{
+   -webkit-filter: grayscale(0%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .5s ease-in-out;
+}
+
 #latestprojectsphoto{
   width: 95%;
   height:250px;
   margin: auto;
-  border: solid 2px green;
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(100%); 
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(100%); 
+  -o-transition: .5s ease-in-out;
 }
 
 #latestprojects p{
   text-align: left;
   width: 95%;
   margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   font-family: myriadregular;
-  font-size: 16px;
+  font-size: 14px;
   color: #3e2a56;
   letter-spacing: 1px;
 }
 
 #homedivleft{
-  width: 14%;
+  width: 20%;
   float: left;
 }
 
 #homedivright{
   position: absolute;
-  width: 14%;
+  width: 20%;
   right:-2px;
   text-align: right;
   bottom: 0px;
@@ -407,59 +433,55 @@ page-header{
 
 /*####################### PORTFOLIO PAGE CONTENT STYLE #################################*/
 
-#spaceheaderportfolio {
-  width: 100%;
-  height: 212px;
-  content: '';
-}
-
 #selectcontent{
   height: 80px;
-  margin-top: 30px;
-}
-
-#portfoliotitle{
-  width: 290px;
-  height: 50px;
-  margin: auto;
-  text-align: center;
-}
-
-#smalltriangleleft{
-  float: left;
-}
-
-#portfoliotitlecenter{
-  float: left;
-  width: 240px;
-  text-align: center;
-  font-family: monserratmedium;
-  font-size: 31px;
-  letter-spacing: 3px;
-}
-
-#portfoliotitlecenter p{
-  color: #3e2a56;
-}
-
-#smalltriangleright{
-  float: left;
+  padding-top: 200px; 
 }
 
 #portfolioselection ul{
-  width: 295px;
+  width: 423px;
   height: 25px;
   list-style-type: none;
   margin: auto;
-  color: #3e2a56;
+  color: white;
   padding:0;
 }
 
 #portfolioselection ul li{
   float: left;
   font-family: monserratmedium;
-  font-size: 12px;
+  font-size: 20px;
   letter-spacing: 3px;
+}
+
+#port-link{
+  text-decoration: none;
+  position: relative;
+  color:white;
+}
+
+#port-link:after{
+  color:white;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid white;
+  transition: 0.4s;
+}
+
+#port-link:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  transition: 0.4s;
+}
+
+#port-link:hover:after {
+  width: 99%;
 }
 
 #mainTitle{
@@ -498,9 +520,9 @@ page-header{
 
 #teamdivtop{
   text-align: center;
-  width: 71%;
+  width: 60%;
   float:left;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 #teamdivtop p{
@@ -529,8 +551,8 @@ page-header{
 #teamdivlist{
   /*border: solid 2px red;*/
   text-align: center;
-  width: 72%;
-  float:left;
+  width: 60%;
+  margin: auto;
 }
 
 #titlelist{
@@ -547,12 +569,15 @@ page-header{
   width: 95%;
   height:250px;
   margin: auto;
-  border: solid 2px green;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #membername{
   font-family: monserratmedium;
-  font-size: 26px;
+  font-size: 17px;
   color: #3e2a56;
   text-align: left;
   width: 95%;
@@ -564,7 +589,7 @@ page-header{
 
 #memberdescription{
   font-family: myriadregular;
-  font-size: 17px;
+  font-size: 15px;
   color: #3e2a56;
   text-align: justify;
   width: 95%;
@@ -585,7 +610,7 @@ page-header{
 }
 
 #insta{
-  width: 71%;
+  width: 60%;
   margin: auto;
   position:relative;
   padding-top: 45px;
@@ -612,13 +637,14 @@ page-header{
 
 #instainfo{
   padding-top: 120px;
-  width: 70%;
+  width: 60%;
   margin: auto;
 }
 
 #instainfo img{
   width:30px;
   float: left;
+  margin-left:14px;
 }
 
 #instainfo p{
@@ -630,13 +656,17 @@ page-header{
 
 /*####################### REEL PAGE CONTENT STYLE #################################*/
 
+#selectcontentreel{
+  height: 80px; 
+}
+
 #reelcontent{
   position: relative;
   margin-top:40px;
 }
 
 #reeltitle{
-  width: 290px;
+  width: 227px;
   height: 50px;
   margin: auto;
   text-align: center;
@@ -644,10 +674,10 @@ page-header{
 
 #reeltitlecenter{
   float: left;
-  width: 240px;
+  width: 175px;
   text-align: center;
   font-family: monserratmedium;
-  font-size: 31px;
+  font-size: 26px;
   letter-spacing: 3px;
 }
 
@@ -655,9 +685,16 @@ page-header{
   color: #3e2a56;
 }
 
+#reelselection{
+    width: 328px;
+    margin: auto;
+}
+
+#smalltriangleleft{
+  float: left;
+}
+
 #reelselection ul{
-  width: 328px;
-  height: 25px;
   list-style-type: none;
   margin: auto;
   color: #3e2a56;
@@ -673,7 +710,7 @@ page-header{
 
 #spaceheaderreel{
   width: 100%;
-  height: 200px;
+  height: 162px;
   content: '';
 }
 
@@ -716,6 +753,15 @@ page-header{
 
 
 /*####################### CONTACTS PAGE CONTENT STYLE #################################*/
+#address{
+  min-width: 255px;
+}
+
+#messageform{
+  float: right;
+  min-width: 250px;
+  padding-bottom: 40px;
+}
 
 #spaceheadercontacts{
   width: 100%;
@@ -729,7 +775,7 @@ page-header{
 }
 
 #info-form{
-    width: 59%;
+    width: 60%;
     margin: auto;
 } 
 
@@ -804,6 +850,9 @@ textarea {
 
 /*####################### TIMELINE PAGE CONTENT STYLE #################################*/
 
+#timelinedivright{
+  width: 23%;
+}
 
 #spaceheadertimeline{
   width: 100%;
@@ -811,15 +860,20 @@ textarea {
   content: '';
 }
 
+#selectcontenttimeline{
+  height: 80px; 
+}
+
 #timelineselection ul{
-  width: 242px;
+  width: 187px;
   height: 25px;
   list-style-type: none;
   margin: auto;
   color: #3e2a56;
   padding:0;
-  font-size: 18px;
+  font-size: 14px;
 }
+
 
 #timelinedivlist{
   width: 63%;
@@ -832,7 +886,7 @@ textarea {
   width: 280px;
   text-align: center;
   font-family: monserratregular;
-  font-size: 39px;
+  font-size: 26px;
   letter-spacing: 3px;
 }
 
@@ -852,7 +906,7 @@ textarea {
     margin: auto;
     text-align: center;
     font-family: monserratregular;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 3px;
     padding-bottom: 50px;
     color: #3e2a56;
@@ -868,18 +922,19 @@ textarea {
 
 #newname{
   font-family: monserratmedium;
-  font-size: 19px;
+  font-size: 17px;
   color: #3e2a56;
   text-align: left;
   width: 95%;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 20px;
   text-transform: uppercase;
+  height: 30px;
 }
 
 #newdescription{
   font-family: myriadregular;
-  font-size: 17px;
+  font-size: 15px;
   color: #3e2a56;
   text-align: justify;
   width: 95%;
@@ -900,10 +955,9 @@ textarea {
 }
 
 #newsphoto{
-    width: 30%;
+    width: 100%;
     height: 200px;
     float: left;
-    border: solid 2px red;
 }
 
 #newdatename{
@@ -928,16 +982,16 @@ textarea {
 }
 
 #textonews{
-    width: 70%;
+    width: 100%;
     float: right;
 }
 
 #bartitle{
-    width: 72%;
+    width: 60%;
     float: left;
     text-align: center;
     margin-top:200px;
-    font-size: 24px;
+    font-size: 20px;
     font-family: monserratregular;
     letter-spacing: 2px;
     color: #3e2a56;
@@ -946,7 +1000,7 @@ textarea {
 #timelinedivright {
     position: relative;
     float: right;
-    width: 14%;
+    width: 23%;
     right:-2px;
     text-align: right;
     bottom: 0px;
@@ -1017,7 +1071,7 @@ textarea {
     width: 58%;
     margin: auto;
     font-family: monserratmedium;
-    font-size: 25px;
+    font-size: 21px;
     letter-spacing: 3px;
     padding-bottom: 20px;
     color: #b8153a;
@@ -1029,7 +1083,7 @@ textarea {
   margin:auto;
   text-align: justify;
   color: #3e2a56;
-  font-size: 18px;
+  font-size: 14px;
   margin-bottom: 70px;
 }
 
@@ -1051,7 +1105,7 @@ textarea {
 }
 
 #stillProjectcontent{
-  width:57%;
+  width:60%;
   height:30vw;
   margin: auto;
 }
@@ -1068,7 +1122,7 @@ textarea {
   font-size: 22px;
   color: #3e2a56;
   clear: both;
-  width: 57%;
+  width: 60%;
   margin: auto;
   margin-top: 40px;
 
@@ -1079,7 +1133,7 @@ textarea {
   font-size: 15px;
   color: #3e2a56;
   clear: both;
-  width: 57%;
+  width: 60%;
   margin: auto;
   margin-top: 30px;
   text-align: justify;
@@ -1090,25 +1144,27 @@ textarea {
 }
 
 #projectStills{
-    width: 57%;
+    width: 60%;
     margin: auto;
     margin-top: 40px;
 }
 
 #twocolumn{
-  height: 10vw;
+  height: 200px;
 }
 
 #projectCredits{
-    width: 57%;
+    width: 60%;
     margin: auto;
     margin-top: 40px;
 }
 
 #creditTitle{
   color: #b8153a;
-  font-family: monserratmedium;
-  font-size: 20px;
+  font-family: monserratregular;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0 0 4px;
 }
 
 #creditName{
@@ -1118,10 +1174,11 @@ textarea {
 }
 
 #midStillProjectcontent{
-  width:57%;
+  width:60%;
   height:30vw;
   margin: auto;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 #projectdescription3{
@@ -1133,10 +1190,9 @@ textarea {
 }
 
 #bottomStillProjectcontent{
-  width:58.5%;
+  width:60%;
   height:33vw;
   margin: auto;
-  margin-top: 40px;
 }
 
 
@@ -1144,7 +1200,7 @@ textarea {
 
 #disclaimerdivtop{
   text-align: center;
-  width: 71%;
+  width: 60%;
   float:left;
   margin-top: 150px;
 }
@@ -1203,7 +1259,7 @@ textarea {
 
 #careerdivtop{
   text-align: center;
-  width: 71%;
+  width: 60%;
   float:left;
   margin-top: 130px;
 }
