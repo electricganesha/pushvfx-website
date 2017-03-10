@@ -109,6 +109,7 @@ module.exports.projectCreate = function(req, res) {
     category: req.body.category,
     subcategories: req.body.subcategories,
     credits: req.body.credits,
+    links: req.body.links,
     stills: req.body.stills,
     description: req.body.description,
     status: req.body.status,
@@ -172,6 +173,9 @@ module.exports.projectsUpdateOne = function(req, res) {
 
       if(req.body.credits)
       project.credits = req.body.credits;
+
+      if(req.body.links)
+      project.links = req.body.links;
 
       if(req.body.stills)
       project.stills = req.body.stills;

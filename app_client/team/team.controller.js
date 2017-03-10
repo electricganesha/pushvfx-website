@@ -21,6 +21,7 @@
     getData.teammembers()
       .then(function (data){
         $scope.teammembers = data;
+        
       },function (error){
         $scope.message = "Sorry, something's gone wrong, please try again later";
       });
