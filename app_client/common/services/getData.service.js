@@ -8,6 +8,10 @@
   getData.$inject = ['$http'];
   function getData ($http) {
 
+    var structuralInfo = function () {
+      return $http.get('/api/structuralInfo');
+    }
+
     var latestwork = function () {
       return $http.get('/api/getBestProjects');
     };
@@ -75,6 +79,14 @@
       return $http.get('/api/career');
     }
 
+    var whatwedo = function () {
+      return $http.get('/api/categories');
+    }
+
+    var category = function (id) {
+      return $http.get('/api/categories/' + id);
+    }
+
     return {
       latestwork : latestwork,
       portfolio : portfolio,
@@ -88,7 +100,10 @@
       oneNew : oneNew,
       projectById : projectById,
       lab : lab,
-      jobs : jobs
+      jobs : jobs,
+      whatwedo : whatwedo,
+      category : category,
+      structuralInfo : structuralInfo
     };
   }
 

@@ -6,7 +6,7 @@
             <object style="width: 40%;" id="left-triangle" data="/img/left_triangle.svg" type="image/svg+xml"></object>
         </div>
         <div id="select-menu-news">
-            <p style="margin-bottom: 50px;">{{ newTopTitle }}</p>
+            <p style="margin-bottom: 50px;">{{ title }}</p>
             <div id="carouselContent">
                 <carousel interval="myInterval">
                     <slide ng-repeat="slide in slides track by $index" style="height: 32vw;">
@@ -19,9 +19,8 @@
   </div>
   <div id="reellist">
     <div class="row">
-        <p id="titleNew">{{newTitle}}</p>
         <div id="newsdivlist">
-            <p>{{ newdescription }}</p>
+            <p>{{ description }}</p>
             <div id="cracha"></div>
         </div>
         <div id="homedivright">
