@@ -45,6 +45,7 @@
           $scope.bottomPageStill = data.data.bottomPageStill;
           $scope.bottomPagetext = data.data.bottomPagetext;
         }
+        $scope.links = data.data.links;
       },function (error){
         $scope.message = "Sorry, something's gone wrong, please try again later";
       });

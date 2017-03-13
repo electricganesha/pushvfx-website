@@ -29,7 +29,8 @@
             <div id="list">
                 <div id="listalign">
                   <div class="col-md-4" style="padding:0;" ng-repeat="member in teammembers.data" ng-style="($index >= 3 || $index <= 5) && {'margin-top':'30px'} || {'margin-top':'0px'} ">
-                      <div id="teammemberphoto" ng-style="{'background':'url({{member.profilePic}}) no-repeat center center'}">
+                      <div id="teammemberphoto">
+                        <img src="{{member.profilePic}}" style="max-width: 100%; display:block; height: auto;">
                       </div>
                       <p id="membername">{{ member.name }}</p>
                       <p id="memberdescription">{{ member.description }}</p>
