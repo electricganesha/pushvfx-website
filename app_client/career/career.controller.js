@@ -11,7 +11,7 @@
     $scope.showjobs = false;
     getData.jobs()
         .then(function (data){
-            if(data.lenght != 0){
+            if(data.data.length != 0){
                 $scope.showjobs = true;
                 $scope.jobs = data;
                 $scope.info1 = "Would you like to join PUSH?";

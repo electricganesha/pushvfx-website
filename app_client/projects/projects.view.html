@@ -15,16 +15,25 @@
     </div>
     <p id="projecttitle">{{title}}</p>
     <p id="projectdescription1">{{description1 | json}}</p>
+    <div id="projectLinks">
+        <div class="row">
+            <div class="col-md-2 col-xs-6" ng-repeat="link in links">
+                <a id="proj-link" href="{{ link.link }}" target="_black">{{ link.description }}</a>
+            </div>
+        </div>
+    </div>
     <div id="projectStills">
-        <div class="row" ng-hide="!twocolumn"  ng-show="twocolumn">
+        <div class="row" style="margin: -5px;" ng-hide="!twocolumn"  ng-show="twocolumn">
             <div class="col-md-6" ng-repeat="still in projectstills track by $index">
-                <div id="twocolumn" ng-style="{'background':'url({{still}}) no-repeat center center'}">
+                <div id="twocolumn" >
+                    <img id="image" src="{{still}}">
                 </div>
             </div>
         </div>
-        <div class="row" ng-hide="!sixcolumn" ng-show="sixcolumn">
+        <div class="row" style="margin: -5px;" ng-hide="!sixcolumn" ng-show="sixcolumn">
             <div class="col-md-4" style="padding-left:5px; padding-right:5px; padding-top:5px; padding-bottom: 5px;" ng-repeat="still in projectstillssix track by $index">
-                <div id="twocolumn" ng-style="{'background':'url({{still}}) no-repeat center center'}">
+                <div id="twocolumn">
+                    <img id="image" src="{{still}}">
                 </div>
             </div>
         </div>
@@ -46,14 +55,16 @@
                 <anguvideo id="projectVideo" ng-show="showme" ng-model="midPageVideo" width="100%" height="100%"></anguvideo>
             </div>
             <div ng-if="midPagevideoShow == false">
-               <div id="projectstill" ng-style="{'background':'url({{midPageStill}}) no-repeat center center'}">
+               <div id="projectstill">
+                   <img id="image" src="{{midPageStill}}">
                 </div>
             </div>
         </div>
     </div>
     <div id="bottomStillProjectcontent" ng-show="bottomPageDiv"  ng-if="bottomPageStill">
         <div class="col-md-8" style="height: 15vw; padding: 0;">
-            <div id="projectstill" ng-style="{'background':'url({{bottomPageStill}}) no-repeat center center'}">
+            <div id="projectstill">
+                <img id="image" src="{{bottomPageStill}}">
             </div>
         </div>
         <div class="col-md-4" style="height: 15vw; padding-right: 0;">
