@@ -33,6 +33,8 @@ var appClientFiles = [
   'app_client/disclaimer/disclaimer.controller.js',
   'app_client/lab/lab.controller.js',
   'app_client/career/career.controller.js',
+  'app_client/whatwedo/whatwedo.controller.js',
+  'app_client/category/category.controller.js',
   'app_client/common/directives/pageHeader/pageHeader.directive.js',
   'app_client/common/directives/pageFooter/pageFooter.directive.js',
   'app_client/common/services/getData.service.js',

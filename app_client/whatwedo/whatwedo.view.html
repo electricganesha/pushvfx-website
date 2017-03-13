@@ -1,0 +1,40 @@
+<div id="content">
+  <div id="spaceheaderteam"></div>
+  <div id="labcontent">
+    <div class="row">
+      <div id="homedivleft">
+        <object style="width: 40%;" id="left-triangle" data="/img/left_triangle.svg" type="image/svg+xml"></object>
+      </div>
+      <div id="select-menu-what">
+            <div id="whattitle">
+                <div id="smalltriangleleft">
+                    <object style="width: 25px;" data="/img/triangulopequenoesquerda.svg" type="image/svg+xml"></object>
+                </div>
+                <div id="whatwedotitlecenter">
+                    <p>WHAT WE DO</p>
+                </div>
+                <div id="smalltriangleright">
+                    <object style="width: 25px;" data="/img/triangulopequenodireita.svg" type="image/svg+xml"></object>
+                </div>
+            </div>
+        </div>
+      <div id="whatwedolist">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4" ng-repeat="category in categories.data" style=" padding:5px;">
+                            <a class="tint" ng-click="saveId(category._id)" href="/category">
+                                <p id="cattitle">{{ category.title }}</p>
+                                <img id="image" src="{{category.stills[0]}}">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="homedivright">
+                <object style="width: 40%;" id="left-triangle" data="/img/right_triangle.svg" type="image/svg+xml"></object>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>

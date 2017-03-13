@@ -49,6 +49,14 @@ function config($routeProvider, $locationProvider)
     templateUrl: '/career/career.view.html',
     controller: 'careerCtrl'
   })
+  .when('/whatwedo',{
+    templateUrl: '/whatwedo/whatwedo.view.html',
+    controller: 'whatwedoCtrl'
+  })
+  .when('/category',{
+    templateUrl: '/category/category.view.html',
+    controller: 'categoryCtrl'
+  })
   .otherwise({redirectTo: '/'});
 
   $locationProvider.html5Mode({

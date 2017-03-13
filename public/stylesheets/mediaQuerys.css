@@ -183,6 +183,30 @@
         margin-top: 40px;
     }
 
+    /*####################### WHAT WE DO CONTENT #################################*/
+    
+    #cattitle{
+        line-height: 41vw;
+    }
+
+     .tint{
+        margin-bottom: 20px;
+    }
+
+    /*####################### LAB CONTENT #################################*/
+
+    #labtitle{
+        line-height: 31vw;
+    }
+
+    #labsynopsis{
+        line-height: 39vw;
+    }
+
+    .ltint{
+        margin-bottom: 20px;
+    }
+
 }
 
 @media (min-width: 481px) and (max-width: 620px) {
@@ -279,9 +303,6 @@
 
     /*####################### TEAM CONTENT #################################*/
 
-    /*#teammemberphoto{
-     height: 195px;   
-    }*/
 
     #instatitle{
         font-size: 17px;
@@ -331,6 +352,30 @@
     #messageform{
         float: none;
         margin-top: 40px;
+    }
+
+    /*####################### WHAT WE DO CONTENT #################################*/
+    
+    #cattitle{
+        line-height: 41vw;
+    }
+
+     .tint{
+        margin-bottom: 20px;
+    }
+
+    /*####################### LAB CONTENT #################################*/
+
+    #labtitle{
+        line-height: 31vw;
+    }
+
+    #labsynopsis{
+        line-height: 38vw;
+    }
+
+    .ltint{
+        margin-bottom: 20px;
     }
 
 }
@@ -459,6 +504,30 @@
         float: none;
         margin-top: 40px;
     }
+
+    /*####################### WHAT WE DO CONTENT #################################*/
+    
+    #cattitle{
+        line-height: 41vw;
+    }
+
+     .tint{
+        margin-bottom: 20px;
+    }
+
+    /*####################### LAB CONTENT #################################*/
+
+    #labtitle{
+        line-height: 31vw;
+    }
+
+    #labsynopsis{
+        line-height: 38vw;
+    }
+
+    .ltint{
+        margin-bottom: 20px;
+    }
 }
 
 @media(min-width:768px) and (max-width:876px) {
@@ -560,6 +629,30 @@
         float: none;
         margin-top: 40px;
     }
+
+    /*####################### WHAT WE DO CONTENT #################################*/
+    
+    #cattitle{
+        line-height: 41vw;
+    }
+
+     .tint{
+        margin-bottom: 20px;
+    }
+
+    /*####################### LAB CONTENT #################################*/
+
+    #labtitle{
+        line-height: 31vw;
+    }
+
+    #labsynopsis{
+        line-height: 38vw;
+    }
+
+    .ltint{
+        margin-bottom: 20px;
+    }
 }
 
 @media(min-width:877px) and (max-width:945px) {
@@ -627,10 +720,6 @@
 
     /*####################### TEAM CONTENT #################################*/
 
-    /*#teammemberphoto{
-     height: 300px;   
-    }*/
-
     #instainfo img{
         margin-left:26px;
     }
@@ -657,6 +746,32 @@
         float: none;
         margin-top: 40px;
     }
+
+    /*####################### WHAT WE DO CONTENT #################################*/
+    
+    #cattitle{
+        line-height: 41vw;
+    }
+
+     .tint{
+        margin-bottom: 20px;
+    }
+
+    /*####################### LAB CONTENT #################################*/
+
+    #labtitle{
+        line-height: 31vw;
+    }
+
+    #labsynopsis{
+        line-height: 38vw;
+    }
+
+    .ltint{
+        margin-bottom: 20px;
+    }
+
+    
 }
 
 @media(min-width:945px) and (max-width:991px) {
@@ -720,10 +835,6 @@
 
     /*####################### HOME CONTENT #################################*/
 
-    /*#latestprojectsphoto{
-        height: 288px;
-    }*/
-
     #latestworkcontent{
         margin-top: 0;
     }
@@ -740,9 +851,6 @@
 
     /*####################### TEAM CONTENT #################################*/
 
-    /*#teammemberphoto{
-     height: 300px;   
-    }*/
 
     #instainfo img{
         margin-left:29px;
@@ -770,7 +878,30 @@
         float: none;
         margin-top: 40px;
     }
+
+    /*####################### WHAT WE DO CONTENT #################################*/
     
+    #cattitle{
+        line-height: 41vw;
+    }
+
+    .tint{
+        margin-bottom: 20px;
+    }
+
+    /*####################### LAB CONTENT #################################*/
+
+    #labtitle{
+        line-height: 31vw;
+    }
+
+    #labsynopsis{
+        line-height: 38vw;
+    }
+
+    .ltint{
+        margin-bottom: 20px;
+    }
 }
 
 @media(min-width:992px) and (max-width:1099px) {
@@ -834,10 +965,6 @@
 
     /*####################### HOME CONTENT #################################*/
 
-    /*#latestprojectsphoto{
-        height: 119px;
-    }*/
-
     #latestworkcontent{
         margin-top: 0;
     }
@@ -853,10 +980,6 @@
     }
 
     /*####################### TEAM CONTENT #################################*/
-
-    /*#teammemberphoto{
-     height: 153px;   
-    }*/
 
     #instainfo img{
         margin-left:13px;
@@ -901,12 +1024,6 @@
         margin: auto;
     }
 
-    /*####################### HOME CONTENT #################################*/
-
-    /*#latestprojectsphoto{
-        height: 133px;
-    }*/
-
     /*####################### PORTFOLIO CONTENT #################################*/
 
     #latestprojects p{
@@ -915,9 +1032,6 @@
 
     /*####################### TEAM CONTENT #################################*/
 
-    /*#teammemberphoto{
-     height: 153px;   
-    }*/
 
     #instainfo img{
         margin-left:10px;
@@ -961,12 +1075,6 @@
         width: 60%;
         margin: auto;
     }
-
-    /*####################### HOME CONTENT #################################*/
-
-    /*#latestprojectsphoto{
-        height: 152px;
-    }*/
 
     /*####################### PORTFOLIO CONTENT #################################*/
 
@@ -1022,12 +1130,6 @@
         margin: auto;
     }
 
-    /*####################### HOME CONTENT #################################*/
-
-    /*#latestprojectsphoto{
-        height: 152px;
-    }*/
-
     /*####################### PORTFOLIO CONTENT #################################*/
 
     #latestprojects p{
@@ -1070,12 +1172,6 @@
         margin: auto;
     }
 
-    /*####################### HOME CONTENT #################################*/
-
-    /*#latestprojectsphoto{
-        height: 177px;
-    }*/
-
     /*####################### TEAM CONTENT #################################*/
 
     #memberdescription{
@@ -1106,11 +1202,6 @@
         margin: auto;
     }
 
-    /*####################### HOME CONTENT #################################*/
-
-    #latestprojectsphoto{
-        height: 177px;
-    }
 }
 
 @media(min-width:1801px) and (max-width:1899px) {
@@ -1135,12 +1226,6 @@
         width: 50%;
         margin: auto;
     }
-
-    /*####################### HOME CONTENT #################################*/
-
-    /*#latestprojectsphoto{
-        height: 200px;
-    }*/
 
     /*####################### TEAM CONTENT #################################*/
 
