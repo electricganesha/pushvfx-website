@@ -106,6 +106,10 @@ module.exports.projectCreate = function(req, res) {
     thumbnail: req.body.thumbnail,
     showCaseStill: req.body.showCaseStill,
     showCaseVideo: req.body.showCaseVideo,
+    midPageStill: req.body.midPageStill,
+    midPageVideo: req.body.midPageVideo,
+    bottomPageStill:req.body.bottomPageStill,
+    bottomPagetext: req.body.bottomPagetext,
     category: req.body.category,
     subcategories: req.body.subcategories,
     credits: req.body.credits,
@@ -164,6 +168,18 @@ module.exports.projectsUpdateOne = function(req, res) {
 
       if(req.body.showCaseVideo)
       project.showCaseVideo = req.body.showCaseVideo;
+
+      if(req.body.midPageStill)
+      project.midPageStill = req.body.midPageStill;
+
+      if(req.body.midPageVideo)
+      project.midPageVideo = req.body.midPageVideo;
+
+      if(req.body.bottomPageStill)
+      project.bottomPageStill = req.body.bottomPageStill;
+
+      if(req.body.bottomPagetext)
+      project.bottomPagetext = req.body.bottomPagetext;
 
       if(req.body.category)
       project.category = req.body.category;
