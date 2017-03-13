@@ -25,6 +25,16 @@ body{
   line-height: 1;
 }
 
+#image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#arrow{
+  width: 100%;
+}
+
 /*####################### PAGE HEADER STYLE #################################*/
 
 .navbar .navbar-nav {
@@ -294,7 +304,7 @@ page-header{
   position:relative;
   width: 100%;
   height: 100vh;
-  background: url('https://www.whitecase.com/sites/whitecase/files/images/locations/HongKong_Tablet_1920x960.jpg') no-repeat center center; 
+  background: url('/img/film_spaceship.jpg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -367,7 +377,6 @@ page-header{
 
 #latestprojectsphoto{
   width: 95%;
-  height:250px;
   margin: auto;
   -webkit-filter: grayscale(100%);
   -webkit-transition: .5s ease-in-out;
@@ -567,7 +576,6 @@ page-header{
 
 #teammemberphoto{
   width: 95%;
-  height:250px;
   margin: auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -932,6 +940,17 @@ textarea {
   height: 30px;
 }
 
+#newdate{
+  font-family: monserratmedium;
+  font-size: 11px;
+  color: #3e2a56;
+  text-align: left;
+  width: 95%;
+  margin: auto;
+  text-transform: uppercase;
+  height: 30px;
+}
+
 #newdescription{
   font-family: myriadregular;
   font-size: 15px;
@@ -1129,7 +1148,7 @@ textarea {
 }
 
 #projectdescription1, #projectdescription2{
-  font-family: monserratregular;
+  font-family: myriadregular;
   font-size: 15px;
   color: #3e2a56;
   clear: both;
@@ -1261,7 +1280,8 @@ textarea {
   text-align: center;
   width: 60%;
   float:left;
-  margin-top: 130px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 #careerinfo1, #careerinfo2{
