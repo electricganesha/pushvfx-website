@@ -15,15 +15,22 @@
     </div>
     <p id="projecttitle">{{title}}</p>
     <p id="projectdescription1">{{description1 | json}}</p>
+    <div id="projectLinks">
+        <div class="row">
+            <div class="col-md-2 col-xs-6" ng-repeat="link in links">
+                <a id="proj-link" href="{{ link.link }}" target="_black">{{ link.description }}</a>
+            </div>
+        </div>
+    </div>
     <div id="projectStills">
-        <div class="row" ng-hide="!twocolumn"  ng-show="twocolumn">
+        <div class="row" style="margin: -5px;" ng-hide="!twocolumn"  ng-show="twocolumn">
             <div class="col-md-6" ng-repeat="still in projectstills track by $index">
                 <div id="twocolumn" >
                     <img id="image" src="{{still}}">
                 </div>
             </div>
         </div>
-        <div class="row" ng-hide="!sixcolumn" ng-show="sixcolumn">
+        <div class="row" style="margin: -5px;" ng-hide="!sixcolumn" ng-show="sixcolumn">
             <div class="col-md-4" style="padding-left:5px; padding-right:5px; padding-top:5px; padding-bottom: 5px;" ng-repeat="still in projectstillssix track by $index">
                 <div id="twocolumn">
                     <img id="image" src="{{still}}">

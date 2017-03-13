@@ -1113,6 +1113,46 @@ textarea {
 
 /*####################### PROJECT PAGE CONTENT STYLE #################################*/
 
+#projectLinks{
+  width: 60%;
+  margin: auto;
+  margin-top: 40px;
+  color: #b8153a;
+  font-family: monserratregular;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#proj-link{
+  text-decoration: none;
+  position: relative;
+  color:#b8153a;
+}
+
+#proj-link:after{
+  color:#b8153a;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid #b8153a;
+  transition: 0.4s;
+}
+
+#proj-linkk:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  transition: 0.4s;
+}
+
+#proj-link:hover:after {
+  width: 100%;
+}
+  
 #projectstill{
   width: 100%;
   height: 30vw;
