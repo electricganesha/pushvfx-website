@@ -67,3 +67,4 @@ require('./lab');
 require('./structuralInfo');
 require('./reel');
 require('./career');
+require('./categories');
