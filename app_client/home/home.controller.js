@@ -33,6 +33,15 @@
       });
     }
 
+    getData.structuralInfo()
+      .then(function (data){
+        $scope.homePageImage1 = data.data.homePageImage1;
+        $scope.homePageImage2 = data.data.homePageImage2;
+      },function (error){
+        $scope.message = "Sorry, something's gone wrong, please try again later";
+      });
+
+
     getData.latestwork()
       .then(function (data){
         $scope.bestprojects = data;
