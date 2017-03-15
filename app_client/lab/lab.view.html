@@ -3,7 +3,7 @@
   <div id="labcontent">
     <div class="row">
       <div id="homedivleft">
-        <object id="left-triangle" data="/img/left_triangle.svg" type="image/svg+xml"></object>
+        <object style="width: 40%;" id="left-triangle" data="/img/left_triangle.svg" type="image/svg+xml"></object>
       </div>
       <div id="labdivtop">
         <div id="disclaimertext">
@@ -17,18 +17,24 @@
       </div>
     </div>
   </div>
-  <div id="lablist">
-    <div class="row">
-        <div class="col-md-4" ng-repeat="item in lab.data">
-            <a href="{{item.link}}" target="_blank">
-                <div id="latestprojectsphoto">
+  <div id="whatwedolist">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4" ng-repeat="item in lab.data" style=" padding:5px;">
+                        <a class="ltint" href="{{ item.link }}" target="_blank">
+                            <div>
+                              <p id="labtitle">{{ item.title }}</p>
+                              <p id="labsynopsis">{{ item.synopsis }}</p>
+                            </div>
+                            <img id="image" src="{{item.displayImage}}">
+                        </a>
+                    </div>
                 </div>
-                <p>{{ item.title }}</p>
-            </a>
+            </div>
         </div>
         <div id="homedivright">
-            <object id="left-triangle" data="/img/right_triangle.svg" type="image/svg+xml"></object>
+            <object style="width: 40%;" id="left-triangle" data="/img/right_triangle.svg" type="image/svg+xml"></object>
         </div>
     </div>
-  </div>
 </div>

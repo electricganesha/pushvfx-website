@@ -2,16 +2,15 @@
 
   angular
     .module('sitePUSH')
-    .controller('newsCtrl', newsCtrl);
+    .controller('categoryCtrl', categoryCtrl);
 
-  newsCtrl.$inject = ['$scope', 'getData', 'saveNewsId'];
-  function newsCtrl ($scope, getData, saveNewsId) {
+  categoryCtrl.$inject = ['$scope', 'getData', 'saveNewsId'];
+  function categoryCtrl ($scope, getData, saveNewsId) {
 
-    getData.oneNew(saveNewsId.get())
+    getData.category(saveNewsId.get())
       .then(function (data){
-        $scope.newTopTitle = data.data.topTitle;
-        $scope.newTitle = data.data.title;
-        $scope.newdescription = data.data.description;
+        $scope.title = data.data.title;
+        $scope.description = data.data.description;
         $scope.myInterval = 10000;
         $scope.slides = data.data.stills;
       },function (error){
