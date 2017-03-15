@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset=utf-8>
+    <title>VICOUSTIC Virtual Reality</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <style>
+        @font-face {
+            font-family: osb;
+            src: url(fonts/OpenSans-Bold.ttf);
+        }
+        @font-face {
+            font-family: osr;
+            src: url(fonts/OpenSans-Regular.ttf);
+        }
+        @font-face {
+            font-family: ossb;
+            src: url(fonts/OpenSans-Semibold.ttf);
+        }
+        @font-face {
+            font-family: osl;
+            src: url(fonts/OpenSans-Light.ttf);
+        }
+        body {
+        margin: 0;
+        overflow-x:hidden;
+        overflow-y:hidden;
+        }
+
+        #menuDiv{
+          background-color: #d9d9da;
+          bottom: 0%;
+          position: fixed;
+          width: 100%;
+          height:50px;
+          z-index: 1;
+        }
+
+        #btnDiv{
+          margin: auto;
+          width: 340px;
+          height: 100%;
+        }
+
+        #vicousticLogo{
+          margin-left: 5%;
+          margin-top: 5px;
+          float: left;
+        }
+
+        #menuBTEsquerda{
+          background-image: url('img/Vicoustic_botoes-normal-ing_0000_Layer-1.png');
+          background-repeat: no-repeat;
+          width: 168px;
+          height: 53px;
+          float: left;
+          cursor: pointer;
+        }
+
+        #menuBTCentro{
+          background-image: url('img/Vicoustic_botoes-normal-ing_0001_Layer-2.png');
+          width: 168px;
+          height: 53px;
+          float: left;
+          cursor: pointer;
+        }
+
+        #menuEsquerda{
+          width: 800px;
+          height: 188px;
+          bottom: 55px;
+          position: absolute;
+          left:0;
+          right:0;
+          margin-left:auto;
+          margin-right:auto;
+          text-align: center;
+          display: none;
+        }
+
+        #esquerda{
+          background-color: #eeeeee;
+          width: 100%;
+          height: 175px;
+        }
+
+        #closeBt{
+          background-image: url('img/Close_button.png');
+          width: 26px;
+          height: 26px;
+          float: right;
+          margin-right: -13px;
+          margin-top: -188px;
+          cursor: pointer;
+        }
+
+        #nameBar{
+          background-color: #ffa023;
+          width: 100%;
+          height: 30px;
+          box-shadow: 0px 2px 5px #b8b8b8;
+        }
+
+        #name1{
+          font-family: osr;
+          color: #FFF;
+          padding-top: 4px;
+          width: 186px;
+          height: 100%;
+          margin: 0;
+          display: inline-block;
+        }
+
+        #name2{
+          font-family: osr;
+          color: #FFF;
+          width: 125px;
+          height: 100%;
+          margin: 0;
+          display: inline-block;
+        }
+
+        #name3{
+          font-family: osr;
+          color: #FFF;
+          width: 307px;
+          height: 100%;
+          margin: 0;
+          display: inline-block;
+        }
+
+        #name4{
+          font-family: osr;
+          color: #FFF;
+          width: 160px;
+          height: 100%;
+          margin: 0;
+          display: inline-block;
+        }
+
+        #modelsBar{
+          border-right:groove 1px #969696;
+          width: 195px;
+          height: 125px;
+          margin-top: 10px;
+          float: left;
+        }
+
+        #models1{
+          width: 100%;
+          height: 38px;
+        }
+
+        #models1Img{
+          height: 100%;
+          float: left;
+          margin-left: 10px;
+        }
+
+        #models1Del{
+          height: 100%;
+          float: left;
+          margin-left: 10px;
+          cursor: pointer;
+        }
+
+        #models1Name{
+          width:90px;
+          float: right;
+          font-family: osl;
+          text-align: left;
+          color: #e46100;
+          height: 30px;
+          margin: 0;
+          padding-top: 10px;
+        }
+
+        #models2{
+          width: 100%;
+          height: 38px;
+          margin-top: 3px;
+        }
+
+        #models2Img{
+          height: 100%;
+          float: left;
+          margin-left: 10px;
+        }
+
+        #models2Del{
+          height: 100%;
+          float: left;
+          margin-left: 10px;
+          cursor: pointer;
+        }
+
+        #models2Name{
+          width:90px;
+          float: right;
+          font-family: osl;
+          text-align: left;
+          color: #e46100;
+          height: 30px;
+          margin: 0;
+          padding-top: 10px;
+        }
+
+        #models3{
+          width: 100%;
+          height: 38px;
+          margin-top: 3px;
+        }
+
+        #models3Img{
+          height: 100%;
+          float: left;
+          margin-left: 10px;
+        }
+
+        #models3Del{
+          height: 100%;
+          float: left;
+          margin-left: 10px;
+          cursor: pointer;
+        }
+
+        #models3Name{
+          width:90px;
+          float: right;
+          font-family: osl;
+          text-align: left;
+          color: #e46100;
+          height: 30px;
+          margin: 0;
+          padding-top: 10px;
+        }
+
+        #backgroundBar{
+          border-right: groove 1px #969696;
+          width: 120px;
+          height: 125px;
+          margin-top: 10px;
+          float: left;
+        }
+        #colorBar{
+          border-right: groove 1px #969696;
+          width: 325px;
+          height: 125px;
+          margin-top: 10px;
+          float: left;
+        }
+        #favBar{
+          width: 155px;
+          height: 125px;
+          margin-top: 10px;
+          float: left;
+        }
+
+        #trianguloImgEsquerda{
+          background-image: url('img/ponteiro.png');
+          width: 15px;
+          height: 8px;
+          margin-top: -1px;
+          float: left;
+          margin-left: 310px;
+          display: none;
+        }
+
+        #trianguloImgCentro{
+          background-image: url('img/ponteiro.png');
+          width: 15px;
+          height: 8px;
+          margin-top: -1px;
+          float: left;
+          margin-left: 475px;
+          display: none;
+        }
+    </style>
+  </head>
+
+  <body>
+    <script src="js/jquery-2.1.4.min.js"></script>
+
+    <link rel="stylesheet" href="css/colorpicker.css" type="text/css" />
+    <div id="menuDiv">
+      <img id="vicousticLogo" src="img/logo-vicoustic.png">
+      <div id="btnDiv">
+        <div id="menuBTEsquerda">
+        </div>
+        <div id="menuBTCentro">
+        </div>
+      </div>
+    </div>
+    <div id="menuEsquerda">
+      <div id="esquerda">
+        <div id="nameBar">
+          <p id="name1">MODELS</p>
+          <p id="name2">BACKGROUND</p>
+          <p id="name3">COLOR</p>
+          <p id="name4">FAVOURITES</p>
+        </div>
+        <div id="modelsBar">
+          <div id="models1">
+            <img id="models1Del" src="img/Botao_apagar.png"></img>
+            <img id="models1Img" src="img/Diamond_icon.png"></img>
+            <p id="models1Name">Diamond</p>
+          </div>
+          <div id="models2">
+            <img id="models2Del" src="img/Botao_mais.png"></img>
+            <img id="models2Img" src="img/Stylo_icon.png"></img>
+            <p id="models2Name">Stylo</p>
+          </div>
+          <div id="models3">
+            <img id="models3Del" src="img/Botao_mais.png"></img>
+            <img id="models3Img" src="img/Symmetric_icon.png"></img>
+            <p id="models3Name">Symmetric</p>
+          </div>
+        </div>
+        <div id="backgroundBar">
+          <div class="favButtonMenuBg" style="width: 100%; margin-left: -8px;
+          margin-top: 0px;">
+            <ul>
+              <li id="backgroundButtonWhite" style="margin-bottom:20px; cursor: pointer; background-color: #FFF"></li>
+              <br>
+            </ul>
+            <ul>
+              <li id="backgroundButtonBlack" style="background-color: #000; cursor: pointer;"></li>
+              <br>
+            </ul>
+          </div>
+        </div>
+        <div id="colorBar">
+          <form action="" style="width: 310px;">
+            <div class="inputContainer">
+              <div class="R-item"><label for="colorR">R: </label><input type="text" id="colorR" maxlength="3" name="colorR" class="colorwell" value="#ffa023" onchange="updateColorsRGB()" onclick="this.select()"/></div>
+              <div class="G-item"><label for="colorG">G: </label><input type="text" id="colorG" maxlength="3" name="colorG" class="colorwell" value="#ffa023" onchange="updateColorsRGB()" onclick="this.select()"/></div>
+              <div class="B-item"><label for="colorB">B: </label><input type="text" id="colorB" maxlength="3" name="colorB" class="colorwell" value="#ffa023" onchange="updateColorsRGB()" onclick="this.select()"/></div>
+              <div class="form-item">HEX: <input type="text" id="hex" name="color" class="colortest" maxlength="7" value="#ffa023" onchange="updateColorsHEX()" onclick="this.select()"/></div>
+            </div>
+            <div id="picker">
+              <div class="buttonPlus" onclick="clickMainPlus()"></div>
+              <div class="shadowColorPicker"> </div>
+            </div>
+          </form>
+        </div>
+        <div id="favBar">
+          <div class="buttonPlusFavContainer" onclick="clickMainPlus()">
+            <div class="buttonPlusFav"></div>
+          </div>
+          <div class="favButtonMenu">
+            <ul>
+              <li id="favButton1" onclick="clickFavButton1()"></li>
+              <li id="favButton2" onclick="clickFavButton2()"></li>
+              <li id="favButton3" onclick="clickFavButton3()"></li>
+            </ul>
+            <ul>
+              <li id="favButton4" onclick="clickFavButton4()"></li>
+              <li id="favButton5" onclick="clickFavButton5()"></li>
+              <li id="favButton6" onclick="clickFavButton6()"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="closeBt">
+      </div>
+      <div id="trianguloImgEsquerda">
+      </div>
+      <div id="trianguloImgCentro">
+      </div>
+    </div>
+    <script>
+    $('.colorwell').keypress(function (event) {
+        var keycode = event.which;
+        if (!(event.shiftKey == false && (keycode == 13 || keycode == 8 || (keycode >= 48 && keycode <= 57)))) {
+            event.preventDefault();
+        }
+    });
+
+    $('.colortest').keypress(function (event) {
+        var keycode = event.which;
+        if (!(event.shiftKey == true || ( keycode == 13 || keycode == 35 || keycode == 8 || (keycode >= 48 && keycode <= 57) || (keycode >= 65 && keycode <= 90) || (keycode >= 97 && keycode <= 122)))) {
+            event.preventDefault();
+        }
+    });
+    function detectmob() {
+      if( navigator.userAgent.match(/Android/i)
+      || navigator.userAgent.match(/webOS/i)
+      || navigator.userAgent.match(/iPhone/i)
+      || navigator.userAgent.match(/iPad/i)
+      || navigator.userAgent.match(/iPod/i)
+      || navigator.userAgent.match(/BlackBerry/i)
+      || navigator.userAgent.match(/Windows Phone/i)){
+        return true;
+
+      }
+      else{
+        return false;
+      }
+    }
+
+    if (detectmob()){
+      document.write('<video id="video" loop style="display:none" preload="none" muted> <source src="video\/pushshowreel.mp4" type="video\/mp4"><\/video>')
+      document.write("<script src='vicoustic_mobile.js'><\/script>");
+    }else{
+      document.write('<video id="video" loop style="display:none" preload="none"> <source src="video\/pushshowreel.mp4" type="video\/mp4"><\/video>')
+      document.write("<script src='vicoustic.js'><\/script>");
+    }
+    </script>
+  </body>
+
+</html>

@@ -1,5 +1,5 @@
 <div id="content">
-    <div id="homeimg1">
+    <div id="homeimg1" ng-class="still">
         <div id="selectcontent">
             <div id="portfolioselection">
                 <ul>
@@ -7,21 +7,24 @@
                     <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                     <li id="port-link" ng-click="selectMenu('Interactive')" style="cursor: pointer;">INTERACTIVE</li>
                     <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                    <li id="port-link" ng-click="selectMenu('Motion')" style="cursor: pointer;">MOTION</li>
+                    <li id="port-link" ng-click="selectMenu('Animation')" style="cursor: pointer;">ANIMATION</li>
                 </ul>
             </div>
         </div>
         <div id="mainTitle">
-            <p style="font-family:monserratregular; text-transform: uppercase; color: white;">{{ category }}</p>
+            <p style="font-family:monserratregular; text-transform: uppercase; color: white;">{{ category }} </p>
         </div>
+        <section id="section06" class="demo">
+            <a href="#"><span></span></a>
+        </section>
         <div id="uparrow">
-            <object style="width: 100%;" data="/img/arrow_up.svg" type="image/svg+xml"></object>
+            <object data="/img/arrow_up.svg" type="image/svg+xml" width="100%"></object>
         </div>
     </div>
     <div id="portfoliocontent">
         <div class="row">
             <div id="homedivleft">
-                <object style="width: 40%;" id="left-triangle" data="/img/left_triangle.svg" type="image/svg+xml"></object>
+                <img src="/img/left_triangle.png" width="40%" />
             </div>
             <div id="latestwork">
                 <p style="font-family:monserratregular; text-transform: uppercase; color: #b8153a;">{{ category }}</p>
@@ -29,7 +32,7 @@
                     <div class="col-md-4" style="padding:0;" ng-repeat="project in portfolio.data">
                         <a ng-click="saveId(project._id)" href="/projects">
                             <div id="latestprojectsphoto">
-                                <img id="image" src="{{project.thumbnail}}">
+                                <img id="image" ng-src="{{project.thumbnail}}">
                             </div>
                             <p>{{ project.title }}</p>
                         </a>
@@ -37,7 +40,7 @@
                 </div>
             </div>
             <div id="homedivright">
-                <object style="width: 40%;" style="width: 40%;" id="left-triangle" data="/img/right_triangle.svg" type="image/svg+xml"></object>
+                <img src="/img/right_triangle.png" width="40%" />
             </div>
         </div>
     </div>

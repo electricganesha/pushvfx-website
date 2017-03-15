@@ -7,16 +7,18 @@
         </div>
         <div id="select-menu-news">
             <p style="margin-bottom: 50px;">{{ title }}</p>
-            <div id="carouselContent">
-                <carousel interval="myInterval">
-                    <slide ng-repeat="slide in slides track by $index" style="height: 32vw;">
-                        <img ng-src="{{ slide }}" id="divImgCarousel">
-                    </slide>
-                </carousel>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4" style="padding-left:5px; padding-right:5px; padding-top:5px; padding-bottom: 5px;" ng-repeat="slide in slides track by $index">
+                        <img id="image" src="{{slide}}">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
   </div>
+  <br>
+  <br>
   <div id="reellist">
     <div class="row">
         <div id="newsdivlist">

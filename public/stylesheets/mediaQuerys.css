@@ -76,10 +76,6 @@
 
     /*####################### HOME CONTENT #################################*/
 
-    #latestprojectsphoto{
-        height: 150px;
-    }
-
     #latestworkcontent{
         margin-top: 0;
     }
@@ -100,10 +96,6 @@
 
 
     /*####################### TEAM CONTENT #################################*/
-
-    #teammemberphoto{
-     height: 174px;   
-    }
 
     #instatitle{
         font-size: 17px;
@@ -186,7 +178,7 @@
     /*####################### WHAT WE DO CONTENT #################################*/
     
     #cattitle{
-        line-height: 41vw;
+        line-height: 22vw;
     }
 
      .tint{
@@ -200,7 +192,7 @@
     }
 
     #labsynopsis{
-        line-height: 39vw;
+        line-height: 36vw;
     }
 
     .ltint{
@@ -279,10 +271,6 @@
 
     /*####################### HOME CONTENT #################################*/
 
-    #latestprojectsphoto{
-        height: 150px;
-    }
-
     #latestworkcontent{
         margin-top: 0;
     }
@@ -357,7 +345,7 @@
     /*####################### WHAT WE DO CONTENT #################################*/
     
     #cattitle{
-        line-height: 41vw;
+        line-height: 22vw;
     }
 
      .tint{
@@ -371,7 +359,7 @@
     }
 
     #labsynopsis{
-        line-height: 38vw;
+        line-height: 36vw;
     }
 
     .ltint{
@@ -446,10 +434,6 @@
 
     /*####################### HOME CONTENT #################################*/
 
-    #latestprojectsphoto{
-        height: 215px;
-    }
-
     #latestworkcontent{
         margin-top: 0;
     }
@@ -508,7 +492,7 @@
     /*####################### WHAT WE DO CONTENT #################################*/
     
     #cattitle{
-        line-height: 41vw;
+        line-height: 22vw;
     }
 
      .tint{
@@ -522,7 +506,7 @@
     }
 
     #labsynopsis{
-        line-height: 38vw;
+        line-height: 36vw;
     }
 
     .ltint{
@@ -532,9 +516,6 @@
 
 @media(min-width:768px) and (max-width:876px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -633,7 +614,7 @@
     /*####################### WHAT WE DO CONTENT #################################*/
     
     #cattitle{
-        line-height: 41vw;
+        line-height: 22vw;
     }
 
      .tint{
@@ -647,7 +628,7 @@
     }
 
     #labsynopsis{
-        line-height: 38vw;
+        line-height: 36vw;
     }
 
     .ltint{
@@ -657,9 +638,6 @@
 
 @media(min-width:877px) and (max-width:945px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -750,7 +728,7 @@
     /*####################### WHAT WE DO CONTENT #################################*/
     
     #cattitle{
-        line-height: 41vw;
+        line-height: 22vw;
     }
 
      .tint{
@@ -764,7 +742,7 @@
     }
 
     #labsynopsis{
-        line-height: 38vw;
+        line-height: 36vw;
     }
 
     .ltint{
@@ -776,9 +754,6 @@
 
 @media(min-width:945px) and (max-width:991px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -882,7 +857,7 @@
     /*####################### WHAT WE DO CONTENT #################################*/
     
     #cattitle{
-        line-height: 41vw;
+        line-height: 22vw;
     }
 
     .tint{
@@ -896,7 +871,7 @@
     }
 
     #labsynopsis{
-        line-height: 38vw;
+        line-height: 36vw;
     }
 
     .ltint{
@@ -906,9 +881,6 @@
 
 @media(min-width:992px) and (max-width:1099px) {
      /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1003,9 +975,6 @@
 
 @media(min-width:1100px) and (max-width:1210px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1055,9 +1024,6 @@
 
 @media(min-width:1211px) and (max-width:1300px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1109,9 +1075,6 @@
 
 @media(min-width:1301px) and (max-width:1499px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1151,9 +1114,6 @@
 
 @media(min-width:1500px) and (max-width:1600px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1181,9 +1141,6 @@
 }
 
 @media(min-width:1601px) and (max-width:1800px) {
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1206,9 +1163,6 @@
 
 @media(min-width:1801px) and (max-width:1899px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1236,9 +1190,6 @@
 
 @media(min-width:1900px) and (max-width:1920px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1263,10 +1214,6 @@
 
     /*####################### HOME CONTENT #################################*/
 
-   /* #latestprojectsphoto{
-        height: 235px;
-    }*/
-
     /*####################### TEAM CONTENT #################################*/
 
     #memberdescription{
@@ -1276,9 +1223,6 @@
 
 @media(min-width:1921px) and (max-width:2150px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1301,12 +1245,6 @@
         height: 45px;
     }
 
-    /*####################### HOME CONTENT #################################*/
-
-    /*#latestprojectsphoto{
-        height: 235px;
-    }*/
-
     /*####################### TEAM CONTENT #################################*/
 
     #memberdescription{
@@ -1317,9 +1255,6 @@
 
 @media(min-width:2151px) and (max-width:2300px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1352,9 +1287,6 @@
 
 @media(min-width:2301px) and (max-width:2500px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1387,9 +1319,6 @@
 
 @media(min-width:2501px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1410,12 +1339,6 @@
 
     #spaceheader {
         height: 45px;
-    }
-
-    /*####################### HOME CONTENT #################################*/
-
-    #latestprojectsphoto{
-        height: 295px;
     }
 
     /*####################### TEAM CONTENT #################################*/

@@ -21,7 +21,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="row">
-                    <div class="col-md-4" ng-repeat="item in lab.data" style=" padding:5px;">
+                    <div class="col-md-4" ng-repeat="item in lab.data | orderBy:'+title'" style=" padding:5px;">
                         <a class="ltint" href="{{ item.link }}" target="_blank">
                             <div>
                               <p id="labtitle">{{ item.title }}</p>

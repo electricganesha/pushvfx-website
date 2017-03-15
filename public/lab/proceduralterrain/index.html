@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8>
+  <title>PUSH Interactive</title>
+  <style>
+  body {
+    margin: 0px;
+    overflow: hidden;
+
+  }
+
+    /* unvisited link */
+  a:link {
+    font-family: 'Lato', sans-serif;
+      color: #F8802D;
+  }
+
+  /* visited link */
+  a:visited {
+      color: #F8802D;
+  }
+
+  /* mouse over link */
+  a:hover {
+      color: white;
+  }
+
+  /* selected link */
+  a:active {
+      color: #F8802D;
+  }
+
+  #canvasXPTO
+  {
+    position:absolute;
+    width:100%;
+    z-index:-1;
+    background-image: linear-gradient(to bottom, white, #F8802D);
+  }
+
+  #blankSpace
+  {
+    position:absolute;
+    width:100%;
+    text-align:center;
+    z-index:1;
+    padding-top:2%;
+    font-family: 'Lato', sans-serif;
+  }
+
+  #logo
+  {
+    left:50%;
+    margin:auto;
+  }
+  </style>
+</head>
+
+<body>
+
+    <div id="blankSpace">
+      <div id="logo">
+      <img src="PUSHINTERACTIVELOGO.png" alt="Logo" style="width:25%;height:20vh;">
+    </div>
+      <br>
+        <a href="https://www.pushvfx.com" target="_blank">www.pushvfx.com</a>
+        <br>
+        <br>
+      <a href="mailto:info@pushvfx.com?Subject=Contact" target="_blank">info@pushvfx.com</a>
+      <p style="color: #3C2959; font-size:20px; font-family: 'Lato', sans-serif;"><b> COMING SOON <b>  </p>
+    </div>
+    <div id="canvasXPTO">
+  </div>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/three.min.js"></script>
+  <script src="js/ObjectLoader.js"></script>
+  <script src="js/OBJLoader.js"></script>
+  <script src="js/OBJMTLLoader.js"></script>
+  <script src="js/MTLLoader.js"></script>
+  <script src="js/TrackballControls.js"></script>
+  <script src='js/threex.videotexture.js'></script>
+  <script src="js/FlyControls.js"></script>
+  <script src="js/OrbitControls.js"></script>
+  <script src="js/JSONLoader.js"></script>
+  <script src="js/MTLLoader.js"></script>
+  <script src="js/OBJMTLLoader.js"></script>
+  <script src="js/GeometryUtils.js"></script>
+  <script src="js/MapControls.js"></script>
+  <script src="js/Stats.js"></script>
+  <script src="js/Octree.js"></script>
+  <script src="js/Tween.js"></script>
+  <script src="js/EffectComposer.js"></script>
+  <script src="js/CopyShader.js"></script>
+  <script src="js/ShaderPass.js"></script>
+  <script src="js/RenderPass.js"></script>
+  <script src="js/FilmPass.js"></script>
+  <script src="js/BloomPass.js"></script>
+  <script src="js/ConvolutionShader.js"></script>
+  <script src="js/MaskPass.js"></script>
+  <script src="js/BokehShader.js"></script>
+  <script src="js/BokehPass.js"></script>
+  <script src="js/DisplacementShader.js"></script>
+  <script type="x-shader/x-vertex" id="vertexshader">
+  uniform float amplitude;
+
+  attribute float displacement;
+  varying vec3 vNormal;
+  varying vec2 vUv;
+
+  void main() {
+
+    vNormal = normal;
+    vUv = ( 50.5 + amplitude ) * uv + vec2( amplitude );
+
+    vec3 newPosition = position + amplitude * normal * vec3( displacement );
+    gl_Position = projectionMatrix * modelViewMatrix * vec4( newPosition, 1.0 );
+
+  }
+
+  </script>
+
+  <script type="x-shader/x-fragment" id="fragmentshader">
+  varying vec3 vNormal;
+  varying vec2 vUv;
+
+  uniform vec3 color;
+  uniform sampler2D texture;
+  uniform vec3 light;
+
+  void main() {
+
+    vec3 normLight = normalize(light);
+
+    float dProd = dot( vNormal, normLight ) * 20.5 + 5.5;
+
+    vec4 tcolor = texture2D( texture, vUv );
+    vec4 gray = vec4( vec3( tcolor.r * 0.3 + tcolor.g * 0.59 + tcolor.b * 0.11 ), 1.0 );
+
+    gl_FragColor = gray * vec4( vec3( dProd ) * vec3( color ), 1.0 );
+
+  }
+
+  </script>
+  <script>
+
+
+
+  var selectedFace = null;
+  var scene = new THREE.Scene();
+  scene.fog = new THREE.FogExp2( 0xffffff, 0.0001 );
+  var camera = new THREE.PerspectiveCamera( 90, window.innerWidth/window.innerHeight, 0.1, 1000 );
+  var clock = new THREE.Clock();
+
+  var intersectedFaces = new Array();
+
+  var incrementalPlanePosition = -2500;
+
+  var container = document.getElementById("canvasXPTO");
+
+  camera.position.y = 3;
+
+  var mouse = new THREE.Vector2();
+  var raycaster = new THREE.Raycaster();
+
+  var light = new THREE.DirectionalLight( 0xffffff, 0.5 );
+  scene.add( light );
+
+  var renderer = new THREE.WebGLRenderer({antialias:true, alpha: true});
+  renderer.setSize( window.innerWidth, window.innerHeight );
+  renderer.setClearColor( 0xffffff,0);
+
+  var composer = new THREE.EffectComposer( renderer );
+
+  document.getElementById("canvasXPTO").appendChild( renderer.domElement );
+var geometry = new THREE.PlaneBufferGeometry( 5000, 5000, 150, 400 );
+document.addEventListener( 'mousemove', onMouseMove, false );
+
+uniforms = {
+
+  amplitude: { type: "f", value: 0.5 },
+  color:     { type: "c", value: new THREE.Color( 0x211631) },
+  texture:   { type: "t", value: THREE.ImageUtils.loadTexture( "floor.jpg" ) },
+  light:     { type: "v3", value: new THREE.Vector3(0.1, 0.2, 1.0)}
+
+};
+
+//uniforms.texture.value.wrapS = uniforms.texture.value.wrapT = THREE.RepeatWrapping;
+
+var shaderMaterial = new THREE.ShaderMaterial( {
+
+  uniforms: uniforms,
+  vertexShader:document.getElementById( 'vertexshader' ).textContent,
+  fragmentShader: document.getElementById( 'fragmentshader' ).textContent,
+});
+
+var displacement = new Float32Array( geometry.attributes.position.count );
+var noise = new Float32Array( geometry.attributes.position.count );
+
+for ( var i = 0; i < displacement.length; i ++ ) {
+
+  noise[ i ] = Math.random() * 5;
+
+}
+geometry.addAttribute( 'displacement', new THREE.BufferAttribute( displacement, 1 ) );
+
+var material = new THREE.MeshBasicMaterial( {color: 0xffff00, side: THREE.DoubleSide, wireframe:true} );
+
+//var material = new CustomMat("textures/floor.jpg", THREE.DisplacementShader);
+
+var plane = new THREE.Mesh( geometry, shaderMaterial );
+plane.position.z = -2500;
+plane.rotation.x = -Math.PI / 2;
+plane.geometry.dynamic = true;
+
+scene.add( plane );
+
+wireframe = new THREE.WireframeHelper( plane, 0xF8802D );
+scene.add(wireframe);
+
+camera.position.z = -50;
+camera.position.y = 100;
+
+plane.geometry.addAttribute( 'displacement', new THREE.BufferAttribute( displacement, 1 ) );
+
+var newPlane =new THREE.Mesh();
+
+var render = function () {
+  requestAnimationFrame( render );
+  renderer.render(scene, camera);
+  //camera.position.z-=5;
+
+  if(multiple(Math.abs(Math.round(parseInt(camera.position.z))),2500) && !multiple(Math.abs(Math.round(parseInt(camera.position.z))),5000))
+  {
+    var geometry = new THREE.PlaneBufferGeometry( 5000, 5000, 150, 400 );
+
+    /*newPlane = new THREE.Mesh( geometry, shaderMaterial );
+    newPlane.rotation.x = -Math.PI / 2;
+    newPlane.geometry.dynamic = true;
+    incrementalPlanePosition-=5001;
+    newPlane.position.z = incrementalPlanePosition;
+    scene.add( newPlane );*/
+
+  }
+  else if(multiple(Math.abs(Math.round(parseInt(camera.position.z))),5000))
+  {
+    //oldPlane = plane;
+    //plane = newPlane;
+  //plane.geometry.addAttribute( 'displacement', new THREE.BufferAttribute( displacement, 1 ) );
+
+  //scene.remove(oldPlane);
+}
+else if(multiple(Math.abs(Math.round(parseInt(camera.position.z))),500))
+{
+
+
+
+}
+else {
+}
+
+for(var i=0; i<intersectedFaces.length; i++)
+{
+  if(displacement[intersectedFaces[i].a]<0)
+  {
+    displacement[intersectedFaces[i].a] += 0.5;
+  }
+
+if(displacement[intersectedFaces[i].a]>=0)
+{
+  var removalIndex = intersectedFaces.indexOf(intersectedFaces[i]);
+
+  if(removalIndex > -1)
+  intersectedFaces.splice(removalIndex,1);
+}
+
+}
+
+
+raycaster.setFromCamera( mouse, camera );
+
+var intersects = raycaster.intersectObject( plane, true );
+for( var i = 0; i < intersects.length; i++ ) {
+
+  obj = intersects.indices;
+
+  selectedFace = intersects[0].face;
+  var time = Date.now() * 0.01;
+  displacement[ selectedFace.a ] = Math.sin( 10.1 * selectedFace.a + time );
+  noise[ selectedFace.a ] += 5.5 * ( 0.5 - Math.random() );
+  noise[ selectedFace.a ] = THREE.Math.clamp( noise[ selectedFace.a ], -40, 40 );
+  displacement[ selectedFace.a ] -= noise[ selectedFace.a ]*100;
+
+  //light.position.set(intersects[0].point.x,intersects[0].point.y+10,intersects[0].point.z);
+  intersectedFaces.push(selectedFace);
+}
+
+
+plane.geometry.attributes.displacement.needsUpdate = true;
+//else
+
+var time = Date.now() * 0.01;
+uniforms.amplitude.value = 1.5 * Math.sin( plane.rotation.x * 0.125 );
+
+};
+
+function onMouseMove( e )
+{
+  mouse.x = 2 * (e.clientX / window.innerWidth) - 1;
+  mouse.y = 1 - 2 * (e.clientY / window.innerHeight);
+
+  uniforms.light.value = new THREE.Vector3(Math.abs(mouse.x*100),Math.abs(mouse.y*100),-(mouse.y-0.5)*(250/1000)*250 + 100);
+}
+
+
+render();
+
+function multiple(value, multiple)
+{
+  remainder = value % multiple;
+  if(remainder==0)
+  return true;
+  else
+  return false;
+}
+
+</script>
+</body>
+
+</html>
