@@ -1,20 +1,28 @@
 <div id="content">
-    <div id="spaceheaderreel"></div>
+    <div id="spaceheaderproject"></div>
     <div id="projectheadercontent">
         <div id="homedivleft">
-            <object style="width: 40%;" id="left-triangle" data="/img/left_triangle.svg" type="image/svg+xml"></object>
+            <img src="/img/left_triangle.png" width="40%" />
         </div>
         <div id="stillProjectcontent">
             <div class="col-md-12" style="padding:0;" ng-if="showCaseStill">
-                <div id="projectstill" ng-click="showme=true" ng-hide="showme" ng-style="{'background':'url({{showCaseStill}}) no-repeat center center'}">
+                <div ng-if="showCaseVideo != ''">
+                    <div id="projectstill" ng-click="showme=true" ng-hide="showme" style="cursor: pointer">
+                        <img id="playbtn" src="/img/play-arrow.png">
+                        <img id="image" ng-src="{{showCaseStill}}">
+                    </div>
+                    <anguvideo id="projectVideo" ng-show="showme" ng-model="showCaseVideo" width="100%" height="100%"></anguvideo>
                 </div>
-                <anguvideo id="projectVideo" ng-show="showme" ng-model="showCaseVideo" width="100%" height="100%"></anguvideo>
+                <div ng-if="showCaseVideo == ''">
+                    <div id="projectstill" >
+                        <img id="image" ng-src="{{showCaseStill}}">
+                    </div>
+                </div>
             </div>
         </div>
-        
+        <p id="projecttitle">{{title}}</p>
+        <p id="projectdescription1">{{description1 | json}}</p>
     </div>
-    <p id="projecttitle">{{title}}</p>
-    <p id="projectdescription1">{{description1 | json}}</p>
     <div id="projectLinks">
         <div class="row">
             <div class="col-md-2 col-xs-6" ng-repeat="link in links">
@@ -26,14 +34,14 @@
         <div class="row" style="margin: -5px;" ng-hide="!twocolumn"  ng-show="twocolumn">
             <div class="col-md-6" ng-repeat="still in projectstills track by $index">
                 <div id="twocolumn" >
-                    <img id="image" src="{{still}}">
+                    <img id="image" ng-src="{{still}}">
                 </div>
             </div>
         </div>
         <div class="row" style="margin: -5px;" ng-hide="!sixcolumn" ng-show="sixcolumn">
             <div class="col-md-4" style="padding-left:5px; padding-right:5px; padding-top:5px; padding-bottom: 5px;" ng-repeat="still in projectstillssix track by $index">
                 <div id="twocolumn">
-                    <img id="image" src="{{still}}">
+                    <img id="image" ng-src="{{still}}">
                 </div>
             </div>
         </div>
@@ -56,7 +64,7 @@
             </div>
             <div ng-if="midPagevideoShow == false">
                <div id="projectstill">
-                   <img id="image" src="{{midPageStill}}">
+                   <img id="image" ng-src="{{midPageStill}}">
                 </div>
             </div>
         </div>
@@ -64,11 +72,14 @@
     <div id="bottomStillProjectcontent" ng-show="bottomPageDiv"  ng-if="bottomPageStill">
         <div class="col-md-8" style="height: 15vw; padding: 0;">
             <div id="projectstill">
-                <img id="image" src="{{bottomPageStill}}">
+                <img id="image" ng-src="{{bottomPageStill}}">
             </div>
         </div>
         <div class="col-md-4" style="height: 15vw; padding-right: 0;">
             <p id="projectdescription3">{{ bottomPagetext }}</p>
         </div>
+    </div>
+    <div id="homedivright">
+        <img src="/img/right_triangle.png" width="40%" />
     </div>
 </div>

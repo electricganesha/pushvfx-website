@@ -13,9 +13,15 @@
         $scope.description = data.data.description;
         $scope.myInterval = 10000;
         $scope.slides = data.data.stills;
+        $scope.links = data.data.links;
+
       },function (error){
         $scope.message = "Sorry, something's gone wrong, please try again later";
       });
+
+    $scope.saveId = function(id){
+      saveNewsId.set(id);
+    }
 
     $scope.showError = function (error) {
       $scope.$apply(function() {

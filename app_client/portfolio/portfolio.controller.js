@@ -12,6 +12,7 @@
       .then(function (data){
         $scope.category = choice;
         $scope.portfolio = data;
+        $scope.still = 'stillBigFilm';
       },function (error){
         $scope.message = "Sorry, something's gone wrong, please try again later";
       });
@@ -26,6 +27,20 @@
         .then(function (data){
           $scope.category = choice;
           $scope.portfolio = data;
+          switch($scope.category){
+            case "Film":
+              $scope.still = 'stillBigFilm';
+              console.log("Film");
+              break;
+            case "Interactive":
+              $scope.still = 'stillBigInteractive';
+              console.log("Interactive");
+              break;
+            case "Animation":
+              $scope.still = 'stillBigAnimation';
+              console.log("Animation");
+              break;
+          }
         },function (error){
           $scope.message = "Sorry, something's gone wrong, please try again later";
         });

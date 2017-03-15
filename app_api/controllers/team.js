@@ -8,7 +8,8 @@ var sendJSONresponse = function(res, status, content) {
 
 /* GET list of team members */
 module.exports.teamList = function(req, res) {
-    Team.find({}, function(err, team) {
+    Team.find({}, null, {sort:{name:1}}, function(err, team) {
+	console.log(team);
        res.json(team);
   });
 };

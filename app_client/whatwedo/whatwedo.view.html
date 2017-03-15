@@ -3,36 +3,45 @@
   <div id="labcontent">
     <div class="row">
       <div id="homedivleft">
-        <object style="width: 40%;" id="left-triangle" data="/img/left_triangle.svg" type="image/svg+xml"></object>
+        <img src="/img/left_triangle.png" width="40%" />
       </div>
       <div id="select-menu-what">
             <div id="whattitle">
                 <div id="smalltriangleleft">
-                    <object style="width: 25px;" data="/img/triangulopequenoesquerda.svg" type="image/svg+xml"></object>
+                    <img src="/img/triangulopequenoesquerda.png" width="25px" />
                 </div>
                 <div id="whatwedotitlecenter">
                     <p>WHAT WE DO</p>
                 </div>
                 <div id="smalltriangleright">
-                    <object style="width: 25px;" data="/img/triangulopequenodireita.svg" type="image/svg+xml"></object>
+                    <img src="/img/triangulopequenodireita.png" width="25px" />
                 </div>
             </div>
         </div>
       <div id="whatwedolist">
+          <br>
+          <br>
+          <p style="text-align: justify; color: #3e2a56; font-family: myriadregular; font-size: 17px;">PUSH is, in its core, aims to be a creative studio, or a gathering of engineers and artists, a multi-disciplinary group of skilled and versed people with a common vision: that of visual story-telling. 
+Independently of the medium – be it film, animation, virtual reality experience, video-game, website, mobile application, or any other – we strive to tell stories, and to enhance them in all possible ways: visually, interactively and conceptually.
+It is through iterative commitment to our work that we continuously PUSH the boundaries of our work, and continuously expand, developing new interests and techniques.<br><br>
+PUSH was initially founded as a VFX/Post-Production and Animation studio, but quickly expanded the business area into a branch of products which are naturally co-related with the original goals: interactive products.
+We are ideologically committed to quality, in all of our activities, leaving no small detail behind, as we engage in works of exploration, imagination, technology, art, technique and aesthetics. All the work we develop is aimed at the fulfilment of our mission as a company – to PUSH the limits of creativity in order to expand the limits of the industry -, the preservation of our core values – inspiration, creative thought, curiosity, hunger for knowledge, deep thought and sustainability -, and the realization of our vision – a world where creativity and effort are synonyms of success.<p>
+            <br>
+            <br>
             <div class="row">
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-4" ng-repeat="category in categories.data" style=" padding:5px;">
+                        <div class="col-md-4" ng-repeat="category in categories.data | orderBy:'+title'" style=" padding:5px;">
                             <a class="tint" ng-click="saveId(category._id)" href="/category">
                                 <p id="cattitle">{{ category.title }}</p>
-                                <img id="image" src="{{category.stills[0]}}">
+                                <img id="image" src="{{category.stills[0].still}}">
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="homedivright">
-                <object style="width: 40%;" id="left-triangle" data="/img/right_triangle.svg" type="image/svg+xml"></object>
+                <img src="/img/right_triangle.png" width="40%" />
             </div>
         </div>
     </div>

@@ -1,7 +1,9 @@
 <div id="content">
-  <div id="homeimg1" ng-style="{'background':'url({{homePageImage1}}) no-repeat center center'}">
+  <div id="homeimg1" ng-style="{'background':'url({{mainStill1}}) no-repeat center center'}">
     <div id="uparrow">
-      <object id="arrow" data="/img/arrow_up.svg" type="image/svg+xml"></object>
+      <img src="/img/arrow_up.png" width="100%">
+      <!--<embed src="/img/arrow_up.svg" width="100%" />-->
+      <!--<object data="/img/arrow_up.svg" type="image/svg+xml" width="100%"></object>-->
     </div>
   </div>
   <div id="slogan-top">
@@ -10,7 +12,7 @@
   <div id="latestworkcontent">
     <div class="row">
       <div id="homedivleft">
-        <object style="width: 40%;" id="left-triangle" data="/img/left_triangle.svg" type="image/svg+xml"></object>
+        <img src="/img/left_triangle.png" width="40%">
       </div>
       <div id="latestwork">
         <p>OUR LATEST WORK</p>
@@ -18,7 +20,7 @@
             <div class="col-md-4" style="padding:0;" ng-repeat="bestproject in bestprojects.data">
               <a style="text-decoration: none;" ng-click="saveId(bestproject._id)"  href="/projects">
                 <div id="latestprojectsphoto"> 
-                  <img id="image" src="{{bestproject.thumbnail}}">
+                  <img id="image" ng-src="{{bestproject.thumbnail}}">
                 </div>
                 <p>{{ bestproject.title }}</p>
               </a>
@@ -27,19 +29,23 @@
         </div>
       </div>
       <div id="homedivright">
-        <object style="width: 40%;" id="left-triangle" data="/img/right_triangle.svg" type="image/svg+xml"></object>
+        <img src="/img/right_triangle.png" width="40%">
       </div>
     </div>
   </div>
   <div id="slogan-bottom">
     <p>PUSH YOURSELF TO THE LIMIT</p>
   </div>
-  <div id="homeimg1" ng-style="{'background':'url({{homePageImage2}}) no-repeat center center'}">
+  <div id="homeimg1" ng-style="{'background':'url({{mainStill2}}) no-repeat center center'}">
     <div id="downarrow">
-      <object id="arrow" data="/img/arrow_down.svg" type="image/svg+xml"></object>
+      <img src="/img/arrow_down.png" width="100%">
+      <!--<object data="/img/arrow_down.svg" type="image/svg+xml" width="100%"></object>-->
+      <!--<embed src="/img/arrow_down.svg" width="100%" />-->
     </div>
     <div id="uparrow">
-      <object id="arrow" data="/img/arrow_up.svg" type="image/svg+xml"></object>
+      <img src="/img/arrow_up.png" width="100%">
+      <!--<object data="/img/arrow_up.svg" type="image/svg+xml" width="100%"></object>-->
+      <!--<embed src="/img/arrow_up.svg" width="100%" />-->
     </div>
   </div>
 
@@ -47,7 +53,7 @@
     <div class="row">
       <div id="homebottomdivcenter">
         <p id="bottom-slogan">PUSH YOURSELF</p>
-        <object id="left-triangle-bottom-div" data="/img/left_triangle.svg" type="image/svg+xml"></object>
+        <img id="left-triangle-bottom-div" src="/img/left_triangle.png" width="40%">
       </div>
     </div>
   </div>

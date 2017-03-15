@@ -76,10 +76,6 @@
 
     /*####################### HOME CONTENT #################################*/
 
-    #latestprojectsphoto{
-        height: 150px;
-    }
-
     #latestworkcontent{
         margin-top: 0;
     }
@@ -98,12 +94,24 @@
         font-size: 11px;
     }
 
+    #portfolioselection ul{
+        width: 265px;
+    }
+
+    #portfolioselection ul li{
+        font-size: 9PX;
+    }
+
+    #portfolioselection{
+        margin-top: -30px;
+    }
+
+    #mainTitle{
+        font-size: 76px;
+    }
+
 
     /*####################### TEAM CONTENT #################################*/
-
-    #teammemberphoto{
-     height: 174px;   
-    }
 
     #instatitle{
         font-size: 17px;
@@ -111,6 +119,14 @@
 
     #instainfo img{
         margin-left:13px;
+    }
+
+    #membername{
+        text-align: center;
+    }
+
+    #teamsocial{
+        text-align: center;
     }
 
     /*####################### REEL CONTENT #################################*/
@@ -186,7 +202,7 @@
     /*####################### WHAT WE DO CONTENT #################################*/
     
     #cattitle{
-        line-height: 41vw;
+        line-height: 22vw;
     }
 
      .tint{
@@ -200,7 +216,7 @@
     }
 
     #labsynopsis{
-        line-height: 39vw;
+        line-height: 36vw;
     }
 
     .ltint{
@@ -279,10 +295,6 @@
 
     /*####################### HOME CONTENT #################################*/
 
-    #latestprojectsphoto{
-        height: 150px;
-    }
-
     #latestworkcontent{
         margin-top: 0;
     }
@@ -308,6 +320,14 @@
         font-size: 17px;
     }
 
+    #membername{
+        text-align: center;
+    }
+
+    #teamsocial{
+        text-align: center;
+    }
+
     /*####################### REEL CONTENT #################################*/
 
     #reelselection {
@@ -319,6 +339,10 @@
 
     #bartitle{
         font-size: 14px;
+    }
+
+    #reeldivlist{
+        margin-top: 50px;
     }
 
     /*####################### TIMELINE CONTENT #################################*/
@@ -347,6 +371,22 @@
         text-align: center;
     }
 
+    #portfolioselection ul{
+        width: 265px;
+    }
+
+    #portfolioselection ul li{
+        font-size: 9PX;
+    }
+
+    #portfolioselection{
+        margin-top: -30px;
+    }
+
+    #mainTitle{
+        font-size: 76px;
+    }
+
      /*####################### CONTACTS CONTENT #################################*/
 
     #messageform{
@@ -357,7 +397,7 @@
     /*####################### WHAT WE DO CONTENT #################################*/
     
     #cattitle{
-        line-height: 41vw;
+        line-height: 22vw;
     }
 
      .tint{
@@ -371,7 +411,7 @@
     }
 
     #labsynopsis{
-        line-height: 38vw;
+        line-height: 36vw;
     }
 
     .ltint{
@@ -446,10 +486,6 @@
 
     /*####################### HOME CONTENT #################################*/
 
-    #latestprojectsphoto{
-        height: 215px;
-    }
-
     #latestworkcontent{
         margin-top: 0;
     }
@@ -468,11 +504,13 @@
         font-size: 11px;
     }
 
-    /*####################### TEAM CONTENT #################################*/
+    /*####################### REEL CONTENT #################################*/
 
-    #teammemberphoto{
-     height: 300px;   
+    #reeldivlist{
+        margin-top: 50px;
     }
+
+    /*####################### TEAM CONTENT #################################*/
 
     #instatitle{
         font-size: 17px;
@@ -484,6 +522,14 @@
 
     #photoinsta{
         height: 301px;
+    }
+
+    #membername{
+        text-align: center;
+    }
+
+    #teamsocial{
+        text-align: center;
     }
 
     /*####################### TIMELINE CONTENT #################################*/
@@ -508,7 +554,7 @@
     /*####################### WHAT WE DO CONTENT #################################*/
     
     #cattitle{
-        line-height: 41vw;
+        line-height: 22vw;
     }
 
      .tint{
@@ -522,7 +568,7 @@
     }
 
     #labsynopsis{
-        line-height: 38vw;
+        line-height: 36vw;
     }
 
     .ltint{
@@ -532,9 +578,6 @@
 
 @media(min-width:768px) and (max-width:876px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -577,6 +620,12 @@
         text-align: center;
     }
 
+    /*####################### REEL CONTENT #################################*/
+
+    #reeldivlist{
+        margin-top: 50px;
+    }
+
     /*####################### HOME CONTENT #################################*/
 
     #latestworkcontent{
@@ -598,10 +647,6 @@
     }
 
     /*####################### TEAM CONTENT #################################*/
-
-    #teammemberphoto{
-     height: 300px;   
-    }
 
     #instainfo img{
         margin-left:15px;
@@ -633,7 +678,7 @@
     /*####################### WHAT WE DO CONTENT #################################*/
     
     #cattitle{
-        line-height: 41vw;
+        line-height: 22vw;
     }
 
      .tint{
@@ -647,7 +692,7 @@
     }
 
     #labsynopsis{
-        line-height: 38vw;
+        line-height: 36vw;
     }
 
     .ltint{
@@ -657,9 +702,6 @@
 
 @media(min-width:877px) and (max-width:945px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -700,6 +742,12 @@
 
     #mapright ul{
         text-align: center;
+    }
+
+    /*####################### REEL CONTENT #################################*/
+
+    #reeldivlist{
+        margin-top: 50px;
     }
 
     /*####################### HOME CONTENT #################################*/
@@ -750,7 +798,7 @@
     /*####################### WHAT WE DO CONTENT #################################*/
     
     #cattitle{
-        line-height: 41vw;
+        line-height: 22vw;
     }
 
      .tint{
@@ -764,7 +812,7 @@
     }
 
     #labsynopsis{
-        line-height: 38vw;
+        line-height: 36vw;
     }
 
     .ltint{
@@ -776,9 +824,6 @@
 
 @media(min-width:945px) and (max-width:991px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -841,6 +886,12 @@
 
     #homebottomdivcenter{
         height: 200px;
+    }
+
+    /*####################### REEL CONTENT #################################*/
+
+    #reeldivlist{
+        margin-top: 50px;
     }
 
     /*####################### PORTFOLIO CONTENT #################################*/
@@ -882,7 +933,7 @@
     /*####################### WHAT WE DO CONTENT #################################*/
     
     #cattitle{
-        line-height: 41vw;
+        line-height: 22vw;
     }
 
     .tint{
@@ -896,7 +947,7 @@
     }
 
     #labsynopsis{
-        line-height: 38vw;
+        line-height: 36vw;
     }
 
     .ltint{
@@ -906,9 +957,6 @@
 
 @media(min-width:992px) and (max-width:1099px) {
      /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -963,6 +1011,18 @@
         text-align: center;
     }
 
+    /*####################### REEL CONTENT #################################*/
+
+    #reeldivlist{
+        margin-top: 50px;
+    }
+
+    /*####################### REEL CONTENT #################################*/
+
+    #reeldivlist{
+        margin-top: 50px;
+    }
+
     /*####################### HOME CONTENT #################################*/
 
     #latestworkcontent{
@@ -993,6 +1053,15 @@
         height: 237px;
     }
 
+    #membername{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #teamsocial{
+        text-align: center;
+    }
+
     /*####################### TIMELINE CONTENT #################################*/
     
     #newdescription{
@@ -1003,9 +1072,6 @@
 
 @media(min-width:1100px) and (max-width:1210px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1045,6 +1111,28 @@
         height: 203px;
     }
 
+    #membername{
+        text-align: center;
+    }
+
+    #teamsocial{
+        text-align: center;
+    }
+
+    .col-lg-8 {
+        width: 100%;
+    }
+
+    .col-lg-4 {
+        width: 100%;
+    }
+
+    /*####################### REEL CONTENT #################################*/
+
+    #reeldivlist{
+        margin-top: 50px;
+    }
+
     /*####################### TIMELINE CONTENT #################################*/
     
     #newdescription{
@@ -1055,9 +1143,6 @@
 
 @media(min-width:1211px) and (max-width:1300px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1084,10 +1169,6 @@
 
      /*####################### TEAM CONTENT #################################*/
 
-    /*#teammemberphoto{
-     height: 153px;   
-    }*/
-
     #instainfo img{
         margin-left:10px;
     }
@@ -1100,6 +1181,28 @@
         height: 203px;
     }
 
+    #membername{
+        text-align: center;
+    }
+
+    #teamsocial{
+        text-align: center;
+    }
+
+    .col-lg-8 {
+        width: 100%;
+    }
+
+    .col-lg-4 {
+        width: 100%;
+    }
+
+    /*####################### REEL CONTENT #################################*/
+
+    #reeldivlist{
+        margin-top: 50px;
+    }
+
     /*####################### TIMELINE CONTENT #################################*/
     
     #newdescription{
@@ -1109,9 +1212,6 @@
 
 @media(min-width:1301px) and (max-width:1499px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1142,6 +1242,22 @@
         height: 165px;
     }
 
+    #membername{
+        text-align: center;
+    }
+
+    #teamsocial{
+        text-align: center;
+    }
+
+    .col-lg-8 {
+        width: 100%;
+    }
+
+    .col-lg-4 {
+        width: 100%;
+    }
+
     /*####################### TIMELINE CONTENT #################################*/
     
     #newdescription{
@@ -1151,9 +1267,6 @@
 
 @media(min-width:1500px) and (max-width:1600px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1178,12 +1291,25 @@
         height: 143px;
     }
 
+    #membername{
+        text-align: center;
+    }
+
+    #teamsocial{
+        text-align: center;
+    }
+
+    .col-lg-8 {
+        width: 100%;
+    }
+
+    .col-lg-4 {
+        width: 100%;
+    }
+
 }
 
 @media(min-width:1601px) and (max-width:1800px) {
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1202,13 +1328,28 @@
         margin: auto;
     }
 
+    /*####################### TEAM CONTENT #################################*/
+
+    #membername{
+        text-align: center;
+    }
+
+    #teamsocial{
+        text-align: center;
+    }
+
+    .col-lg-8 {
+        width: 100%;
+    }
+
+    .col-lg-4 {
+        width: 100%;
+    }
+
 }
 
 @media(min-width:1801px) and (max-width:1899px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1236,9 +1377,6 @@
 
 @media(min-width:1900px) and (max-width:1920px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1263,10 +1401,6 @@
 
     /*####################### HOME CONTENT #################################*/
 
-   /* #latestprojectsphoto{
-        height: 235px;
-    }*/
-
     /*####################### TEAM CONTENT #################################*/
 
     #memberdescription{
@@ -1276,9 +1410,6 @@
 
 @media(min-width:1921px) and (max-width:2150px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1301,12 +1432,6 @@
         height: 45px;
     }
 
-    /*####################### HOME CONTENT #################################*/
-
-    /*#latestprojectsphoto{
-        height: 235px;
-    }*/
-
     /*####################### TEAM CONTENT #################################*/
 
     #memberdescription{
@@ -1317,9 +1442,6 @@
 
 @media(min-width:2151px) and (max-width:2300px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1352,9 +1474,6 @@
 
 @media(min-width:2301px) and (max-width:2500px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1387,9 +1506,6 @@
 
 @media(min-width:2501px) {
     /*####################### PAGE HEADER #################################*/
-    .navbar .navbar-nav{
-        width: 473px;  
-    }
 
     #pad{
         padding-right: 35px; 
@@ -1410,12 +1526,6 @@
 
     #spaceheader {
         height: 45px;
-    }
-
-    /*####################### HOME CONTENT #################################*/
-
-    #latestprojectsphoto{
-        height: 295px;
     }
 
     /*####################### TEAM CONTENT #################################*/

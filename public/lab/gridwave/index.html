@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+
+        <!-- Mobile Stuff -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="msapplication-tap-highlight" content="no">
+
+        <!-- Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon.png">
+
+        <!-- Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+        <!-- Windows 8 -->
+        <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon.png">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+
+
+        <meta name="theme-color" content="#000000">
+
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <title>GridWave test</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <script src="js/three.min.js"></script>
+        <script src="js/gridwave.js"></script>
+        <style>
+          #container {
+						margin:auto;
+						margin-top:20vh;
+            width:80%;
+            height:60vh;
+            background-size:     cover;
+            background-repeat:   no-repeat;
+            background-position: center center;
+          }
+        </style>
+    </head>
+
+    <body>
+        <div id="container"></div>
+        <script>
+        var gwave = new GridWave(document.querySelector("#container"),{
+          modelPath:"geometry/gridwave-x2.js",
+          imagePath: "images/push.jpg",
+					modelColor: 0x3F3F3F,
+		      ambientColor: 0x333333,
+		      dirColor: 0xffffff,
+		      lightColor: 0x7a7a33,
+		      lightIntensity: 5.2,
+		      lightDistance: 36.0,
+		      lightElevation: 16,
+		      cameraElevation: 15,
+		      scaleX:1.5,
+		      scaleY:1.5,
+		      alphaDistance:12,
+		      alphaLower:10,
+		      alphaExponent:1,
+		      geoFactorWidth:0.1,
+		      geoFactorHeight:5.0,
+		      geoFactorDepth:7.0,
+		      geoMovementVelocity:0.3,
+		      enableAO: 0.5
+        });
+        gwave.start();
+      </script>
+    </body>
+</html>
