@@ -30,9 +30,18 @@
                 <div id="listalign">
                   <div class="col-md-4" style="padding:0;" ng-repeat="member in teammembers.data" ng-style="($index >= 3 || $index <= 5) && {'margin-top':'30px'} || {'margin-top':'0px'} ">
                       <div id="teammemberphoto">
-                        <img src="{{member.profilePic}}" style="max-width: 100%; display:block; height: auto;">
+                        <img ng-src="{{member.profilePic}}" style="max-width: 100%; display:block; height: auto;">
                       </div>
-                      <p id="membername">{{ member.name }}</p>
+                      <div class="row">
+                        <div class="col-lg-8 col-md-12 col-sm-8">
+                          <p id="membername">{{ member.name }}</p>
+                        </div>
+                        <div id="teamsocial" class="col-lg-4 col-md-12 col-sm-4">
+                          <a ng-show="member.social[2].value !=''" ng-href="{{member.social[2].value}}" target="_blank"><img src="/img/website.png" width="20px;"></a>
+                          <a ng-show="member.social[0].value !=''" ng-href="{{member.social[0].value}}" target="_blank"><img src="/img/insta_small.png" width="20px;"></a>
+                          <a ng-show="member.social[1].value !=''" ng-href="{{member.social[1].value}}" target="_blank"><img src="/img/linkedin_small.png" width="20px;"></a>
+                        </div>
+                      </div>
                       <p id="memberdescription">{{ member.description }}</p>
                   </div>
                 </div>

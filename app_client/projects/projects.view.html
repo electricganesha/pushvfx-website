@@ -6,10 +6,18 @@
         </div>
         <div id="stillProjectcontent">
             <div class="col-md-12" style="padding:0;" ng-if="showCaseStill">
-                <div id="projectstill" ng-click="showme=true" ng-hide="showme" >
-                    <img id="image" ng-src="{{showCaseStill}}">
+                <div ng-if="showCaseVideo != ''">
+                    <div id="projectstill" ng-click="showme=true" ng-hide="showme" style="cursor: pointer">
+                        <img id="playbtn" src="/img/play-arrow.png">
+                        <img id="image" ng-src="{{showCaseStill}}">
+                    </div>
+                    <anguvideo id="projectVideo" ng-show="showme" ng-model="showCaseVideo" width="100%" height="100%"></anguvideo>
                 </div>
-                <anguvideo id="projectVideo" ng-show="showme" ng-model="showCaseVideo" width="100%" height="100%"></anguvideo>
+                <div ng-if="showCaseVideo == ''">
+                    <div id="projectstill" >
+                        <img id="image" ng-src="{{showCaseStill}}">
+                    </div>
+                </div>
             </div>
         </div>
         <p id="projecttitle">{{title}}</p>

@@ -94,6 +94,22 @@
         font-size: 11px;
     }
 
+    #portfolioselection ul{
+        width: 265px;
+    }
+
+    #portfolioselection ul li{
+        font-size: 9PX;
+    }
+
+    #portfolioselection{
+        margin-top: -30px;
+    }
+
+    #mainTitle{
+        font-size: 76px;
+    }
+
 
     /*####################### TEAM CONTENT #################################*/
 
@@ -103,6 +119,14 @@
 
     #instainfo img{
         margin-left:13px;
+    }
+
+    #membername{
+        text-align: center;
+    }
+
+    #teamsocial{
+        text-align: center;
     }
 
     /*####################### REEL CONTENT #################################*/
@@ -296,6 +320,14 @@
         font-size: 17px;
     }
 
+    #membername{
+        text-align: center;
+    }
+
+    #teamsocial{
+        text-align: center;
+    }
+
     /*####################### REEL CONTENT #################################*/
 
     #reelselection {
@@ -307,6 +339,10 @@
 
     #bartitle{
         font-size: 14px;
+    }
+
+    #reeldivlist{
+        margin-top: 50px;
     }
 
     /*####################### TIMELINE CONTENT #################################*/
@@ -333,6 +369,22 @@
 
     #projectCredits{
         text-align: center;
+    }
+
+    #portfolioselection ul{
+        width: 265px;
+    }
+
+    #portfolioselection ul li{
+        font-size: 9PX;
+    }
+
+    #portfolioselection{
+        margin-top: -30px;
+    }
+
+    #mainTitle{
+        font-size: 76px;
     }
 
      /*####################### CONTACTS CONTENT #################################*/
@@ -452,11 +504,13 @@
         font-size: 11px;
     }
 
-    /*####################### TEAM CONTENT #################################*/
+    /*####################### REEL CONTENT #################################*/
 
-    #teammemberphoto{
-     height: 300px;   
+    #reeldivlist{
+        margin-top: 50px;
     }
+
+    /*####################### TEAM CONTENT #################################*/
 
     #instatitle{
         font-size: 17px;
@@ -468,6 +522,14 @@
 
     #photoinsta{
         height: 301px;
+    }
+
+    #membername{
+        text-align: center;
+    }
+
+    #teamsocial{
+        text-align: center;
     }
 
     /*####################### TIMELINE CONTENT #################################*/
@@ -558,6 +620,12 @@
         text-align: center;
     }
 
+    /*####################### REEL CONTENT #################################*/
+
+    #reeldivlist{
+        margin-top: 50px;
+    }
+
     /*####################### HOME CONTENT #################################*/
 
     #latestworkcontent{
@@ -579,10 +647,6 @@
     }
 
     /*####################### TEAM CONTENT #################################*/
-
-    #teammemberphoto{
-     height: 300px;   
-    }
 
     #instainfo img{
         margin-left:15px;
@@ -678,6 +742,12 @@
 
     #mapright ul{
         text-align: center;
+    }
+
+    /*####################### REEL CONTENT #################################*/
+
+    #reeldivlist{
+        margin-top: 50px;
     }
 
     /*####################### HOME CONTENT #################################*/
@@ -818,6 +888,12 @@
         height: 200px;
     }
 
+    /*####################### REEL CONTENT #################################*/
+
+    #reeldivlist{
+        margin-top: 50px;
+    }
+
     /*####################### PORTFOLIO CONTENT #################################*/
 
     #latestprojects p{
@@ -935,6 +1011,18 @@
         text-align: center;
     }
 
+    /*####################### REEL CONTENT #################################*/
+
+    #reeldivlist{
+        margin-top: 50px;
+    }
+
+    /*####################### REEL CONTENT #################################*/
+
+    #reeldivlist{
+        margin-top: 50px;
+    }
+
     /*####################### HOME CONTENT #################################*/
 
     #latestworkcontent{
@@ -963,6 +1051,15 @@
 
     #memberdescription{
         height: 237px;
+    }
+
+    #membername{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #teamsocial{
+        text-align: center;
     }
 
     /*####################### TIMELINE CONTENT #################################*/
@@ -1014,6 +1111,28 @@
         height: 203px;
     }
 
+    #membername{
+        text-align: center;
+    }
+
+    #teamsocial{
+        text-align: center;
+    }
+
+    .col-lg-8 {
+        width: 100%;
+    }
+
+    .col-lg-4 {
+        width: 100%;
+    }
+
+    /*####################### REEL CONTENT #################################*/
+
+    #reeldivlist{
+        margin-top: 50px;
+    }
+
     /*####################### TIMELINE CONTENT #################################*/
     
     #newdescription{
@@ -1050,10 +1169,6 @@
 
      /*####################### TEAM CONTENT #################################*/
 
-    /*#teammemberphoto{
-     height: 153px;   
-    }*/
-
     #instainfo img{
         margin-left:10px;
     }
@@ -1064,6 +1179,28 @@
 
     #memberdescription{
         height: 203px;
+    }
+
+    #membername{
+        text-align: center;
+    }
+
+    #teamsocial{
+        text-align: center;
+    }
+
+    .col-lg-8 {
+        width: 100%;
+    }
+
+    .col-lg-4 {
+        width: 100%;
+    }
+
+    /*####################### REEL CONTENT #################################*/
+
+    #reeldivlist{
+        margin-top: 50px;
     }
 
     /*####################### TIMELINE CONTENT #################################*/
@@ -1105,6 +1242,22 @@
         height: 165px;
     }
 
+    #membername{
+        text-align: center;
+    }
+
+    #teamsocial{
+        text-align: center;
+    }
+
+    .col-lg-8 {
+        width: 100%;
+    }
+
+    .col-lg-4 {
+        width: 100%;
+    }
+
     /*####################### TIMELINE CONTENT #################################*/
     
     #newdescription{
@@ -1138,6 +1291,22 @@
         height: 143px;
     }
 
+    #membername{
+        text-align: center;
+    }
+
+    #teamsocial{
+        text-align: center;
+    }
+
+    .col-lg-8 {
+        width: 100%;
+    }
+
+    .col-lg-4 {
+        width: 100%;
+    }
+
 }
 
 @media(min-width:1601px) and (max-width:1800px) {
@@ -1157,6 +1326,24 @@
     nav{
         width: 50%;
         margin: auto;
+    }
+
+    /*####################### TEAM CONTENT #################################*/
+
+    #membername{
+        text-align: center;
+    }
+
+    #teamsocial{
+        text-align: center;
+    }
+
+    .col-lg-8 {
+        width: 100%;
+    }
+
+    .col-lg-4 {
+        width: 100%;
     }
 
 }
