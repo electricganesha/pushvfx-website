@@ -8,7 +8,7 @@ var sendJSONresponse = function(res, status, content) {
 
 /* GET list of projects */
 module.exports.projectsList = function(req, res) {
-  Proj.find({}, function(err, projects) {
+  Proj.find({}).sort('-dateOfProject').exec(function(err, projects) {
     res.json(projects);
   });
 };
