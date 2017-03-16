@@ -45,7 +45,7 @@ module.exports.projectsReadOne = function(req, res) {
 module.exports.getProjectsByCategory = function(req,res)
 {
 
-  Proj.find({category: req.params.category}).exec(function(err, projects) {
+  Proj.find({category: req.params.category}).sort('-dateCreated').exec(function(err, projects) {
     res.json(projects);
   });
 }
@@ -64,22 +64,22 @@ module.exports.getProjectsBySubCategory = function(req,res)
     });
     break;
     case(1):
-      Proj.find({subcategories: { $in:[subcategories[0]]} }).exec(function(err, projects) {
+      Proj.find({subcategories: { $in:[subcategories[0]]} }).sort('-dateCreated').exec(function(err, projects) {
         res.json(projects);
       });
     break;
     case(2):
-      Proj.find({$and: [{subcategories: { $in:[subcategories[0]]} },{subcategories: { $in:[subcategories[1]]} }]}).exec(function(err, projects) {
+      Proj.find({$and: [{subcategories: { $in:[subcategories[0]]} },{subcategories: { $in:[subcategories[1]]} }]}).sort('-dateCreated').exec(function(err, projects) {
         res.json(projects);
       });
     break;
     case(3):
-      Proj.find({$and: [{subcategories: { $in:[subcategories[0]]} },{subcategories: { $in:[subcategories[1]]} },{subcategories: { $in:[subcategories[2]]} }]}).exec(function(err, projects) {
+      Proj.find({$and: [{subcategories: { $in:[subcategories[0]]} },{subcategories: { $in:[subcategories[1]]} },{subcategories: { $in:[subcategories[2]]} }]}).sort('-dateCreated').exec(function(err, projects) {
         res.json(projects);
       });
     break;
     case(4):
-      Proj.find({$and: [{subcategories: { $in:[subcategories[0]]} },{subcategories: { $in:[subcategories[1]]} }, {subcategories: { $in:[subcategories[2]]} },{subcategories: { $in:[subcategories[3]]} }]}).exec(function(err, projects) {
+      Proj.find({$and: [{subcategories: { $in:[subcategories[0]]} },{subcategories: { $in:[subcategories[1]]} }, {subcategories: { $in:[subcategories[2]]} },{subcategories: { $in:[subcategories[3]]} }]}).sort('-dateCreated').exec(function(err, projects) {
         res.json(projects);
       });
     break;
