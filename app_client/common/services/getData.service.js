@@ -16,6 +16,10 @@
       return $http.get('/api/getBestProjects');
     };
 
+    var allPortfolio = function () {
+      return $http.get('/api/projects');
+    };
+
     var portfolio = function (category) {
       return $http.get('/api/getProjectsByCategory/' + category);
     };
@@ -103,7 +107,8 @@
       jobs : jobs,
       whatwedo : whatwedo,
       category : category,
-      structuralInfo : structuralInfo
+      structuralInfo : structuralInfo,
+      allPortfolio : allPortfolio
     };
   }
 

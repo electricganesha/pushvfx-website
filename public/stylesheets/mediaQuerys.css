@@ -192,6 +192,10 @@
         text-align: center;
     }
 
+    #bottomprojtext{
+        padding-left: 0px;
+    }
+
     /*####################### CONTACTS CONTENT #################################*/
 
     #messageform{
@@ -387,6 +391,10 @@
         font-size: 76px;
     }
 
+    #bottomprojtext{
+        padding-left: 0px;
+    }
+
      /*####################### CONTACTS CONTENT #################################*/
 
     #messageform{
@@ -544,6 +552,10 @@
         text-align: center;
     }
 
+    #bottomprojtext{
+        padding-left: 0px;
+    }
+
     /*####################### CONTACTS CONTENT #################################*/
 
     #messageform{
@@ -668,6 +680,10 @@
         text-align: center;
     }
 
+    #bottomprojtext{
+        padding-left: 0px;
+    }
+
     /*####################### CONTACTS CONTENT #################################*/
 
     #messageform{
@@ -786,6 +802,10 @@
 
     #projectCredits{
         text-align: center;
+    }
+
+    #bottomprojtext{
+        padding-left: 0px;
     }
 
     /*####################### CONTACTS CONTENT #################################*/
@@ -923,6 +943,10 @@
         text-align: center;
     }
 
+    #bottomprojtext{
+        padding-left: 0px;
+    }
+
     /*####################### CONTACTS CONTENT #################################*/
 
     #messageform{
@@ -1049,10 +1073,6 @@
         height: 167px;
     }
 
-    #memberdescription{
-        height: 237px;
-    }
-
     #membername{
         text-align: center;
         font-size: 15px;
@@ -1105,10 +1125,6 @@
 
     #photoinsta{
         height: 152px;
-    }
-
-    #memberdescription{
-        height: 203px;
     }
 
     #membername{
@@ -1177,10 +1193,6 @@
         height: 152px;
     }
 
-    #memberdescription{
-        height: 203px;
-    }
-
     #membername{
         text-align: center;
     }
@@ -1238,9 +1250,6 @@
 
     /*####################### TEAM CONTENT #################################*/
 
-    #memberdescription{
-        height: 165px;
-    }
 
     #membername{
         text-align: center;
@@ -1286,10 +1295,6 @@
     }
 
     /*####################### TEAM CONTENT #################################*/
-
-    #memberdescription{
-        height: 143px;
-    }
 
     #membername{
         text-align: center;
@@ -1368,11 +1373,6 @@
         margin: auto;
     }
 
-    /*####################### TEAM CONTENT #################################*/
-
-    #memberdescription{
-        height: 115px;
-    }
 }
 
 @media(min-width:1900px) and (max-width:1920px) {
@@ -1399,13 +1399,6 @@
         height: 45px;
     }
 
-    /*####################### HOME CONTENT #################################*/
-
-    /*####################### TEAM CONTENT #################################*/
-
-    #memberdescription{
-        height: 103px;
-    }
 }
 
 @media(min-width:1921px) and (max-width:2150px) {
@@ -1430,12 +1423,6 @@
 
     #spaceheader {
         height: 45px;
-    }
-
-    /*####################### TEAM CONTENT #################################*/
-
-    #memberdescription{
-        height: 103px;
     }
 
 }
@@ -1464,12 +1451,6 @@
         height: 45px;
     }
 
-    /*####################### TEAM CONTENT #################################*/
-
-    #memberdescription{
-        height: 103px;
-    }
-
 }
 
 @media(min-width:2301px) and (max-width:2500px) {
@@ -1496,12 +1477,6 @@
         height: 45px;
     }
 
-    /*####################### TEAM CONTENT #################################*/
-
-    #memberdescription{
-        height: 103px;
-    }
-
 }
 
 @media(min-width:2501px) {
@@ -1526,12 +1501,6 @@
 
     #spaceheader {
         height: 45px;
-    }
-
-    /*####################### TEAM CONTENT #################################*/
-
-    #memberdescription{
-        height: 103px;
     }
 
 }

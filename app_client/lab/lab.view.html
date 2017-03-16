@@ -23,11 +23,11 @@
                 <div class="row">
                     <div class="col-md-4" ng-repeat="item in lab.data | orderBy:'+title'" style=" padding:5px;">
                         <a class="ltint" href="{{ item.link }}" target="_blank">
-                            <div>
+                            <div id="labtext">
                               <p id="labtitle">{{ item.title }}</p>
                               <p id="labsynopsis">{{ item.synopsis }}</p>
                             </div>
-                            <img id="image" src="{{item.displayImage}}">
+                            <img id="image" ng-src="{{item.displayImage}}">
                         </a>
                     </div>
                 </div>
