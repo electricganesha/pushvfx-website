@@ -34,9 +34,67 @@ We are ideologically committed to quality, in all of our activities, leaving no 
                         <div class="col-md-4" ng-repeat="category in categories.data | orderBy:'+title'" style=" padding:5px;">
                             <a class="tint" ng-click="saveId(category._id)" href="/category">
                                 <p id="cattitle">{{ category.title }}</p>
-                                <img id="image" src="{{category.stills[0].still}}">
+                                <img id="image" ng-src="{{category.stills[0].still}}">
                             </a>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <p id="software">SOFTWARE WE USE</p>
+            <div class="row">
+                <div class="col-md-12" style="text-align: center; margin-top: 60px;">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6" style=" padding:5px; height: 112px;">
+                            <img src="/pics/softwarepics/houdini.png" width="60px;">
+                        </div>
+                        <div class="col-md-3 col-sm-6" style=" padding:5px; height: 112px;">
+                            <img src="/pics/softwarepics/nukex.png" width="60px;">
+                        </div>
+                        <div class="col-md-3 col-sm-6" style=" padding:5px; height: 112px;">
+                            <img src="/pics/softwarepics/mari.jpg" width="60px;">
+                        </div>
+                        <div class="col-md-3 col-sm-6" style=" padding:5px; height: 112px;">
+                            <img src="/pics/softwarepics/modo.png" width="60px;">
+                        </div>
+                        <div class="col-md-3 col-sm-6" style=" padding:5px; height: 112px;">
+                            <img src="/pics/softwarepics/substancepainter.png" width="60px;">
+                        </div>
+                        <div class="col-md-3 col-sm-6" style=" padding:5px; height: 112px;">
+                            <img src="/pics/softwarepics/photoshop.png" width="60px;">
+                        </div>
+                        <div class="col-md-3 col-sm-6" style=" padding:5px; height: 112px;">
+                            <img src="/pics/softwarepics/aftereffects.jpg" width="60px;">
+                        </div>
+                        <div class="col-md-3 col-sm-6" style=" padding:5px; height: 112px;">
+                            <img src="/pics/softwarepics/illustrator.png" width="60px;">
+                        </div>
+                        <div class="col-md-3 col-sm-6" style=" padding:5px; height: 112px;">
+                            <img src="/pics/softwarepics/nodejs.png" width="60px;">
+                        </div>
+                        <div class="col-md-3 col-sm-6" style=" padding:5px; height: 112px;">
+                            <img src="/pics/softwarepics/angularjs.png" width="60px;">
+                        </div>
+                        <div class="col-md-3 col-sm-6" style=" padding:5px; height: 112px;">
+                            <img src="/pics/softwarepics/mongodb.png" width="60px;">
+                        </div>
+                        <div class="col-md-3 col-sm-6" style=" padding:5px; height: 112px;">
+                            <img src="/pics/softwarepics/threejs.png" width="60px;">
+                        </div>
+                        <div class="col-md-3 col-sm-6" style=" padding:5px; height: 112px;">
+                            <img src="/pics/softwarepics/unity.png" width="60px;">
+                        </div>
+                        <div class="col-md-3 col-sm-6" style=" padding:5px; height: 112px;">
+                            <img src="/pics/softwarepics/unreal.png" width="60px;">
+                        </div>
+                        <div class="col-md-3 col-sm-6" style=" padding:5px; height: 112px;">
+                            <img src="/pics/softwarepics/oculus.png" width="60px;">
+                        </div>
+                        <div class="col-md-3 col-sm-6" style=" padding:5px; height: 112px;">
+                            <img src="/pics/softwarepics/bitbucket.png" width="60px;">
+                        </div>
+                       
                     </div>
                 </div>
             </div>

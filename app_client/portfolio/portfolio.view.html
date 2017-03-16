@@ -3,11 +3,33 @@
         <div id="selectcontent">
             <div id="portfolioselection">
                 <ul>
-                    <li id="port-link" ng-click="selectMenu('Film')" style="cursor: pointer;">FILM</li>
+                    <div ng-if="category == 'All'">
+                        <li id="port-link-hover" ng-click="selectMenu('All')" style="cursor: pointer;">ALL</li>
+                    </div>
+                    <div ng-if="category != 'All'">
+                        <li id="port-link" ng-click="selectMenu('All')" style="cursor: pointer;">ALL</li>
+                    </div>
                     <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                    <li id="port-link" ng-click="selectMenu('Interactive')" style="cursor: pointer;">INTERACTIVE</li>
+                    <div ng-if="category == 'Film'">
+                        <li id="port-link-hover" ng-click="selectMenu('Film')" style="cursor: pointer;">FILM</li>
+                    </div>
+                    <div ng-if="category != 'Film'">
+                        <li id="port-link" ng-click="selectMenu('Film')" style="cursor: pointer;">FILM</li>
+                    </div>
                     <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                    <li id="port-link" ng-click="selectMenu('Animation')" style="cursor: pointer;">ANIMATION</li>
+                    <div ng-if="category == 'Interactive'">
+                        <li id="port-link-hover" ng-click="selectMenu('Interactive')" style="cursor: pointer;">INTERACTIVE</li>
+                    </div>
+                    <div ng-if="category != 'Interactive'">
+                        <li id="port-link" ng-click="selectMenu('Interactive')" style="cursor: pointer;">INTERACTIVE</li>
+                    </div>
+                    <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+                    <div ng-if="category == 'Animation'">
+                        <li id="port-link-hover" ng-click="selectMenu('Animation')" style="cursor: pointer;">ANIMATION</li>
+                    </div>
+                    <div ng-if="category != 'Animation'">
+                        <li id="port-link" ng-click="selectMenu('Animation')" style="cursor: pointer;">ANIMATION</li>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -19,7 +41,6 @@
         </section>
         <div id="uparrow">
             <img src="/img/arrow_up.png" width="100%">
-            <!--<object data="/img/arrow_up.svg" type="image/svg+xml" width="100%"></object>-->
         </div>
     </div>
     <div id="portfoliocontent">

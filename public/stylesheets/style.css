@@ -449,6 +449,10 @@ page-header{
   padding-top: 200px; 
 }
 
+.stillBigAll{
+  background: url("http://pushvfx.com:4000/pics/stills/film.jpg") no-repeat center center;
+}
+
 .stillBigFilm{
   background: url("http://pushvfx.com:4000/pics/stills/film.jpg") no-repeat center center;
 }
@@ -525,7 +529,7 @@ page-header{
 }
 
 #portfolioselection ul{
-  width: 463px;
+  width: 552px;
   height: 25px;
   list-style-type: none;
   margin: auto;
@@ -568,6 +572,11 @@ page-header{
 
 #port-link:hover:after {
   width: 99%;
+}
+
+#port-link-hover {
+  height: 20px;
+  border-bottom: 2px solid white;
 }
 
 #mainTitle{
@@ -1366,7 +1375,6 @@ textarea {
 
 #bottomStillProjectcontent{
   width:60%;
-  height:33vw;
   margin: auto;
 }
 
@@ -1567,6 +1575,13 @@ textarea {
   margin: auto;
   margin-bottom: 90px;
   text-align: right;
+}
+
+#software{
+  text-align: center;
+  font-family: monserratregular;
+  font-size: 23px;
+  margin-top: 50px;
 }
 
 #cattitle{

@@ -58,7 +58,9 @@
     <div id="midStillProjectcontent" ng-show="midPageDiv">
         <div class="col-md-12" style="padding:0;" ng-if="showCaseStill">
             <div ng-if="midPagevideoShow == true">
-                <div id="projectstill" ng-click="showme=true" ng-hide="showme" ng-style="{'background':'url({{midPageStill}}) no-repeat center center'}">
+                <div id="projectstill" ng-click="showme=true" ng-hide="showme" style="cursor: pointer">
+                    <img id="playbtn" src="/img/play-arrow.png">
+                    <img id="image" ng-src="{{midPageStill}}">
                 </div>
                 <anguvideo id="projectVideo" ng-show="showme" ng-model="midPageVideo" width="100%" height="100%"></anguvideo>
             </div>
@@ -69,13 +71,17 @@
             </div>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
     <div id="bottomStillProjectcontent" ng-show="bottomPageDiv"  ng-if="bottomPageStill">
-        <div class="col-md-8" style="height: 15vw; padding: 0;">
+        <div class="col-md-8" style="padding: 0; margin-bottom: 40px;">
             <div id="projectstill">
                 <img id="image" ng-src="{{bottomPageStill}}">
             </div>
         </div>
-        <div class="col-md-4" style="height: 15vw; padding-right: 0;">
+        <div id="bottomprojtext" class="col-md-4" style="padding-right: 0; margin-bottom: 40px;">
             <p id="projectdescription3">{{ bottomPagetext }}</p>
         </div>
     </div>
