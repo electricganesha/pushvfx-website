@@ -38,7 +38,6 @@
     $scope.showNew = function(newsdate) {
       getData.newsByDate(newsdate)
         .then(function (data){
-          console.log(data);
           $scope.newsByDate = data;
         },function (error){
           $scope.message = "Sorry, something's gone wrong, please try again later";
