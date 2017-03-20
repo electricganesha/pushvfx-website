@@ -6,17 +6,33 @@
 
   homeCtrl.$inject = ['$scope', 'getData', 'saveNewsId'];
   function homeCtrl ($scope, getData, saveNewsId) {
+    
+    var viewportWidth = $(window).width();
+
+   /* $(document).mousemove(function (event) {
+        var width1 = event.pageX;
+         var width2 = event.pageX;
+        var clip1 = "rect(0," + width1 + "px, auto, auto)";
+        var clip2 = "rect(0, auto, auto, " + width1 + "px)";
+        $("#image2").css('clip', clip1);
+        $("#image2").css('clip', clip1);
+    });*/
+
+    $(document).mousemove(function (event) {
+        var width1 = event.pageX;
+        var clip1 = "polygon(0 0, 0 " + width1*1.56 + "px, " + width1*1.56 + "px 0)";
+        $("#image1").css('clip-path', clip1);   
+    });
 
     var arrayImg1 = new Array();
-    arrayImg1[0] = "still.jpg";
-    arrayImg1[1] = "still1.jpg";
-    arrayImg1[2] = "still2.jpg";
-    arrayImg1[3] = "still3.jpg";
-    arrayImg1[4] = "still4.jpg";
-    arrayImg1[5] = "still5.jpg";
-    arrayImg1[6] = "still6.jpg";
-    arrayImg1[7] = "still7.jpg";
-    arrayImg1[8] = "still8.jpg";
+    arrayImg1[0] = {"before": "bpa_before.jpg","after":"bpa_after.jpg"};
+    arrayImg1[1] = {"before": "burro_before.jpg","after":"burro_after.jpg"};
+    arrayImg1[2] = {"before": "dentes_before.jpg","after":"dentes_after.jpg"};
+    arrayImg1[3] = {"before": "galo_before.jpg","after":"galo_after.jpg"};
+    arrayImg1[4] = {"before": "jac01_before.jpg","after":"jac01_after.jpg"};
+    arrayImg1[5] = {"before": "jac02_before.jpg","after":"jac02_after.jpg"};
+    arrayImg1[6] = {"before": "porco_before.jpg","after":"porco_after.jpg"};
+     arrayImg1[7] = {"before": "wirehead_before.jpg","after":"wirehead_after.jpg"};
 
     var arrayImg2 = new Array();
     arrayImg2[0] = "still9.jpg";
@@ -33,10 +49,11 @@
     getRandomImage1(arrayImg2, "");
 
     function getRandomImage(imgAr, path) {
-        path = path || 'https://pushvfx.com/pics/stills/'; // default path here
+        path = path || '/pics/beforeafter/'; // default path here
         var num = Math.floor( Math.random() * imgAr.length );
         var img = imgAr[ num ];
-        $scope.mainStill1 = path + img;
+        $scope.before = path + imgAr[ num ].before;
+        $scope.after = path + imgAr[ num ].after;
     }
 
     function getRandomImage1(imgAr, path) {
@@ -48,7 +65,7 @@
 
     var lastScrollTop = 0;
     var up = false;
-    var viewportWidth = $(window).width();
+    
     
     if(viewportWidth > 1000){
       $(window).scroll(function(event){

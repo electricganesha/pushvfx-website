@@ -313,14 +313,19 @@ page-header{
   background-size: cover;
 }
 
+#uparrowtop{
+  width: 100%;
+  margin-top: -4%;
+}
+
 #uparrow{
   width: 100%;
-  bottom:-6px;
-  position:absolute;
+  margin-top: -4%;
 }
 
 #downarrow{
   width: 100%;
+  position: absolute;
 }
 
 #slogan-top{
@@ -331,6 +336,7 @@ page-header{
   font-size: 19px;
   color: #3e2a56;
   letter-spacing: 3px;
+  background-color: white;
 }
 
 #slogan-bottom{
@@ -358,7 +364,7 @@ page-header{
 #latestwork p{
   margin-top: 50px;
   font-family: monserratregular;
-  font-size: 16px;
+  font-size: 18px;
   color: #3e2a56;
   letter-spacing: 2px;
 }
@@ -403,6 +409,7 @@ page-header{
 #homedivleft{
   width: 20%;
   float: left;
+  padding-top: 30px;
 }
 
 #homedivright{
@@ -410,7 +417,7 @@ page-header{
   width: 20%;
   right:-2px;
   text-align: right;
-  bottom: 0px;
+  bottom: 35px;
 }
 
 #left-triangle{
@@ -436,14 +443,20 @@ page-header{
 }
 
 #bottom-slogan{
-  width: 100%;
-  position: absolute;
+  width: 70%;
+  margin: auto;
+  position: relative;
   top: 40%;
   transform: translateY(-50%);
 }
 
 /*####################### PORTFOLIO PAGE CONTENT STYLE #################################*/
 
+#uparrowport{
+    width: 100%;
+    bottom: -6px;
+    position: absolute;
+}
 #selectcontent{
   height: 80px;
   padding-top: 200px;
@@ -484,7 +497,7 @@ page-header{
 }
 
 #section06 a {
-	padding-top: 95px;
+	padding-top: 100px;
 }
 #section06 a span {
 	position: absolute;
@@ -772,7 +785,7 @@ page-header{
   height: 50px;
   margin: auto;
   text-align: center;
-  margin-top: 136px;
+  margin-top: 90px;
 }
 
 #reeltitlecenter{
@@ -780,7 +793,7 @@ page-header{
   width: 175px;
   text-align: center;
   font-family: monserratregular;
-  font-size: 26px;
+  font-size: 23px;
   letter-spacing: 3px;
 }
 
@@ -986,10 +999,10 @@ textarea {
 
 #timelinetitlecenter{
   float: left;
-  width: 280px;
+  width: 250px;
   text-align: center;
   font-family: monserratregular;
-  font-size: 26px;
+  font-size: 23px;
   letter-spacing: 3px;
 }
 
@@ -998,7 +1011,7 @@ textarea {
 }
 
 #timelinetitle{
-  width: 330px;
+  width: 301px;
   height: 50px;
   margin: auto;
   text-align: center;
@@ -1016,7 +1029,7 @@ textarea {
 }
 
 #select-menu-timeline{
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 #timelinecontent{
@@ -1139,7 +1152,7 @@ textarea {
 .carousel-control.right {
   background-image: none;
   background-color: #3e2a56;
-  width: 40px;
+  width: 30px;
   cursor: pointer;
   opacity: 1;
 }
@@ -1151,7 +1164,7 @@ textarea {
 .carousel-control.left {
   background-image: none;
   background-color: #3e2a56;
-  width: 40px;
+  width: 30px;
   text-align: center;
   cursor: pointer;
   opacity: 1;
@@ -1182,7 +1195,7 @@ textarea {
 }
 
 #titleNew{
-    width: 58%;
+    width: 60%;
     margin: auto;
     font-family: monserratmedium;
     font-size: 21px;
@@ -1193,7 +1206,7 @@ textarea {
 }
 
 #newsdivlist{
-  width: 58%;
+  width: 60%;
   margin:auto;
   text-align: justify;
   color: #3e2a56;
@@ -1589,15 +1602,16 @@ textarea {
   z-index: 0;
   width: 100%;
   text-align: center;
-  font-size: 30px;
-  line-height: 11vw;
+  font-size: 25px;
   color: white;
   font-family: monserratmedium;
   text-transform: uppercase;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #select-menu-what{
-  margin-top: 150px;
+  margin-top: 110px;
 }
 
 #whatwedotitlecenter{
@@ -1605,7 +1619,7 @@ textarea {
   width: 287px;
   text-align: center;
   font-family: monserratregular;
-  font-size: 26px;
+  font-size: 23px;
   letter-spacing: 3px;
 }
 

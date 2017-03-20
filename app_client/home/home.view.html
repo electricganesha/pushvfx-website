@@ -1,12 +1,13 @@
 <div id="content">
-  <div id="homeimg1" ng-style="{'background':'url({{mainStill1}}) no-repeat center center'}">
-    <div id="uparrow">
-      <img src="/img/arrow_up.png" width="100%">
+  <!--ng-style="{'background':'url({{mainStill1}}) no-repeat center center'}"-->
+    <img id="image1" style="position: relative; z-index: -5; left: 0px; top: 0px; width:100%;" ng-src="{{after}}">
+    <img id="image2" style="position: absolute;z-index: -6; left: 0px; top: 0px; width:100%;" ng-src="{{before}}">
+    <section id="section06" class="demo" style="position: relative;">
+        <a href="#"><span></span></a>
+    </section>
+    <div id="uparrowtop">
+      <img src="/img/arrow_up_v.png" width="100%">
     </div>
-  </div>
-  <div id="slogan-top">
-    <p>PUSH YOURSELF TO NEW IDEAS</p>
-  </div>
   <div id="latestworkcontent">
     <div class="row">
       <div id="homedivleft">
@@ -31,22 +32,18 @@
       </div>
     </div>
   </div>
-  <div id="slogan-bottom">
-    <p>PUSH YOURSELF TO THE LIMIT</p>
-  </div>
-  <div id="homeimg1" ng-style="{'background':'url({{mainStill2}}) no-repeat center center'}">
     <div id="downarrow">
-      <img src="/img/arrow_down.png" width="100%">
+      <img src="/img/arrow_down.png" width="100%" style="vertical-align: baseline;">
     </div>
+    <img style="z-index: -5; left: 0px; top: 0px; width:100%;" ng-src="{{mainStill2}}">
     <div id="uparrow">
-      <img src="/img/arrow_up.png" width="100%">
+      <img src="/img/arrow_up_v.png" width="100%">
     </div>
-  </div>
 
   <div id="bottomcontent">
     <div class="row">
       <div id="homebottomdivcenter">
-        <p id="bottom-slogan">PUSH YOURSELF</p>
+        <p id="bottom-slogan">PUSH YOURSELF TO NEW IDEAS</p>
         <img id="left-triangle-bottom-div" src="/img/left_triangle.png" width="40%">
       </div>
     </div>
