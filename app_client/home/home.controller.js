@@ -49,7 +49,7 @@
     getRandomImage1(arrayImg2, "");
 
     function getRandomImage(imgAr, path) {
-        path = path || '/pics/beforeafter/'; // default path here
+        path = path || 'https://pushvfx.com/pics/beforeafter/'; // default path here
         var num = Math.floor( Math.random() * imgAr.length );
         var img = imgAr[ num ];
         $scope.before = path + imgAr[ num ].before;
