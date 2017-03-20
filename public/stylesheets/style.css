@@ -313,6 +313,12 @@ page-header{
   background-size: cover;
 }
 
+#uparrowtop{
+  width: 100%;
+  top: 52vw;
+  position:absolute;
+}
+
 #uparrow{
   width: 100%;
   bottom:-6px;
@@ -331,6 +337,7 @@ page-header{
   font-size: 19px;
   color: #3e2a56;
   letter-spacing: 3px;
+  background-color: white;
 }
 
 #slogan-bottom{
