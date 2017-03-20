@@ -104,6 +104,7 @@ module.exports.projectCreate = function(req, res) {
     title: req.body.title,
     thumbnail: req.body.thumbnail,
     showCaseStill: req.body.showCaseStill,
+    showCaseStillSecond: req.body.showCaseStillSecond,
     showCaseVideo: req.body.showCaseVideo,
     midPageStill: req.body.midPageStill,
     midPageVideo: req.body.midPageVideo,
@@ -163,6 +164,9 @@ module.exports.projectsUpdateOne = function(req, res) {
 
       if(req.body.showCaseStill)
       project.showCaseStill = req.body.showCaseStill;
+
+      if(req.body.showCaseStillSecond)
+      project.showCaseStillSecond = req.body.showCaseStillSecond;
 
       if(req.body.showCaseVideo)
       project.showCaseVideo = req.body.showCaseVideo;
