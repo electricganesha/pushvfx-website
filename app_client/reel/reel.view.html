@@ -40,7 +40,8 @@
         </div>
         <div id="reeldivlist">
             <div class="col-md-12" style="padding:0; margin-bottom: 70px;" ng-repeat="reel in reels.data">
-                <div id="reel" ng-click="showme=true" ng-hide="showme" ng-style="{'background':'url({{reel.still}}) no-repeat center center'}">
+                <div id="reel" ng-click="showme=true" ng-hide="showme">
+                    <img id="image" ng-src="{{reel.still}}">
                 </div>
 		        <anguvideo id="reelvideo" ng-show="showme" ng-model="reel.link" width="100%" height="100%"></anguvideo>
             </div>

@@ -29,7 +29,6 @@ module.exports.newsReadOne = function(req, res) {
           sendJSONresponse(res, 404, err);
           return;
         }
-        console.log(newsclip);
         sendJSONresponse(res, 200, newsclip);
       });
   } else {
@@ -74,7 +73,6 @@ module.exports.newsCreate = function(req, res) {
         console.log(err);
         sendJSONresponse(res, 400, err);
     } else {
-        console.log(newsclip);
         sendJSONresponse(res, 201, newsclip);
     }
   });
@@ -147,7 +145,6 @@ module.exports.newsDeleteOne = function(req, res) {
             sendJSONresponse(res, 404, err);
             return;
           }
-          console.log("News id " + newsId + " deleted");
           sendJSONresponse(res, 204, null);
         }
     );

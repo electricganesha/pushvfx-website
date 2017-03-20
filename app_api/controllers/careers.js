@@ -15,7 +15,6 @@ module.exports.careerList = function(req, res) {
 
 /* GET a careeritem by its id */
 module.exports.careerReadOne = function(req, res) {
-  console.log('Finding career item details', req.params);
   if (req.params && req.params.careerId) {
     Career
       .findById(req.params.careerId)
@@ -30,7 +29,6 @@ module.exports.careerReadOne = function(req, res) {
           sendJSONresponse(res, 404, err);
           return;
         }
-        console.log(careeritem);
         sendJSONresponse(res, 200, careeritem);
       });
   } else {
@@ -61,7 +59,6 @@ module.exports.careerCreate = function(req, res) {
         console.log(err);
         sendJSONresponse(res, 400, err);
     } else {
-        console.log(careeritem);
         sendJSONresponse(res, 201, careeritem);
     }
   });
@@ -149,7 +146,6 @@ module.exports.careerDeleteOne = function(req, res) {
             sendJSONresponse(res, 404, err);
             return;
           }
-          console.log("Career id " + careerId + " deleted");
           sendJSONresponse(res, 204, null);
         }
     );

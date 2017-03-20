@@ -282,13 +282,6 @@
 
        $scope.map.setOptions({styles: $scope.map.styles});
 	});
-
-    
-
-      
-   
-
-    console.log($scope.mapOptions);
     
     $scope.showError = function (error) {
       $scope.$apply(function() {

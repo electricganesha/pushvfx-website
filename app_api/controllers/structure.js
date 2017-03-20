@@ -29,7 +29,6 @@ module.exports.structuralInfoCreate = function(req, res) {
         console.log(err);
         sendJSONresponse(res, 400, err);
     } else {
-        console.log(siItem);
         sendJSONresponse(res, 201, siItem);
     }
   });
@@ -56,14 +55,6 @@ module.exports.structuralInfoUpdate = function(req, res) {
           sendJSONresponse(res, 400, err);
           return;
         }
-        /*
-        homePageImage1: req.body.homePageImage1,
-        homePageImage2: req.body.homePageImage2,
-        portfolioImage1Film: req.body.portfolioImage1Film,
-        portfolioImage2Interactive: req.body.portfolioImage2Interactive,
-        textContacts: req.body.textContacts,
-        textTeam: req.body.textTeam,
-        textLab: req.body.textLab,*/
 
         if(req.body.homePageImage1)
         siItem.title = req.body.homePageImage1;
@@ -110,7 +101,6 @@ module.exports.structuralInfoDelete = function(req, res) {
             sendJSONresponse(res, 404, err);
             return;
           }
-          console.log("SI id " + siId + " deleted");
           sendJSONresponse(res, 204, null);
         }
     );
