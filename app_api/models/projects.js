@@ -21,6 +21,7 @@ var projectSchema = new mongoose.Schema(
       title: {type:String, required:true}, // PROJECT TITLE
       thumbnail:  {type:String, required:true}, // PROJECT THUMBNAIL
       showCaseStill : {type:String, required:true}, //STILL IMAGE SHOWING IN THE LIST / PROJECT PAGE
+      showCaseStillSecond : {type:String, required:true}, //SECOND STILL IMAGE SHOWING IN THE LIST / PROJECT PAGE
       showCaseVideo : {type:String, required:true}, // STILL VIDEO WHEN WE CLICK STILL IMAGE
       midPageStill : {type:String},
       midPageVideo : {type:String},
