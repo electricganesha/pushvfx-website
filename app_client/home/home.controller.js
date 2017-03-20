@@ -25,7 +25,14 @@
     });
 
     var arrayImg1 = new Array();
-    arrayImg1[0] = {"before": "bpa_after.png","after":"bpa_before.png"};
+    arrayImg1[0] = {"before": "bpa_before.jpg","after":"bpa_after.jpg"};
+    arrayImg1[1] = {"before": "burro_before.jpg","after":"burro_after.jpg"};
+    arrayImg1[2] = {"before": "dentes_before.jpg","after":"dentes_after.jpg"};
+    arrayImg1[3] = {"before": "galo_before.jpg","after":"galo_after.jpg"};
+    arrayImg1[4] = {"before": "jac01_before.jpg","after":"jac01_after.jpg"};
+    arrayImg1[5] = {"before": "jac02_before.jpg","after":"jac02_after.jpg"};
+    arrayImg1[6] = {"before": "porco_before.jpg","after":"porco_after.jpg"};
+     arrayImg1[7] = {"before": "wirehead_before.jpg","after":"wirehead_after.jpg"};
 
     var arrayImg2 = new Array();
     arrayImg2[0] = "still9.jpg";

@@ -76,6 +76,10 @@
 
     /*####################### HOME CONTENT #################################*/
 
+    #image1, #image2{
+        margin-top: 80px;
+    }
+
     #latestworkcontent{
         margin-top: 0;
     }
@@ -86,6 +90,16 @@
 
     #uparrow {
         bottom: -3px;
+    }
+
+    #latestprojectsphoto {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+    }
+
+    #section06{
+        display: none;
     }
 
     /*####################### PORTFOLIO CONTENT #################################*/
@@ -172,6 +186,35 @@
         margin-top: 30px;
     }
 
+    #select-menu-timeline{
+        margin-top:87px;
+    }
+
+    #timelinetitle{
+        width:233px;
+    }
+
+    #timelinetitlecenter {
+        width: 170px;
+        font-size: 18px;
+    }
+
+    #titleSixNews {
+        font-size: 14px;
+    }
+
+    #reellist{
+        margin-top:40px;
+    }
+
+    #newname{
+        font-size: 12px;
+    }
+
+    #newdate{
+        font-size: 10px;
+    }
+
     /*####################### NEW CONTENT #################################*/
 
     #select-menu-news{
@@ -206,11 +249,20 @@
     /*####################### WHAT WE DO CONTENT #################################*/
     
     #cattitle{
-        line-height: 22vw;
+        font-size: 16px;
     }
 
      .tint{
         margin-bottom: 20px;
+    }
+
+    #whattitle{
+        width: 258px;
+    }
+
+    #whatwedotitlecenter{
+        width: 205px;
+        font-size: 16px;
     }
 
     /*####################### LAB CONTENT #################################*/
@@ -311,6 +363,20 @@
         bottom: -3px;
     }
 
+    #image1, #image2{
+        margin-top: 80px;
+    }
+
+    #latestprojectsphoto {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+    }
+
+    #section06{
+        display: none;
+    }
+
     /*####################### PORTFOLIO CONTENT #################################*/
 
     #latestprojects p{
@@ -353,6 +419,35 @@
 
     #textonews{
         margin-top: 30px;
+    }
+
+    #select-menu-timeline{
+        margin-top:87px;
+    }
+
+    #timelinetitle{
+        width:233px;
+    }
+
+    #timelinetitlecenter {
+        width: 170px;
+        font-size: 18px;
+    }
+
+    #titleSixNews {
+        font-size: 14px;
+    }
+
+    #reellist{
+        margin-top:40px;
+    }
+
+    #newname{
+        font-size: 12px;
+    }
+
+    #newdate{
+        font-size: 10px;
     }
 
     /*####################### NEW CONTENT #################################*/
@@ -405,11 +500,20 @@
     /*####################### WHAT WE DO CONTENT #################################*/
     
     #cattitle{
-        line-height: 22vw;
+        font-size: 16px;
     }
 
      .tint{
         margin-bottom: 20px;
+    }
+
+    #whattitle{
+        width: 258px;
+    }
+
+    #whatwedotitlecenter{
+        width: 205px;
+        font-size: 16px;
     }
 
     /*####################### LAB CONTENT #################################*/
@@ -506,6 +610,20 @@
         bottom: -3px;
     }
 
+    #image1, #image2{
+        margin-top: 80px;
+    }
+
+    #latestprojectsphoto {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+    }
+
+    #section06{
+        display: none;
+    }
+
     /*####################### PORTFOLIO CONTENT #################################*/
 
     #latestprojects p{
@@ -566,11 +684,20 @@
     /*####################### WHAT WE DO CONTENT #################################*/
     
     #cattitle{
-        line-height: 22vw;
+        font-size: 16px;
     }
 
      .tint{
         margin-bottom: 20px;
+    }
+
+    #whattitle{
+        width: 258px;
+    }
+
+    #whatwedotitlecenter{
+        width: 205px;
+        font-size: 16px;
     }
 
     /*####################### LAB CONTENT #################################*/
@@ -652,6 +779,20 @@
         bottom: -3px;
     }
 
+    #image1, #image2{
+        margin-top: 80px;
+    }
+
+    #latestprojectsphoto {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+    }
+
+    #section06{
+        display: none;
+    }
+
     /*####################### PORTFOLIO CONTENT #################################*/
 
     #latestprojects p{
@@ -694,7 +835,7 @@
     /*####################### WHAT WE DO CONTENT #################################*/
     
     #cattitle{
-        line-height: 22vw;
+        font-size: 16px;
     }
 
      .tint{
@@ -776,6 +917,20 @@
         height: 200px;
     }
 
+    #image1, #image2{
+        margin-top: 80px;
+    }
+
+    #latestprojectsphoto {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+    }
+
+    #section06{
+        display: none;
+    }
+
     /*####################### PORTFOLIO CONTENT #################################*/
 
     #latestprojects p{
@@ -816,10 +971,6 @@
     }
 
     /*####################### WHAT WE DO CONTENT #################################*/
-    
-    #cattitle{
-        line-height: 22vw;
-    }
 
      .tint{
         margin-bottom: 20px;
@@ -908,6 +1059,20 @@
         height: 200px;
     }
 
+    #image1, #image2{
+        margin-top: 80px;
+    }
+
+    #latestprojectsphoto {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+    }
+
+    #section06{
+        display: none;
+    }
+
     /*####################### REEL CONTENT #################################*/
 
     #reeldivlist{
@@ -955,10 +1120,6 @@
     }
 
     /*####################### WHAT WE DO CONTENT #################################*/
-    
-    #cattitle{
-        line-height: 22vw;
-    }
 
     .tint{
         margin-bottom: 20px;
@@ -1082,10 +1243,20 @@
         text-align: center;
     }
 
+    #newname{
+        font-size: 13px;
+    }
+
     /*####################### TIMELINE CONTENT #################################*/
     
     #newdescription{
         height:31px;
+    }
+
+    /*####################### WHAT WE DO CONTENT #################################*/
+
+    #cattitle{
+        font-size: 16px;
     }
 
 }
@@ -1154,6 +1325,16 @@
     #newdescription{
         height:20px;
     }
+
+    #newname{
+        font-size: 13px;
+    }
+
+    /*####################### WHAT WE DO CONTENT #################################*/
+
+    #cattitle{
+        font-size: 16px;
+    }
     
 }
 
@@ -1220,6 +1401,10 @@
     #newdescription{
         height:9px;
     }
+
+    #newname{
+        font-size: 13px;
+    }
 }
 
 @media(min-width:1301px) and (max-width:1499px) {
@@ -1271,6 +1456,10 @@
     
     #newdescription{
         height:4px;
+    }
+
+    #newname{
+        font-size: 13px;
     }
 }
 

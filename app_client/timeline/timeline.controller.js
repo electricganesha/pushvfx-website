@@ -103,7 +103,7 @@
 
       var timelineyear = document.createElement("p");
       timelineyear.innerHTML= year;
-      timelineyear.style.marginTop= "10px";
+      timelineyear.style.marginTop= "4px";
       timelineyear.style.paddingLeft= "15px";
       timelineyear.style.width= "9%";
       timelineyear.style.float= "left";
