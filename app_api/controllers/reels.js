@@ -15,7 +15,6 @@ module.exports.reelsList = function(req, res) {
 
 /* GET a reel by its id */
 module.exports.reelsReadOne = function(req, res) {
-  console.log('Finding reel details', req.params);
   if (req.params && req.params.reelId) {
     Reel
     .findById(req.params.reelId)
@@ -30,7 +29,6 @@ module.exports.reelsReadOne = function(req, res) {
         sendJSONresponse(res, 404, err);
         return;
       }
-      console.log(reel);
       sendJSONresponse(res, 200, reel);
     });
   } else {
@@ -80,8 +78,6 @@ module.exports.getReelsByCategory = function(req,res)
 /* POST a new reel */
 /* /api/reels */
 module.exports.reelCreate = function(req, res) {
-  console.log("CRIAR REEL");
-  console.log(req);
   Reel.create({
     still: req.body.still,
     dateOfReel: new Date(req.body.dateOfReel),
@@ -156,7 +152,6 @@ module.exports.reelsDeleteOne = function(req, res) {
           sendJSONresponse(res, 404, err);
           return;
         }
-        console.log("reel id " + reelId + " deleted");
         sendJSONresponse(res, 204, null);
       }
     );

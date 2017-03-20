@@ -15,7 +15,6 @@ module.exports.labList = function(req, res) {
 
 /* GET a labitem by its id */
 module.exports.labReadOne = function(req, res) {
-  console.log('Finding lab item details', req.params);
   if (req.params && req.params.labId) {
     Lab
       .findById(req.params.labId)
@@ -54,7 +53,6 @@ module.exports.labCreate = function(req, res) {
         console.log(err);
         sendJSONresponse(res, 400, err);
     } else {
-        console.log(labitem);
         sendJSONresponse(res, 201, labitem);
     }
   });
@@ -118,7 +116,6 @@ module.exports.labDeleteOne = function(req, res) {
             sendJSONresponse(res, 404, err);
             return;
           }
-          console.log("Lab id " + labId + " deleted");
           sendJSONresponse(res, 204, null);
         }
     );

@@ -15,7 +15,6 @@ module.exports.categoryList = function(req, res) {
 
 /* GET a category by its id */
 module.exports.categoryReadOne = function(req, res) {
-  console.log('Finding category item details', req.params);
   if (req.params && req.params.categoryId) {
     Category
       .findById(req.params.categoryId)
@@ -30,7 +29,6 @@ module.exports.categoryReadOne = function(req, res) {
           sendJSONresponse(res, 404, err);
           return;
         }
-        console.log(category);
         sendJSONresponse(res, 200, category);
       });
   } else {
@@ -53,7 +51,6 @@ module.exports.categoryCreate = function(req, res) {
         console.log(err);
         sendJSONresponse(res, 400, err);
     } else {
-        console.log(category);
         sendJSONresponse(res, 201, category);
     }
   });
@@ -117,7 +114,6 @@ module.exports.categoryDeleteOne = function(req, res) {
             sendJSONresponse(res, 404, err);
             return;
           }
-          console.log("Category id " + categoryId + " deleted");
           sendJSONresponse(res, 204, null);
         }
     );
