@@ -382,9 +382,9 @@ page-header{
   margin: auto;
   -webkit-filter: grayscale(100%);
   -webkit-transition: .5s ease-in-out;
-  -moz-filter: grayscale(100%); 
+  -moz-filter: grayscale(100%);
   -moz-transition: .5s ease-in-out;
-  -o-filter: grayscale(100%); 
+  -o-filter: grayscale(100%);
   -o-transition: .5s ease-in-out;
 }
 
@@ -446,23 +446,23 @@ page-header{
 
 #selectcontent{
   height: 80px;
-  padding-top: 200px; 
+  padding-top: 200px;
 }
 
 .stillBigAll{
-  background: url("http://pushvfx.com:4000/pics/stills/film.jpg") no-repeat center center;
+  background: url("https://pushvfx.com/pics/stills/still2.jpg") no-repeat center center;
 }
 
 .stillBigFilm{
-  background: url("http://pushvfx.com:4000/pics/stills/film.jpg") no-repeat center center;
+  background: url("https://pushvfx.com/pics/stills/still1.jpg") no-repeat center center;
 }
 
 .stillBigInteractive{
-   background: url("http://pushvfx.com:4000/pics/stills/interactive_data.jpg") no-repeat center center;
+   background: url("https://pushvfx.com/pics/stills/still5.jpg") no-repeat center center;
 }
 
 .stillBigAnimation{
-  background: url("http://pushvfx.com:4000/pics/stills/animation.jpg") no-repeat center center;
+  background: url("https://pushvfx.com/pics/stills/still.jpg") no-repeat center center;
 }
 
 .demo a {
@@ -720,7 +720,7 @@ page-header{
 
 #photoinsta {
   content: '';
-  width: 90%; 
+  width: 90%;
   height: 200px;
   margin: auto;
   margin-top:25px;
@@ -759,7 +759,7 @@ page-header{
 /*####################### REEL PAGE CONTENT STYLE #################################*/
 
 #selectcontentreel{
-  height: 80px; 
+  height: 80px;
 }
 
 #reelcontent{
@@ -821,7 +821,7 @@ page-header{
   width: 63%;
   margin:auto;
   float:left;
-  padding-bottom: 100px; 
+  padding-bottom: 100px;
 }
 
 #divleftreel{
@@ -840,7 +840,7 @@ page-header{
   width: 96%;
   height:34vw;
   margin-left: 2%;
-  z-index:0; 
+  z-index:0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -848,7 +848,7 @@ page-header{
 }
 
 #reelvideo{
-  width: 96%; 
+  width: 96%;
   height:34vw;
   margin: auto;
   z-index: -1;
@@ -880,7 +880,7 @@ page-header{
 #info-form{
     width: 60%;
     margin: auto;
-} 
+}
 
 .formtb{
     width: 100%;
@@ -934,14 +934,14 @@ textarea {
 #info_title{
   font-family: monserratregular;
   font-size: 14px;
-  color: #b8153a; 
+  color: #b8153a;
   letter-spacing: 1px;
   margin:5px;
 }
 
 #info_text{
-  line-height:22px; 
-  color: #3e2a56; 
+  line-height:22px;
+  color: #3e2a56;
   font-size:12px;
   font-family: monserratlight;
 }
@@ -964,7 +964,7 @@ textarea {
 }
 
 #selectcontenttimeline{
-  height: 80px; 
+  height: 80px;
 }
 
 #timelineselection ul{
@@ -1226,9 +1226,9 @@ textarea {
     transform: translateY(-50%);
     -webkit-filter: opacity(40%);
     -webkit-transition: .5s ease-in-out;
-    -moz-filter: opacity(40%); 
+    -moz-filter: opacity(40%);
     -moz-transition: .5s ease-in-out;
-    -o-filter: opacity(40%); 
+    -o-filter: opacity(40%);
     -o-transition: .5s ease-in-out;
 }
 
@@ -1267,11 +1267,11 @@ textarea {
 #proj-link:hover:after {
   width: 100%;
 }
-  
+
 #projectstill{
   width: 100%;
   text-align: center;
-  z-index:0; 
+  z-index:0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1285,7 +1285,7 @@ textarea {
   -moz-transition: .5s ease-in-out;
   -o-filter: opacity(1);
   -o-transition: .5s ease-in-out;
-  
+
 }
 
 #stillProjectcontent{

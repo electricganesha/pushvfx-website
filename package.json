@@ -9,12 +9,15 @@
     "body-parser": "~1.15.1",
     "cookie-parser": "~1.4.3",
     "cors": "^2.8.1",
+    "crypto": "0.0.3",
     "debug": "~2.2.0",
     "express": "~4.13.4",
+    "http": "0.0.0",
     "jade": "~1.11.0",
     "mongoose": "^4.7.6",
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.0",
+    "tls": "0.0.1",
     "uglify-js": "^2.7.5"
   }
 }
