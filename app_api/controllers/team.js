@@ -9,7 +9,6 @@ var sendJSONresponse = function(res, status, content) {
 /* GET list of team members */
 module.exports.teamList = function(req, res) {
     Team.find({}, null, {sort:{name:1}}, function(err, team) {
-	console.log(team);
        res.json(team);
   });
 };
@@ -31,7 +30,6 @@ module.exports.teamReadOne = function(req, res) {
           sendJSONresponse(res, 404, err);
           return;
         }
-        console.log(teammember);
         sendJSONresponse(res, 200, teammember);
       });
   } else {
@@ -63,7 +61,6 @@ social: [socialNetworksSchema]*/
         console.log(err);
         sendJSONresponse(res, 400, err);
     } else {
-        console.log(teammember);
         sendJSONresponse(res, 201, teammember);
     }
   });
@@ -130,7 +127,6 @@ module.exports.teamDeleteOne = function(req, res) {
             sendJSONresponse(res, 404, err);
             return;
           }
-          console.log("Team id " + teamId + " deleted");
           sendJSONresponse(res, 204, null);
         }
     );

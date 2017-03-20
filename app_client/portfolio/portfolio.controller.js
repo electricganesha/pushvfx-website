@@ -31,7 +31,6 @@
             $scope.category = choice;
             $scope.portfolio = data;
             $scope.still = 'stillBigAll';
-            console.log("All");
           },function (error){
             $scope.message = "Sorry, something's gone wrong, please try again later";
           });

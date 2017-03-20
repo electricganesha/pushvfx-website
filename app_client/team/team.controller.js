@@ -12,7 +12,6 @@
     getData.getinstaphotos()
       .then(function (data){
         $scope.instaphotos = data;
-        console.log(data);
         $scope.$apply();
       },function (error){
         $scope.message = "Sorry, something's gone wrong, please try again later";

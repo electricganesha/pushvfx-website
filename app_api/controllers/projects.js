@@ -15,7 +15,6 @@ module.exports.projectsList = function(req, res) {
 
 /* GET a project by its id */
 module.exports.projectsReadOne = function(req, res) {
-  console.log('Finding project details', req.params);
   if (req.params && req.params.projectId) {
     Proj
     .findById(req.params.projectId)
@@ -123,7 +122,6 @@ module.exports.projectCreate = function(req, res) {
       console.log(err);
       sendJSONresponse(res, 400, err);
     } else {
-      console.log(project);
       sendJSONresponse(res, 201, project);
     }
   });
@@ -229,7 +227,6 @@ module.exports.projectsDeleteOne = function(req, res) {
           sendJSONresponse(res, 404, err);
           return;
         }
-        console.log("Project id " + projectId + " deleted");
         sendJSONresponse(res, 204, null);
       }
     );

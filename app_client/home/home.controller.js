@@ -8,18 +8,25 @@
   function homeCtrl ($scope, getData, saveNewsId) {
 
     var arrayImg1 = new Array();
-    arrayImg1[0] = "film1.jpg";
-    arrayImg1[1] = "film2.jpg";
-    arrayImg1[2] = "interactive_data.jpg";
-    arrayImg1[3] = "film4.jpg";
-    arrayImg1[4] = "Interactive.jpg";
+    arrayImg1[0] = "still.jpg";
+    arrayImg1[1] = "still1.jpg";
+    arrayImg1[2] = "still2.jpg";
+    arrayImg1[3] = "still3.jpg";
+    arrayImg1[4] = "still4.jpg";
+    arrayImg1[5] = "still5.jpg";
+    arrayImg1[6] = "still6.jpg";
+    arrayImg1[7] = "still7.jpg";
+    arrayImg1[8] = "still8.jpg";
 
     var arrayImg2 = new Array();
-    arrayImg2[0] = "film3.jpg";
-    arrayImg2[1] = "film5.jpg";
-    arrayImg2[2] = "animation.jpg";
-    arrayImg2[3] = "interactive1.jpg";
-    arrayImg2[4] = "film.jpg";
+    arrayImg2[0] = "still9.jpg";
+    arrayImg2[1] = "still10.jpg";
+    arrayImg2[2] = "still11.jpg";
+    arrayImg2[3] = "still12.jpg";
+    arrayImg2[4] = "still13.jpg";
+    arrayImg2[5] = "still14.jpg";
+    arrayImg2[6] = "still15.jpg";
+    arrayImg2[7] = "still16.jpg";
 
 
     getRandomImage(arrayImg1, "");

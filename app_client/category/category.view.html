@@ -11,10 +11,10 @@
                 <div class="row">
                     <div class="col-md-4" style="padding-left:5px; padding-right:5px; padding-top:5px; padding-bottom: 5px;" ng-repeat="slide in slides track by $index">
                         <div ng-if="slide.isInternal == false">
-                            <a href="{{slide.link}}" target="_blank"><img id="image" src="{{slide.still}}"></a>
+                            <a href="{{slide.link}}" target="_blank"><img id="image" ng-src="{{slide.still}}"></a>
                         </div>
                         <div ng-if="slide.isInternal == true">
-                            <a ng-click="saveId(slide.link)"  href="/projects"><img id="image" src="{{slide.still}}"></a>
+                            <a ng-click="saveId(slide.link)"  href="/projects"><img id="image" ng-src="{{slide.still}}"></a>
                         </div>
                     </div>
                 </div>

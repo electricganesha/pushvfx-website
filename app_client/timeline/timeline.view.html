@@ -35,7 +35,7 @@
             <div class="col-md-4" style="padding:0;" ng-repeat="new in lastNews.data" ng-style="($index >= 3 || $index <= 5) && {'margin-top':'30px'} || {'margin-top':'0px'} ">
                 <a style="text-decoration: none;" ng-click="saveId(new._id)" href="/news">
                     <div id="teammemberphoto">
-                        <img id="image" src="{{new.thumbnail}}">
+                        <img id="image" ng-src="{{new.thumbnail}}">
                     </div>
                     <p id="newname">{{ new.title }}</p>
                     <p id="newdate">{{ new.dateOfEvent | date : shortDate }}</p>
@@ -58,7 +58,7 @@
                 <a style="text-decoration: none;" ng-click="saveId(new._id)" href="/news">
                     <div class="col-md-4">
                         <div id="newsphoto">
-                            <img id="image" src="{{new.thumbnail}}">
+                            <img id="image" ng-src="{{new.thumbnail}}">
                         </div>
                     </div>
                     <div class="col-md-8">
