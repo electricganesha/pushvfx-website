@@ -26,14 +26,14 @@
     getRandomImage1(arrayImg2, "");
 
     function getRandomImage(imgAr, path) {
-        path = path || 'http://pushvfx.com:4000/pics/stills/'; // default path here
+        path = path || 'https://pushvfx.com/pics/stills/'; // default path here
         var num = Math.floor( Math.random() * imgAr.length );
         var img = imgAr[ num ];
         $scope.mainStill1 = path + img;
     }
 
     function getRandomImage1(imgAr, path) {
-        path = path || 'http://pushvfx.com:4000/pics/stills/'; // default path here
+        path = path || 'https://pushvfx.com/pics/stills/'; // default path here
         var num = Math.floor( Math.random() * imgAr.length );
         var img = imgAr[ num ];
         $scope.mainStill2 = path + img;

@@ -22,7 +22,7 @@
 14 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:833:5)
 15 verbose pkgid sitePUSH@0.0.0
 16 verbose cwd /home/pushint/sitePUSH
-17 error Linux 4.4.0-64-generic
+17 error Linux 4.4.0-66-generic
 18 error argv "node" "/home/pushint/.nvm/v0.10.40/bin/npm" "start"
 19 error node v0.10.40
 20 error npm  v3.10.8
