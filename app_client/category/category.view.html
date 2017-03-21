@@ -14,12 +14,7 @@
                             <a href="{{slide.link}}" target="_blank"><img id="image" ng-src="{{slide.still}}"></a>
                         </div>
                         <div ng-if="slide.isInternal == true">
-                            <div ng-if="slide.link != ''">
-                              <a ng-click="saveId(slide.link)"  href="/projects"><img id="image" ng-src="{{slide.still}}"></a>
-                            <div>
-                            <div ng-if="slide.link == ''">
-                              <img id="image" ng-src="{{slide.still}}">
-                            <div>
+                            <a ng-click="saveId(slide.link)"  href="/projects"><img id="image" ng-src="{{slide.still}}"></a>
                         </div>
                     </div>
                 </div>
