@@ -56,7 +56,7 @@ function config($routeProvider, $locationProvider)
   .when('/category',{
     templateUrl: '/category/category.view.html',
     controller: 'categoryCtrl'
-  }).
+  })
   .when('/portfolio/', {
     templateUrl: 'portfolio/portfolio.view.html',
     controller: 'portfolioCtrl'
@@ -107,11 +107,7 @@ function config($routeProvider, $locationProvider)
   })
   .otherwise({redirectTo: '/'});
 
-  $locationProvider.html5Mode({
-  	enabled: false,
-  	requireBase: true,
-  	rewriteLinks: true
-	});
+  $locationProvider.html5Mode(true);
 }
 
 angular.module('sitePUSH')
