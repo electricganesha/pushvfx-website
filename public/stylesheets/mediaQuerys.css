@@ -109,11 +109,19 @@
     }
 
     #portfolioselection ul{
-        width: 265px;
+        width: 282px;
     }
 
     #portfolioselection ul li{
-        font-size: 9PX;
+        font-size: 12px;
+    }
+
+    #portfolioselection2 ul{
+        width: 325px;
+    }
+
+    #portfolioselection2 ul li{
+        font-size: 12px;
     }
 
     #portfolioselection{
@@ -383,6 +391,26 @@
         font-size: 11px;
     }
 
+    #portfolioselection ul{
+        width: 282px;
+    }
+
+    #portfolioselection ul li{
+        font-size: 12px;
+    }
+
+    #portfolioselection2 ul{
+        width: 325px;
+    }
+
+    #portfolioselection2 ul li{
+        font-size: 12px;
+    }
+
+    #portfolioselection{
+        margin-top: -30px;
+    }
+
     /*####################### TEAM CONTENT #################################*/
 
 
@@ -468,18 +496,6 @@
 
     #projectCredits{
         text-align: center;
-    }
-
-    #portfolioselection ul{
-        width: 265px;
-    }
-
-    #portfolioselection ul li{
-        font-size: 9PX;
-    }
-
-    #portfolioselection{
-        margin-top: -30px;
     }
 
     #mainTitle{

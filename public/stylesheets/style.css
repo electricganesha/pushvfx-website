@@ -542,7 +542,7 @@ page-header{
 }
 
 #portfolioselection ul{
-  width: 552px;
+  width: 407px;
   height: 25px;
   list-style-type: none;
   margin: auto;
@@ -551,6 +551,23 @@ page-header{
 }
 
 #portfolioselection ul li{
+  float: left;
+  font-family: monserratmedium;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+#portfolioselection2 ul{
+  width: 476px;
+  height: 25px;
+  list-style-type: none;
+  margin: auto;
+  color: white;
+  padding:0;
+  margin-top: 10px;
+}
+
+#portfolioselection2 ul li{
   float: left;
   font-family: monserratmedium;
   font-size: 20px;

@@ -49,6 +49,9 @@
             case "Animation":
               $scope.still = 'stillBigAnimation';
               break;
+            case "Motion Graphics":
+              $scope.still = 'stillBigAnimation';
+              break;
           }
         },function (error){
           $scope.message = "Sorry, something's gone wrong, please try again later";

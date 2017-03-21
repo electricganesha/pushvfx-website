@@ -1,7 +1,9 @@
 <div id="content">
   <!--ng-style="{'background':'url({{mainStill1}}) no-repeat center center'}"-->
-    <img id="image1" style="position: relative; z-index: -5; left: 0px; top: 0px; width:100%;" ng-src="{{after}}">
-    <img id="image2" style="position: absolute;z-index: -6; left: 0px; top: 0px; width:100%;" ng-src="{{before}}">
+    <div id="imagePanel">
+        <img id="image1" style="position: absolute; z-index: -5; left: 0px; top: 0px; width:100%; visibility: hidden;" src="{{after}}">
+        <img id="image2" style="position: relative; z-index: -6; left: 0px; top: 0px; width:100%;" src="{{before}}">
+    </div>
     <section id="section06" class="demo" style="position: relative;">
         <a href="#"><span></span></a>
     </section>
