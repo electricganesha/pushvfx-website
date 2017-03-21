@@ -59,7 +59,11 @@ function config($routeProvider, $locationProvider)
   })
   .otherwise({redirectTo: '/'});
 
-  $locationProvider.html5Mode(true);
+  $locationProvider.html5Mode({
+  	enabled: false,
+  	requireBase: true,
+  	rewriteLinks: true
+	});
 }
 
 angular.module('sitePUSH')
