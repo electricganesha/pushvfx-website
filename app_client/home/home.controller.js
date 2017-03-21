@@ -83,10 +83,10 @@
     }
 
 
-    $("#imagePanel").mousemove(function (event) {
+    $(document).mousemove(function (event) {
         $("#image1").css('visibility', 'visible');
         var width1 = event.pageX;
-        var clip1 = "polygon(0 0, " + width1*1.56 + "px 0, 0 " + width1*1.56 + "px)";
+        var clip1 = "polygon(0 0, 0 " + width1*1.56 + "px, " + width1*1.56 + "px 0)";
         $("#image1").css('clip-path', clip1);
     });
 
