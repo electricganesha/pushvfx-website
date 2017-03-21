@@ -303,6 +303,10 @@ page-header{
   width: 100%;
 }
 
+#image1{
+  display: none;
+}
+
 #homeimg1{
   position:relative;
   width: 100%;
