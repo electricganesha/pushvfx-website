@@ -60,9 +60,11 @@ function config($routeProvider, $locationProvider)
   .otherwise({redirectTo: '/'});
 
   $locationProvider.html5Mode({
-  	enabled: false,
-  	requireBase: true,
-  	rewriteLinks: true
+  	enabled: true,
+  	
+        
+        //requireBase: true,
+  	//rewriteLinks: true
 	});
 }
 

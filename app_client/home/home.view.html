@@ -1,8 +1,6 @@
-<div id="content">
-    <div id="imagePanel">
-        <img id="image1" style="position: relative; z-index: -5; left: 0px; top: 0px; width:100%;" src="{{after}}">
-        <img id="image2" style="position: absolute; z-index: -6; left: 0px; top: 0px; width:100%;" src="{{before}}">
-    </div>
+<div id="content" ng-mousemove="clipimage($event)">
+    <img id="image1" ng-show="image1show" ng-src="{{after}}">
+    <img id="image2" ng-src="{{before}}">
     <section id="section06" class="demo" style="position: relative;">
         <a href="#"><span></span></a>
     </section>
@@ -15,7 +13,7 @@
         <img src="/img/left_triangle.png" width="40%">
       </div>
       <div id="latestwork">
-        <p>OUR LATEST WORK</p>
+        <p>OUR LATEST WORK {{image1show}}</p>
         <div id="latestprojects">
             <div class="col-md-4" style="padding:0;" ng-repeat="bestproject in bestprojects.data">
               <a style="text-decoration: none;" ng-click="saveId(bestproject._id)"  href="/projects">
