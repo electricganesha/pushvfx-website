@@ -18,11 +18,6 @@
         $("#image2").css('clip', clip1);
     });*/
 
-    $(document).mousemove(function (event) {
-        var width1 = event.pageX;
-        var clip1 = "polygon(0 0, 0 " + width1*1.56 + "px, " + width1*1.56 + "px 0)";
-        $("#image1").css('clip-path', clip1);   
-    });
 
     var arrayImg1 = new Array();
     arrayImg1[0] = {"before": "bpa_before.jpg","after":"bpa_after.jpg"};
@@ -32,7 +27,7 @@
     arrayImg1[4] = {"before": "jac01_before.jpg","after":"jac01_after.jpg"};
     arrayImg1[5] = {"before": "jac02_before.jpg","after":"jac02_after.jpg"};
     arrayImg1[6] = {"before": "porco_before.jpg","after":"porco_after.jpg"};
-     arrayImg1[7] = {"before": "wirehead_before.jpg","after":"wirehead_after.jpg"};
+    arrayImg1[7] = {"before": "wirehead_before.jpg","after":"wirehead_after.jpg"};
 
     var arrayImg2 = new Array();
     arrayImg2[0] = "still9.jpg";
@@ -86,6 +81,14 @@
         }
       });
     }
+
+
+    $("#imagePanel").mousemove(function (event) {
+        $("#image1").css('visibility', 'visible');
+        var width1 = event.pageX;
+        var clip1 = "polygon(0 0, " + width1*1.56 + "px 0, 0 " + width1*1.56 + "px)";
+        $("#image1").css('clip-path', clip1);
+    });
 
     getData.structuralInfo()
       .then(function (data){

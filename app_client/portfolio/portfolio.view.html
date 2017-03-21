@@ -18,17 +18,27 @@
                     </div>
                     <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                     <div ng-if="category == 'Interactive'">
-                        <li id="port-link-hover" ng-click="selectMenu('Interactive')" style="cursor: pointer;">INTERACTIVE</li>
+                        <li id="port-link-hover" ng-click="selectMenu('Interactive')" style="cursor: pointer;">VR/INTERACTIVE</li>
                     </div>
                     <div ng-if="category != 'Interactive'">
-                        <li id="port-link" ng-click="selectMenu('Interactive')" style="cursor: pointer;">INTERACTIVE</li>
+                        <li id="port-link" ng-click="selectMenu('Interactive')" style="cursor: pointer;">VR/INTERACTIVE</li>
                     </div>
-                    <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+                </ul>
+            </div>
+            <div id="portfolioselection2">
+                <ul>
                     <div ng-if="category == 'Animation'">
-                        <li id="port-link-hover" ng-click="selectMenu('Animation')" style="cursor: pointer;">ANIMATION</li>
+                        <li id="port-link-hover" ng-click="selectMenu('Animation')" style="cursor: pointer;">3D ANIMATION</li>
                     </div>
                     <div ng-if="category != 'Animation'">
-                        <li id="port-link" ng-click="selectMenu('Animation')" style="cursor: pointer;">ANIMATION</li>
+                        <li id="port-link" ng-click="selectMenu('Animation')" style="cursor: pointer;">3D ANIMATION</li>
+                    </div>
+                    <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+                    <div ng-if="category == 'Motion Graphics'">
+                        <li id="port-link-hover" ng-click="selectMenu('Motion Graphics')" style="cursor: pointer;">MOTION GRAPHICS</li>
+                    </div>
+                    <div ng-if="category != 'Motion Graphics'">
+                        <li id="port-link" ng-click="selectMenu('Motion Graphics')" style="cursor: pointer;">MOTION GRAPHICS</li>
                     </div>
                 </ul>
             </div>
