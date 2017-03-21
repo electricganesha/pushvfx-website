@@ -6,18 +6,15 @@
 
   homeCtrl.$inject = ['$scope', 'getData', 'saveNewsId'];
   function homeCtrl ($scope, getData, saveNewsId) {
-    
+    $scope.image1show = false;
     var viewportWidth = $(window).width();
 
-   /* $(document).mousemove(function (event) {
-        var width1 = event.pageX;
-         var width2 = event.pageX;
-        var clip1 = "rect(0," + width1 + "px, auto, auto)";
-        var clip2 = "rect(0, auto, auto, " + width1 + "px)";
-        $("#image2").css('clip', clip1);
-        $("#image2").css('clip', clip1);
-    });*/
-
+    $scope.clipimage = function($event){
+        $scope.image1show = true;
+        var width1 = $event.x;
+        var clip1 = "polygon(0 0, 0 " + width1*1.56 + "px, " + width1*1.56 + "px 0)";
+        $("#image1").css('clip-path', clip1);
+    }
 
     var arrayImg1 = new Array();
     arrayImg1[0] = {"before": "bpa_before.jpg","after":"bpa_after.jpg"};
@@ -38,7 +35,6 @@
     arrayImg2[5] = "still14.jpg";
     arrayImg2[6] = "still15.jpg";
     arrayImg2[7] = "still16.jpg";
-
 
     getRandomImage(arrayImg1, "");
     getRandomImage1(arrayImg2, "");
@@ -81,14 +77,6 @@
         }
       });
     }
-
-
-    $(document).mousemove(function (event) {
-        $("#image1").css('display', 'block');
-        var width1 = event.pageX;
-        var clip1 = "polygon(0 0, 0 " + width1*1.56 + "px, " + width1*1.56 + "px 0)";
-        $("#image1").css('clip-path', clip1);
-    });
 
     getData.structuralInfo()
       .then(function (data){
