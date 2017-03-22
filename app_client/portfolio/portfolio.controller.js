@@ -46,7 +46,7 @@
           }
           
           $scope.portfolio = data;
-          switch($scope.category){
+          switch(choice){
             case "Film":
               $scope.still = 'stillBigFilm';
               break;
