@@ -14,6 +14,7 @@
         var width1 = $event.x;
         var clip1 = "polygon(0 0, 0 " + width1*1.56 + "px, " + width1*1.56 + "px 0)";
         $("#image1").css('clip-path', clip1);
+        $("#image1").css('-webkit-clip-path', clip1);
     }
 
     var arrayImg1 = new Array();

@@ -37,7 +37,14 @@
       }else{
         getData.portfolio(choice)
         .then(function (data){
-          $scope.category = choice;
+          if(choice == "Animation"){
+            $scope.category = "3D ANIMATION";
+          } else if(choice == "Interactive") {
+            $scope.category = "VR/INTERACTIVE";
+          } else {
+            $scope.category = choice;
+          }
+          
           $scope.portfolio = data;
           switch($scope.category){
             case "Film":
