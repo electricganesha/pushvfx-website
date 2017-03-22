@@ -10,6 +10,10 @@ var ctrlLab = require('../controllers/lab');
 var ctrlReel = require('../controllers/reels');
 var ctrlCareer = require('../controllers/careers');
 var ctrlCategories = require('../controllers/categories');
+var ctrlMailer = require('../controllers/mailerservice');
+
+//mailerservice
+router.post('/mailerservice', ctrlMailer.sendContactEmail); //send contact email
 
 //structuralInfo
 router.get('/structuralInfo', ctrlStructure.structuralInfoGet); //get structural info

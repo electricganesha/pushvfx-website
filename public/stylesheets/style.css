@@ -304,18 +304,18 @@ page-header{
 }
 
 #image1{
-  position: absolute; 
-  z-index: -5; 
-  left: 0px; 
-  top: 0px; 
+  position: absolute;
+  z-index: -5;
+  left: 0px;
+  top: 0px;
   width:100%;
 }
 
 #image2{
-  position: relative; 
-  z-index: -6; 
-  left: 0px; 
-  top: 0px; 
+  position: relative;
+  z-index: -6;
+  left: 0px;
+  top: 0px;
   width:100%;
 }
 
@@ -962,7 +962,18 @@ page-header{
     letter-spacing: 1px;
 }
 
-textarea {
+.formtbError{
+    width: 100%;
+    height: 32px;
+    border: 0;
+    color: #9b9694;
+    outline: 0;
+    border-bottom: solid 1px #b8153a;
+    font-family: monserratlight;
+    letter-spacing: 1px;
+}
+
+.textareaClass {
     width: 100%;
     padding-top: 7px;
     padding-left: 7px;
@@ -971,6 +982,18 @@ textarea {
     resize: none;
     outline: 0;
     font-family: monserratlight;
+}
+
+.textareaClassError
+{
+  width: 100%;
+  padding-top: 7px;
+  padding-left: 7px;
+  color: #9b9694;
+  border: 1px solid #b8153a;
+  resize: none;
+  outline: 0;
+  font-family: monserratlight;
 }
 
 #send {
