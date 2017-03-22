@@ -480,18 +480,34 @@ page-header{
 
 .stillBigAll{
   background: url("https://pushvfx.com/pics/stills/still2.jpg") no-repeat center center;
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  -o-transition: background 1s;
+  transition: background 1s;
 }
 
 .stillBigFilm{
   background: url("https://pushvfx.com/pics/stills/still1.jpg") no-repeat center center;
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  -o-transition: background 1s;
+  transition: background 1s;
 }
 
 .stillBigInteractive{
    background: url("https://pushvfx.com/pics/stills/still5.jpg") no-repeat center center;
+   -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  -o-transition: background 1s;
+  transition: background 1s;
 }
 
 .stillBigAnimation{
   background: url("https://pushvfx.com/pics/stills/still.jpg") no-repeat center center;
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  -o-transition: background 1s;
+  transition: background 1s;
 }
 
 .demo a {
