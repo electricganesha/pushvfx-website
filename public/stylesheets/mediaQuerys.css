@@ -129,7 +129,7 @@
     }
 
     #mainTitle{
-        font-size: 76px;
+        font-size: 30px;
     }
 
 
@@ -411,6 +411,10 @@
         margin-top: -30px;
     }
 
+    #mainTitle{
+        font-size: 30px;
+    }
+
     /*####################### TEAM CONTENT #################################*/
 
 
@@ -496,10 +500,6 @@
 
     #projectCredits{
         text-align: center;
-    }
-
-    #mainTitle{
-        font-size: 76px;
     }
 
     #bottomprojtext{
@@ -644,6 +644,10 @@
 
     #latestprojects p{
         font-size: 11px;
+    }
+
+    #mainTitle{
+        font-size: 30px;
     }
 
     /*####################### REEL CONTENT #################################*/
@@ -815,6 +819,10 @@
         font-size: 11px;
     }
 
+    #mainTitle{
+        font-size: 70px;
+    }
+
     /*####################### TEAM CONTENT #################################*/
 
     #instainfo img{
@@ -951,6 +959,10 @@
 
     #latestprojects p{
         font-size: 11px;
+    }
+
+    #mainTitle{
+        font-size: 70px;
     }
 
     /*####################### TEAM CONTENT #################################*/
@@ -1101,6 +1113,10 @@
         font-size: 11px;
     }
 
+    #mainTitle{
+        font-size: 70px;
+    }
+
     /*####################### TEAM CONTENT #################################*/
 
 
@@ -1240,6 +1256,10 @@
         font-size: 11px;
     }
 
+    #mainTitle{
+        font-size: 70px;
+    }
+
     /*####################### TEAM CONTENT #################################*/
 
     #instainfo img{
@@ -1301,6 +1321,10 @@
 
     #latestprojects p{
         font-size: 11px;
+    }
+
+    #mainTitle{
+        font-size: 70px;
     }
 
     /*####################### TEAM CONTENT #################################*/
@@ -1380,6 +1404,10 @@
         font-size: 11px;
     }
 
+    #mainTitle{
+        font-size: 100px;
+    }
+
      /*####################### TEAM CONTENT #################################*/
 
     #instainfo img{
@@ -1447,6 +1475,10 @@
 
     #latestprojects p{
         font-size: 11px;
+    }
+
+    #mainTitle{
+        font-size: 100px;
     }
 
     /*####################### TEAM CONTENT #################################*/
