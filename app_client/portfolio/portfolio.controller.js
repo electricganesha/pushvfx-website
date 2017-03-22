@@ -37,8 +37,7 @@
       }else{
         getData.portfolio(choice)
         .then(function (data){
-          $scope.portfolio = data;~
-          console.log(choice);
+          $scope.portfolio = data;
           switch(choice){
             case "Film":
               $scope.still = 'stillBigFilm';
