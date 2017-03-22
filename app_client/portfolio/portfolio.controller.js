@@ -37,27 +37,24 @@
       }else{
         getData.portfolio(choice)
         .then(function (data){
-          if(choice == "Animation"){
-            $scope.category = "3D ANIMATION";
-          } else if(choice == "Interactive") {
-            $scope.category = "VR/INTERACTIVE";
-          } else {
-            $scope.category = choice;
-          }
-          
-          $scope.portfolio = data;
+          $scope.portfolio = data;~
+          console.log(choice);
           switch(choice){
             case "Film":
               $scope.still = 'stillBigFilm';
+              $scope.category = choice;
               break;
             case "Interactive":
               $scope.still = 'stillBigInteractive';
+              $scope.category = "VR/INTERACTIVE";
               break;
             case "Animation":
               $scope.still = 'stillBigAnimation';
+              $scope.category = "3D ANIMATION";
               break;
             case "Motion Graphics":
-              $scope.still = 'stillBigAnimation';
+              $scope.still = 'stillBigMotion';
+              $scope.category = choice;
               break;
           }
         },function (error){

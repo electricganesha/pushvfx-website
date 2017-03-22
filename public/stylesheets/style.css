@@ -509,6 +509,13 @@ page-header{
   -o-transition: background 1s;
   transition: background 1s;
 }
+.stillBigMotion{
+  background: url("https://pushvfx.com/pics/stills/still16.jpg") no-repeat center center;
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  -o-transition: background 1s;
+  transition: background 1s;
+}
 
 .demo a {
 	position: absolute;
