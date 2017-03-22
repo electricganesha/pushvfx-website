@@ -4,13 +4,18 @@
     .module('sitePUSH')
     .controller('contactsCtrl', contactsCtrl);
 
- 
 
-  contactsCtrl.$inject = ['$scope', 'getData','NgMap'];
-  function contactsCtrl ($scope, getData,NgMap) {
+
+  contactsCtrl.$inject = ['$scope', 'getData','NgMap','$http'];
+  function contactsCtrl ($scope, getData,NgMap,$http) {
+
+    $scope.inputNameClass = 'formtb';
+    $scope.inputEmailClass = 'formtb';
+    $scope.inputSubjectClass = 'formtb';
+    $scope.textAreaClass = 'textareaClass';
 
      NgMap.getMap({id:"pushMap"}).then(function(map) {
-			
+
 			$scope.map = map;
 
       $scope.map.styles = [
@@ -282,7 +287,58 @@
 
        $scope.map.setOptions({styles: $scope.map.styles});
 	});
-    
+
+    $scope.submitContactForm = function()
+    {
+
+      formIsValid = false;
+
+      var data = ({
+        contactName : $scope.nameContact,
+        contactEmail : $scope.emailContact,
+        contactSubject : $scope.subjectContact,
+        contactMessage : $scope.messageContact
+      });
+
+      if(!$scope.nameContact || $scope.nameContact === '') { $scope.inputNameClass = 'formtbError'; formIsValid = false;  }
+      else if($scope.nameContact || $scope.nameContact != '') { $scope.inputNameClass = 'formtb';  }
+
+      if(!$scope.emailContact || $scope.emailContact === '') { $scope.inputEmailClass = 'formtbError'; formIsValid = false;  }
+      else if($scope.emailContact || $scope.emailContact != '') { $scope.inputEmailClass = 'formtb';  }
+
+      if(!$scope.subjectContact || $scope.subjectContact === '') { $scope.inputSubjectClass = 'formtbError'; formIsValid = false; }
+      else if($scope.subjectContact || $scope.subjectContact != '') { $scope.inputSubjectClass = 'formtb';  }
+
+      if(!$scope.messageContact || $scope.messageContact === '') { $scope.textAreaClass = 'textareaClassError'; formIsValid = false; }
+      else if($scope.messageContact || $scope.messageContact != '') { $scope.textAreaClass = 'textareaClass';  }
+
+      if($scope.nameContact &&  $scope.emailContact && $scope.messageContact && $scope.subjectContact)
+        formIsValid = true;
+
+      if(formIsValid){
+
+      // Simple POST request example (passing data) :
+            $http.post('/api/mailerservice', data).
+                then(function(data, status, headers, config) {
+                    // this callback will be called asynchronously
+                    // when the response is available
+                    //clean form
+                    $scope.nameContact = '';
+                    $scope.emailContact = '';
+                    $scope.messageContact = '';
+                    $scope.subjectContact = '';
+                    currentDate = '';
+                    $scope.newContactForm.$setPristine();
+                }).
+                catch(function(data, status, headers, config) {
+                    // called asynchronously if an error occurs
+                    // or server returns response with an error status.
+                    console.log("EMAIL WAS NOT SENT - ERROR "+status);
+                });
+    }
+
+    }
+
     $scope.showError = function (error) {
       $scope.$apply(function() {
         $scope.message = error.message;

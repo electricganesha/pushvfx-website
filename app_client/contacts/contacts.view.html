@@ -3,7 +3,7 @@
   <div id="contactscontent">
     <div class="row">
         <div id="homedivleft">
-            <object style="width: 40%;" id="left-triangle" data="/img/left_triangle.svg" type="image/svg+xml"></object>
+            <img src="/img/left_triangle.png" width="40%">
         </div>
         <div id="info-form" style="border-bottom:solid 4px #b8153a">
             <div class="row" style="width: 51vw; margin: auto;">
@@ -24,20 +24,25 @@
                     <p id="info_text" style="margin-top: 10px;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+351 211 935 588</p>
                 </div>
                 <div id="messageform" class="col-md-5" style="text-align: center;">
-                   <form method="post">
-                        <input type="text" id="name_cont" name="name_cont" class="formtb" placeholder="NAME" required style="color: #9b9694;">
-                        <br>
-                        <br>
-                        <input type="text" id="email_cont" name="email_cont" class="formtb" placeholder="E-MAIL" required>
-                        <br>
-                        <br>
-                        <input type="text" id="subject" name="subject" class="formtb" placeholder="SUBJECT" required>
-                        <br>
-                        <br>
-                        <br>
-                        <textarea placeholder="MESSAGE" id="message" name="message" rows="7"></textarea>
-                        <input type="submit" id="send" name="send" value="SEND MASSAGE">
-                    </form>
+                  <form id="contactFormContainer" action="#" ng-submit="submitContactForm()" name="newContactForm">
+                    <input id="contactName" ng-class="inputNameClass" type="text" name="Name" ng-required="true" ng-model="nameContact" placeholder="NAME" style="color: #9b9694;" >
+                    <br>
+                    <br>
+                    <input id="contactEmail" ng-class="inputEmailClass" type="email" name="Email" ng-required="true" ng-model="emailContact" placeholder="E-MAIL">
+                    <br>
+                    <br>
+                    <input id="contactSubject" ng-class="inputSubjectClass" type="text" name="Subject" ng-required="true" ng-model="subjectContact" placeholder="SUBJECT">
+                    <br>
+                    <br>
+                    <br>
+                    <textarea id="textAreaContact"  ng-class="textAreaClass" rows="7"  name="Message" ng-required="true" ng-model="messageContact" placeholder="MESSAGE"></textarea>
+                    <!--<button id="send" type="submit" value="Submit"> SEND MESSAGE </button>-->
+                    <input type="button" id="send" value="SEND MESSAGE" ng-click="submitContactForm()">
+                    <br>
+                    <br>
+                    <br>
+                    <p style="color:#3e2a56;" ng-show="newContactForm.Name.$valid == false && newContactForm.Email.$valid == false && newContactForm.Subject.$valid == false && newContactForm.Message.$valid == false"> * All fields are required. Please fill the form accordingly. </p>
+                  </form>
                 </div>
             </div>
         </div>
@@ -56,7 +61,7 @@
             </div>
         </div>
         <div id="homedivright">
-            <object style="width: 40%;" width="90%" id="left-triangle" data="/img/right_triangle.svg" type="image/svg+xml"></object>
+            <img src="/img/right_triangle.png" width="40%">
         </div>
     </div>
     <br>
