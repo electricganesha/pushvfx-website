@@ -303,6 +303,33 @@ page-header{
   width: 100%;
 }
 
+#selectionproject{
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 20px;
+    width: 250px;
+    z-index: 100;
+    font-family: monserratmedium;
+}
+
+#selection{
+  float: left;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  margin-right: 10px;
+  cursor: pointer;
+  color:white;
+  padding-top: 1px;
+  transition: background-color 0.3s ease;
+  transition: border: width border-style color; 0.3s ease;
+  background-color: white;
+}
+
+#selection:hover{
+  background-color: #b8153a;
+}
+
 #image1{
   position: absolute;
   z-index: -5;
