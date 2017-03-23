@@ -5,8 +5,8 @@
     .controller('projectsCtrl', projectsCtrl);
 
 
-  projectsCtrl.$inject = ['$scope','$routeParams', 'getData', 'saveNewsId'];
-  function projectsCtrl ($scope, $routeParams, getData, saveNewsId) {
+  projectsCtrl.$inject = ['$scope','$routeParams', 'getData'];
+  function projectsCtrl ($scope, $routeParams, getData) {
     $scope.twocolumn = false;
     $scope.sixcolumn = false;
     $scope.midPageDiv = false;

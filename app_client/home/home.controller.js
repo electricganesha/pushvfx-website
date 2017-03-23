@@ -4,8 +4,8 @@
     .module('sitePUSH')
     .controller('homeCtrl', homeCtrl);
 
-  homeCtrl.$inject = ['$scope', 'getData', 'saveNewsId'];
-  function homeCtrl ($scope, getData, saveNewsId) {
+  homeCtrl.$inject = ['$scope', 'getData'];
+  function homeCtrl ($scope, getData) {
     $scope.image1show = false;
     var viewportWidth = $(window).width();
     var path = 'https://pushvfx.com/pics/beforeafter/';
@@ -76,16 +76,6 @@
       }
     }
 
-    /*var arrayImg1 = new Array();
-    arrayImg1[0] = {"before": "bpa_before.jpg","after":"bpa_after.jpg"};
-    arrayImg1[1] = {"before": "burro_before.jpg","after":"burro_after.jpg"};
-    arrayImg1[2] = {"before": "dentes_before.jpg","after":"dentes_after.jpg"};
-    arrayImg1[3] = {"before": "galo_before.jpg","after":"galo_after.jpg"};
-    arrayImg1[4] = {"before": "jac01_before.jpg","after":"jac01_after.jpg"};
-    arrayImg1[5] = {"before": "jac02_before.jpg","after":"jac02_after.jpg"};
-    arrayImg1[6] = {"before": "porco_before.jpg","after":"porco_after.jpg"};
-    arrayImg1[7] = {"before": "wirehead_before.jpg","after":"wirehead_after.jpg"};*/
-
     var arrayImg2 = new Array();
     arrayImg2[0] = "still9.jpg";
     arrayImg2[1] = "still10.jpg";
@@ -96,16 +86,7 @@
     arrayImg2[6] = "still15.jpg";
     arrayImg2[7] = "still16.jpg";
 
-    /*getRandomImage(arrayImg1, "");*/
     getRandomImage1(arrayImg2, "");
-
-    /*function getRandomImage(imgAr, path) {
-        path = path || 'https://pushvfx.com/pics/beforeafter/'; // default path here
-        var num = Math.floor( Math.random() * imgAr.length );
-        var img = imgAr[ num ];
-        $scope.before = path + imgAr[ num ].before;
-        $scope.after = path + imgAr[ num ].after;
-    }*/
 
     function getRandomImage1(imgAr, path) {
         path = path || 'https://pushvfx.com/pics/stills/'; // default path here
@@ -116,8 +97,8 @@
 
     var lastScrollTop = 0;
     var up = false;
-    
-    
+
+
     if(viewportWidth > 1000){
       $(window).scroll(function(event){
         if($(this).scrollTop()){
@@ -153,10 +134,6 @@
       },function (error){
         $scope.message = "Sorry, something's gone wrong, please try again later";
       });
-
-    $scope.saveId = function(id){
-      saveNewsId.set(id);
-    }
 
     $scope.showError = function (error) {
       $scope.$apply(function() {

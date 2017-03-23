@@ -53,7 +53,7 @@ function config($routeProvider, $locationProvider)
     templateUrl: '/whatwedo/whatwedo.view.html',
     controller: 'whatwedoCtrl'
   })
-  .when('/category',{
+  .when('/category/:categoryId',{
     templateUrl: '/category/category.view.html',
     controller: 'categoryCtrl'
   })
@@ -77,7 +77,7 @@ function config($routeProvider, $locationProvider)
     templateUrl: '/timeline/timeline.view.html',
     controller: 'timelineCtrl'
   })
-  .when('/news/',{
+  .when('/news/:newsId',{
     templateUrl: '/news/news.view.html',
     controller: 'newsCtrl'
   })

@@ -4,10 +4,10 @@
     .module('sitePUSH')
     .controller('newsCtrl', newsCtrl);
 
-  newsCtrl.$inject = ['$scope', 'getData', 'saveNewsId'];
-  function newsCtrl ($scope, getData, saveNewsId) {
+  newsCtrl.$inject = ['$scope', '$routeParams', 'getData'];
+  function newsCtrl ($scope, $routeParams, getData) {
 
-    getData.oneNew(saveNewsId.get())
+    getData.oneNew($routeParams.newsId)
       .then(function (data){
         $scope.newTopTitle = data.data.topTitle;
         $scope.newTitle = data.data.title;
