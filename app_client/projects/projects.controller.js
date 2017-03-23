@@ -4,16 +4,16 @@
     .module('sitePUSH')
     .controller('projectsCtrl', projectsCtrl);
 
- 
-  projectsCtrl.$inject = ['$scope', 'getData', 'saveNewsId'];
-  function projectsCtrl ($scope, getData, saveNewsId) {
+
+  projectsCtrl.$inject = ['$scope','$routeParams', 'getData', 'saveNewsId'];
+  function projectsCtrl ($scope, $routeParams, getData, saveNewsId) {
     $scope.twocolumn = false;
     $scope.sixcolumn = false;
     $scope.midPageDiv = false;
     $scope.midPagevideoShow = false;
     $scope.bottomPageDiv = false;
 
-     getData.projectById(saveNewsId.get())
+     getData.projectById($routeParams.projectId)
       .then(function (data){
         $scope.showCaseStill = data.data.showCaseStill;
         $scope.showCaseVideo = data.data.showCaseVideo;
@@ -49,7 +49,7 @@
       },function (error){
         $scope.message = "Sorry, something's gone wrong, please try again later";
       });
-    
+
     $scope.showError = function (error) {
       $scope.$apply(function() {
         $scope.message = error.message;

@@ -33,7 +33,7 @@ function config($routeProvider, $locationProvider)
     templateUrl: '/news/news.view.html',
     controller: 'newsCtrl'
   })
-  .when('/projects',{
+  .when('/projects/:projectId',{
     templateUrl: '/projects/projects.view.html',
     controller: 'projectsCtrl'
   })
