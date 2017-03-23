@@ -66,7 +66,7 @@
         <p>OUR LATEST WORK</p>
         <div id="latestprojects">
             <div class="col-md-4" style="padding:0;" ng-repeat="bestproject in bestprojects.data">
-              <a style="text-decoration: none;" ng-click="saveId(bestproject._id)"  href="/projects">
+              <a style="text-decoration: none;" href="/projects/{{bestproject._id}}">
                 <div id="latestprojectsphoto"> 
                   <img id="image" ng-src="{{bestproject.thumbnail}}">
                 </div>
