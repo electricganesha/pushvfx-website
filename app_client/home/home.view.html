@@ -1,13 +1,53 @@
 <div id="content" ng-mousemove="clipimage($event)">
     <div id="selectionproject">
-      <div id="selection" ng-click="changeproject(1)">1</div>
-      <div id="selection" ng-click="changeproject(2)">2</div>
-      <div id="selection" ng-click="changeproject(3)">3</div>
-      <div id="selection" ng-click="changeproject(4)">4</div>
-      <div id="selection" ng-click="changeproject(5)">5</div>
-      <div id="selection" ng-click="changeproject(6)">6</div>
-      <div id="selection" ng-click="changeproject(7)">7</div>
-      <div id="selection" ng-click="changeproject(8)">8</div>
+      <div ng-if="id==1">
+        <div id="selection" style="background-color: #b8153a;" ng-click="changeproject(1)"></div>
+      </div>
+      <div ng-if="id!=1">
+        <div id="selection" ng-click="changeproject(1)"></div>
+      </div>
+      <div ng-if="id==2">
+        <div id="selection" style="background-color: #b8153a;" ng-click="changeproject(2)"></div>
+      </div>
+      <div ng-if="id!=2">
+        <div id="selection" ng-click="changeproject(2)"></div>
+      </div>
+      <div ng-if="id==3">
+        <div id="selection" style="background-color: #b8153a;" ng-click="changeproject(3)"></div>
+      </div>
+      <div ng-if="id!=3">
+        <div id="selection" ng-click="changeproject(3)"></div>
+      </div>
+      <div ng-if="id==4">
+        <div id="selection" style="background-color: #b8153a;" ng-click="changeproject(4)"></div>
+      </div>
+      <div ng-if="id!=4">
+        <div id="selection" ng-click="changeproject(4)"></div>
+      </div>
+      <div ng-if="id==5">
+        <div id="selection" style="background-color: #b8153a;" ng-click="changeproject(5)"></div>
+      </div>
+      <div ng-if="id!=5">
+        <div id="selection" ng-click="changeproject(5)"></div>
+      </div>
+      <div ng-if="id==6">
+        <div id="selection" style="background-color: #b8153a;" ng-click="changeproject(6)"></div>
+      </div>
+      <div ng-if="id!=6">
+        <div id="selection" ng-click="changeproject(6)"></div>
+      </div>
+      <div ng-if="id==7">
+        <div id="selection" style="background-color: #b8153a;" ng-click="changeproject(7)"></div>
+      </div>
+      <div ng-if="id!=7">
+        <div id="selection" ng-click="changeproject(7)"></div>
+      </div>
+      <div ng-if="id==8">
+        <div id="selection" style="background-color: #b8153a;" ng-click="changeproject(8)"></div>
+      </div>
+      <div ng-if="id!=8">
+        <div id="selection" ng-click="changeproject(8)"></div>
+      </div>
     </div>
     <img id="image1" ng-show="image1show" ng-src="{{after}}">
     <img id="image2" ng-src="{{before}}">

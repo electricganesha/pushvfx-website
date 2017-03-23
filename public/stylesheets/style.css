@@ -314,16 +314,16 @@ page-header{
 
 #selection{
   float: left;
-  border: solid 2px #b8153a;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   text-align: center;
   margin-right: 10px;
   cursor: pointer;
   color:white;
   padding-top: 1px;
   transition: background-color 0.3s ease;
-  background-color: transparent;
+  transition: border: width border-style color; 0.3s ease;
+  background-color: white;
 }
 
 #selection:hover{

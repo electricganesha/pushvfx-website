@@ -102,6 +102,11 @@
         display: none;
     }
 
+    #selectionproject{
+        margin-top: 110px;
+        margin-left: 15px;
+    }
+
     /*####################### PORTFOLIO CONTENT #################################*/
 
     #latestprojects p{
@@ -383,6 +388,11 @@
 
     #section06{
         display: none;
+    }
+
+    #selectionproject{
+        margin-top: 130px;
+        margin-left: 25px;
     }
 
     /*####################### PORTFOLIO CONTENT #################################*/
@@ -813,6 +823,11 @@
         display: none;
     }
 
+    #selectionproject{
+        margin-top: 158px;
+        margin-left: 25px;
+    }
+
     /*####################### PORTFOLIO CONTENT #################################*/
 
     #latestprojects p{
@@ -953,6 +968,11 @@
 
     #section06{
         display: none;
+    }
+
+    #selectionproject{
+        margin-top: 160px;
+        margin-left: 25px;
     }
 
     /*####################### PORTFOLIO CONTENT #################################*/
@@ -1250,6 +1270,11 @@
         height: 200px;
     }
 
+     #selectionproject{
+        margin-top: 160px;
+        margin-left: 25px;
+    }
+
     /*####################### PORTFOLIO CONTENT #################################*/
 
     #latestprojects p{
@@ -1352,6 +1377,13 @@
 
     .col-lg-4 {
         width: 100%;
+    }
+
+    /*####################### HOME CONTENT #################################*/
+
+     #selectionproject{
+        margin-top: 160px;
+        margin-left: 25px;
     }
 
     /*####################### REEL CONTENT #################################*/
@@ -1498,6 +1530,13 @@
 
     .col-lg-4 {
         width: 100%;
+    }
+
+    /*####################### Home CONTENT #################################*/
+
+    #selectionproject{
+        margin-top: 160px;
+        margin-left: 25px;
     }
 
     /*####################### TIMELINE CONTENT #################################*/
