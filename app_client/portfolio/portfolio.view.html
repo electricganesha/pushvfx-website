@@ -62,7 +62,7 @@
                 <p style="font-family:monserratregular; text-transform: uppercase; color: #b8153a;">{{ category }}</p>
                 <div id="latestprojects">
                     <div class="col-md-4" style="padding:0;" ng-repeat="project in portfolio.data">
-                        <a ng-click="saveId(project._id)" href="/projects">
+                        <a href="/projects/{{project._id}}">
                             <div id="latestprojectsphoto">
                                 <img id="image" ng-src="{{project.thumbnail}}">
                             </div>

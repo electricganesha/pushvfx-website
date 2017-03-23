@@ -63,6 +63,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'app_client')));
 
 app.use('/api', routesApi);
+
+app.use(function(req,res){
+  res.sendFile(path.join(__dirname,'app_client','index.html'));
+});
+
 /*app.use(function(req,res) {
   res.sendFile(path.join(__dirname, 'app_client', 'index.html'));
 });*/
