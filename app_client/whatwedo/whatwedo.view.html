@@ -32,7 +32,7 @@ We are ideologically committed to quality, in all of our activities, leaving no 
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-4" ng-repeat="category in categories.data | orderBy:'+title'" style=" padding:5px;">
-                            <a class="tint" ng-click="saveId(category._id)" href="/category">
+                            <a class="tint" href="/category/{{category._id}}">
                                 <p id="cattitle">{{ category.title }}</p>
                                 <img id="image" ng-src="{{category.stills[0].still}}">
                             </a>

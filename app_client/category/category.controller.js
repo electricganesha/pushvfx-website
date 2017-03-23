@@ -4,10 +4,10 @@
     .module('sitePUSH')
     .controller('categoryCtrl', categoryCtrl);
 
-  categoryCtrl.$inject = ['$scope', 'getData', 'saveNewsId'];
-  function categoryCtrl ($scope, getData, saveNewsId) {
+  categoryCtrl.$inject = ['$scope','$routeParams','getData'];
+  function categoryCtrl ($scope, $routeParams, getData) {
 
-    getData.category(saveNewsId.get())
+    getData.category($routeParams.categoryId)
       .then(function (data){
         $scope.title = data.data.title;
         $scope.description = data.data.description;
@@ -18,10 +18,6 @@
       },function (error){
         $scope.message = "Sorry, something's gone wrong, please try again later";
       });
-
-    $scope.saveId = function(id){
-      saveNewsId.set(id);
-    }
 
     $scope.showError = function (error) {
       $scope.$apply(function() {

@@ -5,8 +5,8 @@
     .controller('timelineCtrl', timelineCtrl);
 
 
-  timelineCtrl.$inject = ['$scope', '$compile', 'getData', 'saveNewsId'];
-  function timelineCtrl ($scope, $compile, getData, saveNewsId) {
+  timelineCtrl.$inject = ['$scope', '$compile', 'getData'];
+  function timelineCtrl ($scope, $compile, getData) {
     var dates = new Array();
     var yearEvents = [];
 
@@ -20,7 +20,7 @@
     for(var y = 2016; y <= new Date().getFullYear(); y ++){
       getData.newsByYear(y)
         .then(function (data){
-          for (i=0; i < data.data.length; i ++){  
+          for (i=0; i < data.data.length; i ++){
             dates[i] = data.data[i].dateOfEvent;
           }
           $scope.News = data;
@@ -29,10 +29,6 @@
         },function (error){
           $scope.message = "Sorry, something's gone wrong, please try again later";
         });
-    } 
-
-    $scope.saveId = function(id){
-      saveNewsId.set(id);
     }
 
     $scope.showNew = function(newsdate) {
@@ -118,7 +114,7 @@
       timeline.style.width = "90%";
       timeline.style.float = "right";
       timeline.style.height = "4vh";
-      
+
       timelinebar.appendChild(timelineyear);
       timelinebar.appendChild(timeline);
       timelines.appendChild(timelinebar);

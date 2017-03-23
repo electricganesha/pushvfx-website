@@ -37,8 +37,7 @@ var appClientFiles = [
   '/home/pushint/sitePUSH/app_client/category/category.controller.js',
   '/home/pushint/sitePUSH/app_client/common/directives/pageHeader/pageHeader.directive.js',
   '/home/pushint/sitePUSH/app_client/common/directives/pageFooter/pageFooter.directive.js',
-  '/home/pushint/sitePUSH/app_client/common/services/getData.service.js',
-  '/home/pushint/sitePUSH/app_client/common/services/saveNewsId.service.js'
+  '/home/pushint/sitePUSH/app_client/common/services/getData.service.js'
 ];
 
 var uglified = uglifyJs.minify(appClientFiles, { compress : false });
