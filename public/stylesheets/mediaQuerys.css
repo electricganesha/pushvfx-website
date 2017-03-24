@@ -1481,6 +1481,13 @@
     #newname{
         font-size: 13px;
     }
+
+    /*####################### TIMELINE CONTENT #################################*/
+
+    #selectionproject{
+        margin-top: 160px;
+        margin-left: 25px;
+    }
 }
 
 @media(min-width:1301px) and (max-width:1499px) {
@@ -1532,11 +1539,11 @@
         width: 100%;
     }
 
-    /*####################### Home CONTENT #################################*/
+    /*####################### HOME CONTENT #################################*/
 
     #selectionproject{
-        margin-top: 160px;
-        margin-left: 25px;
+        margin-top: 181px;
+        margin-left: 41px;
     }
 
     /*####################### TIMELINE CONTENT #################################*/
@@ -1588,6 +1595,13 @@
         width: 100%;
     }
 
+    /*####################### HOME CONTENT #################################*/
+
+    #selectionproject{
+        margin-top: 170px;
+        margin-left: 41px;
+    }
+
 }
 
 @media(min-width:1601px) and (max-width:1800px) {
@@ -1627,6 +1641,13 @@
         width: 100%;
     }
 
+    /*####################### HOME CONTENT #################################*/
+
+    #selectionproject{
+        margin-top: 180px;
+        margin-left: 45px;
+    }
+
 }
 
 @media(min-width:1801px) and (max-width:1899px) {
@@ -1647,6 +1668,13 @@
     nav{
         width: 50%;
         margin: auto;
+    }
+
+    /*####################### HOME CONTENT #################################*/
+
+    #selectionproject{
+        margin-top: 180px;
+        margin-left: 45px;
     }
 
 }
@@ -1675,6 +1703,13 @@
         height: 45px;
     }
 
+    /*####################### HOME CONTENT #################################*/
+
+    #selectionproject{
+        margin-top: 156px;
+        margin-left: 60px;
+    }
+
 }
 
 @media(min-width:1921px) and (max-width:2150px) {
@@ -1699,6 +1734,13 @@
 
     #spaceheader {
         height: 45px;
+    }
+
+    /*####################### HOME CONTENT #################################*/
+
+    #selectionproject{
+        margin-top: 190px;
+        margin-left: 60px;
     }
 
 }
@@ -1727,6 +1769,13 @@
         height: 45px;
     }
 
+    /*####################### HOME CONTENT #################################*/
+
+    #selectionproject{
+        margin-top: 190px;
+        margin-left: 60px;
+    }
+
 }
 
 @media(min-width:2301px) and (max-width:2500px) {
@@ -1753,6 +1802,13 @@
         height: 45px;
     }
 
+    /*####################### HOME CONTENT #################################*/
+
+    #selectionproject{
+        margin-top: 190px;
+        margin-left: 60px;
+    }
+
 }
 
 @media(min-width:2501px) {
@@ -1777,6 +1833,13 @@
 
     #spaceheader {
         height: 45px;
+    }
+
+    /*####################### HOME CONTENT #################################*/
+
+    #selectionproject{
+        margin-top: 190px;
+        margin-left: 60px;
     }
 
 }
