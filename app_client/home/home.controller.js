@@ -20,7 +20,7 @@
         $("#image1").css('clip-path', clip1);
     }
 
-    $('#content').bind('touchmove', function (e) {
+    $('#toucharea').bind('touchmove', function (e) {
         e.preventDefault();
         $scope.image1show = true;
         var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
