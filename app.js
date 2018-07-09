@@ -21,23 +21,23 @@ app.set('view engine', 'jade');
 
 
 var appClientFiles = [
-  '/home/pushint/sitePUSH/app_client/sitePUSH.js',
-  '/home/pushint/sitePUSH/app_client/home/home.controller.js',
-  '/home/pushint/sitePUSH/app_client/portfolio/portfolio.controller.js',
-  '/home/pushint/sitePUSH/app_client/team/team.controller.js',
-  '/home/pushint/sitePUSH/app_client/reel/reel.controller.js',
-  '/home/pushint/sitePUSH/app_client/contacts/contacts.controller.js',
-  '/home/pushint/sitePUSH/app_client/timeline/timeline.controller.js',
-  '/home/pushint/sitePUSH/app_client/news/news.controller.js',
-  '/home/pushint/sitePUSH/app_client/projects/projects.controller.js',
-  '/home/pushint/sitePUSH/app_client/disclaimer/disclaimer.controller.js',
-  '/home/pushint/sitePUSH/app_client/lab/lab.controller.js',
-  '/home/pushint/sitePUSH/app_client/career/career.controller.js',
-  '/home/pushint/sitePUSH/app_client/whatwedo/whatwedo.controller.js',
-  '/home/pushint/sitePUSH/app_client/category/category.controller.js',
-  '/home/pushint/sitePUSH/app_client/common/directives/pageHeader/pageHeader.directive.js',
-  '/home/pushint/sitePUSH/app_client/common/directives/pageFooter/pageFooter.directive.js',
-  '/home/pushint/sitePUSH/app_client/common/services/getData.service.js'
+  'app_client/sitePUSH.js',
+  'app_client/home/home.controller.js',
+  'app_client/portfolio/portfolio.controller.js',
+  'app_client/team/team.controller.js',
+  'app_client/reel/reel.controller.js',
+  'app_client/contacts/contacts.controller.js',
+  'app_client/timeline/timeline.controller.js',
+  'app_client/news/news.controller.js',
+  'app_client/projects/projects.controller.js',
+  'app_client/disclaimer/disclaimer.controller.js',
+  'app_client/lab/lab.controller.js',
+  'app_client/career/career.controller.js',
+  'app_client/whatwedo/whatwedo.controller.js',
+  'app_client/category/category.controller.js',
+  'app_client/common/directives/pageHeader/pageHeader.directive.js',
+  'app_client/common/directives/pageFooter/pageFooter.directive.js',
+  'app_client/common/services/getData.service.js'
 ];
 
 var uglified = uglifyJs.minify(appClientFiles, { compress : false });

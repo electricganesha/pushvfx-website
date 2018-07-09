@@ -10,8 +10,8 @@
     var viewportWidth = $(window).width();
     var path = 'https://pushvfx.com/pics/beforeafter/';
     $scope.id = 1;
-    $scope.before = path + "bpa_before.jpg";
-    $scope.after = path + "bpa_after.jpg";
+    $scope.before = path + "01_before.jpg";
+    $scope.after = path + "01_after.jpg";
 
     $scope.clipimage = function($event){
         $scope.image1show = true;
@@ -35,8 +35,8 @@
       switch(id){
         case 1:
           $scope.id = 1;
-          $scope.before = path + "bpa_before.jpg";
-          $scope.after = path + "bpa_after.jpg";
+          $scope.before = path + "01_before.jpg";
+          $scope.after = path + "01_after.jpg";
           break;
         case 2:
           $scope.id = 2;
