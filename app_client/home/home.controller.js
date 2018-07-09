@@ -40,38 +40,38 @@
           break;
         case 2:
           $scope.id = 2;
-          $scope.before = path + "burro_before.jpg";
-          $scope.after = path + "burro_after.jpg";
+          $scope.before = path + "02_before.jpg";
+          $scope.after = path + "02_after.jpg";
           break;
         case 3:
           $scope.id = 3;
-          $scope.before = path + "dentes_before.jpg";
-          $scope.after = path + "dentes_after.jpg";
+          $scope.before = path + "03_before.jpg";
+          $scope.after = path + "03_after.jpg";
           break;
         case 4:
           $scope.id = 4;
-          $scope.before = path + "galo_before.jpg";
-          $scope.after = path + "galo_after.jpg";
+          $scope.before = path + "04_before.jpg";
+          $scope.after = path + "04_after.jpg";
           break;
         case 5:
           $scope.id = 5;
-          $scope.before = path + "jac01_before.jpg";
-          $scope.after = path + "jac01_after.jpg";
+          $scope.before = path + "05_before.jpg";
+          $scope.after = path + "05_after.jpg";
           break;
         case 6:
           $scope.id = 6;
-          $scope.before = path + "jac02_before.jpg";
-          $scope.after = path + "jac02_after.jpg";
+          $scope.before = path + "06_before.jpg";
+          $scope.after = path + "06_after.jpg";
           break;
         case 7:
           $scope.id = 7;
-          $scope.before = path + "porco_before.jpg";
-          $scope.after = path + "porco_after.jpg";
+          $scope.before = path + "07_before.jpg";
+          $scope.after = path + "07_after.jpg";
           break;
         case 8:
           $scope.id = 8;
-          $scope.before = path + "wirehead_before.jpg";
-          $scope.after = path + "wirehead_after.jpg";
+          $scope.before = path + "08_before.jpg";
+          $scope.after = path + "08_after.jpg";
           break;
       }
     }
